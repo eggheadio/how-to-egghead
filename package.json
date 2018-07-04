@@ -1,0 +1,51 @@
+{
+  "name": "howtoegghead.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "now": {
+    "env": {
+      "GOOGLE_ANALYTICS": "",
+      "NODE_ENV": "production"
+    },
+    "alias": "howtoegghead.com",
+    "scale": {
+      "sfo1": {
+        "min": 1,
+        "max": "auto"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggheadio/how-to-egghead.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eggheadio/learnreduxwithdanabramov.com/issues"
+  },
+  "homepage": "https://github.com/eggheadio/learnreduxwithdanabramov.com#readme",
+  "devDependencies": {
+    "babel-plugin-emotion": "^9.1.2",
+    "@mdx-js/loader": "^0.9.0",
+    "@mdx-js/mdx": "^0.9.0"
+  },
+  "dependencies": {
+    "chicago-capitalize": "^0.1.0",
+    "dotenv": "^5.0.1",
+    "emotion": "^9.1.3",
+    "emotion-server": "^9.1.3",
+    "next": "^6.0.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-emotion": "^9.1.3",
+    "react-ga": "^2.5.3",
+    "remark-highlight.js": "^5.0.0"
+  }
+}
