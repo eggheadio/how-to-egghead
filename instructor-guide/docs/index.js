@@ -8,6 +8,7 @@ import chapter5 from "./05-odds-and-ends"
 export default [
   {
     title: "",
+    slug: "",
     chapter: [
       {
         component: WhatIsEgghead,
@@ -17,23 +18,28 @@ export default [
     ]
   },
   {
-    title: "Getting Started as an egghead Instructor",
+    title: "Getting Started",
+    slug: "getting-started",
     chapter: chapter1
   },
   {
     title: "Creating Lessons",
+    slug: "creating-lessons",
     chapter: chapter2
   },
   {
     title: "Creating Courses",
+    slug: "creating-courses",
     chapter: chapter3
   },
   {
     title: "Screencasting Tips",
+    slug: "screencasting-tips",
     chapter: chapter4
   },
   {
     title: "Odds and Ends",
+    slug: "odds-and-ends",
     chapter: chapter5
   }
 ]

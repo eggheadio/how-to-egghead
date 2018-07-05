@@ -15,6 +15,6 @@ export default [
   {
     component: JoiningSlack,
     title: "Joining Slack",
-    slug: "joining slack"
+    slug: "joining-slack"
   }
 ]
