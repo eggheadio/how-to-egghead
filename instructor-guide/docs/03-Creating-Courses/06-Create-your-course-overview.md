@@ -1,4 +1,4 @@
-# 06 - Create your course overview
+## Create your course overview
 When your course is "lesson complete," it's time to record a course overview. Guess what: It’s another lesson! But a lesson that serves as the trailer for your course.
 
 Here’s a great example of an overview, from the course [Advanced React Component Patterns](https://egghead.io/courses/advanced-react-component-patterns) by Kent C. Dodds:

@@ -1,12 +1,12 @@
-# 04 - **Your course code example**
+## Your course code example
 A course typically has one code example that acts as a connecting thread through the course. You’ll build on it from lesson to lesson.
 
 As soon as your course proposal is approved, you should start building your code example [in a tool like Plunker](https://paper.dropbox.com/doc/05-Sharing-your-code-XPt8sCs1hyoeAEuyK8aQr). The best format of your code example will depend on [the style of your course](https://paper.dropbox.com/doc/02-How-to-structure-your-course-YfYDW8HSjx7DsAEShXc4X). As always, #ask your coach for guidance and a second pair of eyes as you build.
 
-*[Gif: code being built]* 
+*[Gif: code being built]*
 
 
-## Sharing your code
+### Sharing your code
 
 For each lesson in a course, you’ll provide your code example in its finished state below the video so learners can explore the code on their own.
 

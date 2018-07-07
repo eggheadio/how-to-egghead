@@ -1,7 +1,7 @@
-# 05 - Record your course
+## Record your course
 With all the prep you've already done for your course, a lot of the hard work is behind you.
 
-Once your proposal has been reviewed and approved, you can spend some time **iterating your lesson plans on paper** and building a solid curriculum that will be useful for thousands of developers for years to come! 
+Once your proposal has been reviewed and approved, you can spend some time **iterating your lesson plans on paper** and building a solid curriculum that will be useful for thousands of developers for years to come!
 
 *[Illustration: putting pen to paper]*
 
