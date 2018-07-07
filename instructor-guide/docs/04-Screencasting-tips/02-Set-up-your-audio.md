@@ -1,4 +1,4 @@
-# 02 - Set up your audio
+## Set up your audio
 Good audio starts with quality gear. Your laptop’s built-in microphone sounds decent, but we want you to sound way better than decent.
 
 When you become an egghead instructor, we hook you up! As soon as you have a draft lesson almost ready to publish, we’ll send you a waterproof Pelican case full of professional-grade audio recording equipment. 📬
@@ -19,14 +19,14 @@ Here’s what you’ll be getting:
 Let’s go through each piece of equipment and explain how you’ll use it.
 
 
-## Microphone boom
+### Microphone boom
 
 *[Image: Microphone boom]*
 
-The boom is a stand for your mic. Booms can range in size and shape. (Action movies require bigger booms than egghead lessons.) This is a very nice, sturdy boom from Germany that folds down for easy storage in the case. 
+The boom is a stand for your mic. Booms can range in size and shape. (Action movies require bigger booms than egghead lessons.) This is a very nice, sturdy boom from Germany that folds down for easy storage in the case.
 
 
-## The microphone
+### The microphone
 
 *[Image: Microphone]*
 
@@ -41,14 +41,14 @@ Positioning of the mic is important. You should be 2–6 inches away for optimal
 (We don’t really give out extra credit, but you might sound *slightly* better.)
 
 
-## Shock mount (right)
+### Shock mount (right)
 
 *[Image: Shock mount + USB audio interface]*
 
 This little piece connects to the boom, and the microphone slides into it before being attached to the XLR cable. It will dampen any footsteps or other vibrations that might be picked up through the stand to the mic. (You’ll most likely be sitting down, but who knows what your kids or roommates are up to.)
 
 
-## USB audio interface (left)
+### USB audio interface (left)
 
 The mic we’re giving you is built for professional audio applications, not necessarily for capturing audio on a computer. This interface connects the mic to your computer, and converts XLR analog signal into 1s and 0s for the computer to store. It has an XLR input (from the mic) and a USB output (to the computer).
 
@@ -57,7 +57,7 @@ Note:
 ⚡️ Turn the gain up!
 
 
-## XLR cable
+### XLR cable
 
 XLR is a plug used in professional audio applications. It isn't completely necessary since the pre-amp will plug directly into the microphone, but play around and see if it makes your sound more stable.
 
@@ -68,7 +68,7 @@ Your final setup should look something like this:
 *[Image: Finished product]*
 
 
-## Check audio input levels
+### Check audio input levels
 
 Once your gear is set up, you'll need to check the audio input levels to make sure your gain is set properly. [Here’s a lesson to help you](https://egghead.io/lessons/tools-prepare-to-record-screen-resolution-and-mic-check?play=true)
 

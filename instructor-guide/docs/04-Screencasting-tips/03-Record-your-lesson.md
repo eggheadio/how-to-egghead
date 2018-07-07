@@ -1,12 +1,12 @@
-# 03 - Record your lesson
-Screencasting is one of those iceberg-like tasks: 90% of the work is behind the scenes. Only 10% is visible. 
+## Record your lesson
+Screencasting is one of those iceberg-like tasks: 90% of the work is behind the scenes. Only 10% is visible.
 
 *[Illustration: Lesson scope, code example, etc. 90%, recording 10%]*
 
 Recording your screencast is that 10%. You’ve put tons of thought and time into your lesson scope, code example, and points you want to cover. What distinguishes your success in this final stage is high-quality technical tools. (And careful editing—that’s next.)
 
 
-## Video capture
+### Video capture
 
 egghead.io instructors are provided with whatever software licenses you need. Just #ask!
 
@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=3nlJ_wP9dPE&&index=5&list=PL219naRJXQKbQJ60WxsuG
 
 
 
-## Capturing audio
+### Capturing audio
 
 There are three ways to record your screencasts. Each is completely 👌
 
@@ -36,11 +36,11 @@ There are three ways to record your screencasts. Each is completely 👌
 
 For more on audio, see our guide to [audio setup](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ).
 
-## Record one thought at a time
+### Record one thought at a time
 
-While you’re recording, do your editing-self a favor: Record in short, high-quality chunks, one thought at a time. 
+While you’re recording, do your editing-self a favor: Record in short, high-quality chunks, one thought at a time.
 
-Think of your lesson as a series of paragraphs that take 20 seconds to record. **Between each, take a pause**. Doing this will help you avoid intense editing to move audio and video snippets around as you build your quilt-like final product. 
+Think of your lesson as a series of paragraphs that take 20 seconds to record. **Between each, take a pause**. Doing this will help you avoid intense editing to move audio and video snippets around as you build your quilt-like final product.
 
 ![](https://media.giphy.com/media/GJycRLp6zYGFq/giphy.gif)
 
