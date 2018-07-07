@@ -1,8 +1,8 @@
-# 09 - Record and upload your lesson
+## Record and upload your lesson
 Now that you know how to [be concise](https://paper.dropbox.com/doc/07-Speak-concisely-v5Rk1EjXfhwrri6cRuPGA), [narrate your lesson](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS), and [show your work](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe), it’s time to record for real.
 
 
-## Recording your screencast
+### Recording your screencast
 
 We’ve put together an entire Technical Guide to help you *record* your screencasts. Find out how to:
 
@@ -14,7 +14,7 @@ We’ve put together an entire Technical Guide to help you *record* your screenc
 Okay, that handles the specifics of recording. But the word *record* is so...official. What if you mess up?
 
 
-- **Make mistakes!** Your video isn't a live presentation. Mistakes and restarts are fine. Sometimes you need to cough, kids run through, a train rolls by. Edit it out later. 
+- **Make mistakes!** Your video isn't a live presentation. Mistakes and restarts are fine. Sometimes you need to cough, kids run through, a train rolls by. Edit it out later.
 
 
 ![](https://media1.giphy.com/media/3oKIPoAP1wLvewc7QI/giphy.gif)
@@ -27,7 +27,7 @@ Okay, that handles the specifics of recording. But the word *record* is so...off
 If you want a second pair of eyes before uploading your lesson, reach out to your coach on Slack. Or go ahead and upload, and you’ll get feedback after that. Remember, we’re here to support you and help you succeed!
 
 
-## Upload your lesson
+### Upload your lesson
 
 When your draft is complete, upload it to [egghead.io](https://egghead.io/). When you upload any lesson video, it’s automatically processed to make sure its audio is in stereo, the resolution is as expected, and that it’s uploaded to the appropriate storage channels.
 
@@ -40,11 +40,11 @@ Feedback in hand, you’ll be able to edit and update your video. When your coac
 Sometimes this can take a few minutes. If an hour goes by and your lesson video still isn’t visible, let us know!
 
 
-## Lesson review and approval
+### Lesson review and approval
 
 Once you complete all the above steps, your lesson will be reviewed for approval. Reviewing means an experienced egghead instructor—someone other than your coach—will watch your lesson and provide feedback. It’s not uncommon that your lesson will require a couple of updates. Just record the required changes and replace the lesson’s video on egghead.
 
-Then we publish! 🍾 
+Then we publish! 🍾
 
 Next up → [When we’ll publish your lesson](https://paper.dropbox.com/doc/10-When-well-publish-your-lesson-qdibFLmE1mZVc976Cbs5n)
 

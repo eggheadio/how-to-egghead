@@ -1,4 +1,4 @@
-## 04 - Create your 30-second lesson
+## Create your 30-second lesson
 
 We want to help new instructors get the hang of egghead style as fast as possible. We know you won’t nail it right away—that’s okay! That’s expected!—so instead of creating an entire lesson, we ask you to record a 30-second video first. That snippet will tell us plenty, and we’ll be able to give you feedback on your [code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY), [instruction style](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS), and the [technical stuff](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB).
 
