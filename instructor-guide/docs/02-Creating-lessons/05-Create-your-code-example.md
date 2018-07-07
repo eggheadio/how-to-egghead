@@ -41,6 +41,3 @@ Embedded examples let learners play around with your code to apply what they’v
 ### Slack us!
 
 Need help with Plunker or want a second pair of eyes on your example? Share it with your coach on Slack. They’ve seen hundreds of examples—some extraordinary, some ehh—so don’t be self-conscious about your coding skills. Your coach will kindly point out anything to fix or ways to tighten your scope.
-
-Next up → [How to instruct](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS)
-

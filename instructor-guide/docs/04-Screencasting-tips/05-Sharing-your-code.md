@@ -89,6 +89,3 @@ Also note that
 **9)** Then the two `SystemJS.config` objects can be added in their own script. Now you’re good to go!
 
 Here’s [one last example of a Plunker embed](http://embed.plnkr.co/UxkIoIK9PEkaupwTInDE?show=script.js,preview) to send you on your way.
-
-Next up → [Host a demo REST API](https://paper.dropbox.com/doc/06-Host-a-demo-REST-API-sHtdZV7OTO4F2CfSwo0Is)
-

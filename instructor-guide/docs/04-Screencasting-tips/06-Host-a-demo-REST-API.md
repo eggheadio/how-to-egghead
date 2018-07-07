@@ -49,8 +49,3 @@ You can use the now  command with an app John set up:
 If this is your first time using now, there will be a small amount of setup, but overall it's a breeze.
 
 There’s a lesson for that, too. Check out [Deploy Web Apps with Zeit Now](https://egghead.io/courses/deploy-web-apps-with-zeit-now) for an in-depth look at `now`. Watch it right now!
-
-Next chapter → [odds and ends](https://paper.dropbox.com/folder/show/05-odds-and-ends-e.1gg8YzoPEhbTkrhvQwJ2zz3VffojOHPOdfu3rIpIvmaXudxK3Eny)
-Next up → [egghead on Slack](https://paper.dropbox.com/doc/01-egghead-on-Slack-VSi6vqVpXCmyahsf660Y2)
-
-

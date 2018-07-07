@@ -52,8 +52,3 @@ Need an example? Watch John Lindquist show how to record one thought at a time.
 **John Lindquist - Record One Thought at a Time**
 
 https://www.dropbox.com/s/cyy9swbl3ga38kd/egghead-record-one-thought-at-a-time.mp4?dl=0
-
-
-
-Next up → [Edit your lesson](https://paper.dropbox.com/doc/04-Edit-your-lesson-MeWShbq74RFNerLauz5AH)
-

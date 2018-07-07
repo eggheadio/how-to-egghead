@@ -45,6 +45,3 @@ Sometimes this can take a few minutes. If an hour goes by and your lesson video 
 Once you complete all the above steps, your lesson will be reviewed for approval. Reviewing means an experienced egghead instructor—someone other than your coach—will watch your lesson and provide feedback. It’s not uncommon that your lesson will require a couple of updates. Just record the required changes and replace the lesson’s video on egghead.
 
 Then we publish! 🍾
-
-Next up → [When we’ll publish your lesson](https://paper.dropbox.com/doc/10-When-well-publish-your-lesson-qdibFLmE1mZVc976Cbs5n)
-

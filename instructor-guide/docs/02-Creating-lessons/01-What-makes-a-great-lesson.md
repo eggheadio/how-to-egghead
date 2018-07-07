@@ -80,6 +80,3 @@ https://www.dropbox.com/s/izvlyf41j6kk6kw/egghead-guide-their-eyes.mp4?dl=0
 ### Slack us!
 
 Still foggy on egghead style? Your coach (and the rest of us at egghead HQ) are here to clear the air. #ask!
-
-Next up → [What should you teach?](https://paper.dropbox.com/doc/02-What-should-you-teach-ebbyW6MTdvsU8GPCkJUn3)
-

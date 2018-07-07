@@ -15,6 +15,3 @@ Once you’ve [signed up](http://egghead.io/) for egghead and created your instr
 Right when you join Slack, we’ll create your private instructor channel. That’s where we’ll share feedback with you, hash out lesson ideas, and answer any questions you have.
 
 When in doubt, Slack!
-
-Next up → [Meeting your coach](https://paper.dropbox.com/doc/48kv2z4NI0EXDNAAdxN09)
-

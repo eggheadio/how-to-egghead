@@ -73,6 +73,3 @@ Your final setup should look something like this:
 Once your gear is set up, you'll need to check the audio input levels to make sure your gain is set properly. [Here’s a lesson to help you](https://egghead.io/lessons/tools-prepare-to-record-screen-resolution-and-mic-check?play=true)
 
 Ta-da! You’re ready to record.
-
-Next up → [Record your lesson](https://paper.dropbox.com/doc/03-Record-your-lesson-5sBpHCVOxhPhlZYEVxrhY)
-

@@ -32,7 +32,3 @@ Our instructors’ diversity also reflects the learners who watch our lessons. O
 Even if you’re relatively new to a concept, your perspective is important. There’s no replacing the beginner’s mindset—when concepts are new and exciting, when you see them with fresh eyes and clarity.
 
 So even if someone more “experienced” has made a lesson about that concept, make your lesson anyway. Other beginners might learn better from you than the seasoned veteran.
-
-Next up → [Write the title and summary](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST)
-
-

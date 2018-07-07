@@ -21,6 +21,3 @@ Note how active those sentences are: *install webpack. Run init. Open the config
 ### How much personality can we bring to our lessons?
 
 Bring all your charm and favorite idioms to your narration *as long as they support your code example*. That’s what egghead learners come to see: good code. Use the [“show your work” trick](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe) to determine if you should talk less, code more.
-
-Next up → [The “show your work” trick](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe)
-

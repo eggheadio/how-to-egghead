@@ -30,6 +30,3 @@ We’ll use those questions to guide our feedback, which we’ll share with you 
 After that, we may go through a few rounds of rerecording and feedback until we feel you’re ready to go off and record your first lesson.
 
 Remember: We want you to succeed. We want you to absolutely crush it. Feedback—especially right when you start with egghead—will help you get there.
-
-Next up → [Receiving your equipment](https://paper.dropbox.com/doc/KykT89A667Oibi8cqBdkE) [](https://paper.dropbox.com/doc/KykT89A667Oibi8cqBdkE)
-

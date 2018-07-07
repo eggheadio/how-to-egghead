@@ -36,6 +36,3 @@ There are so many things to teach about in the world of web development. When we
 We've got other channels for specific topics like music & tv, fitness, functional programming, and podcasts. Surprise surprise, egghead instructors are passionate people.
 
 Like most Slack groups, members are welcome to make public and private channels, DM with anyone, litter every channel with emoji and gifs, and even add integrations. Use your good judgment, and if you have any questions, please feel free to #ask.
-
-Next up → [Our contributor agreement](https://paper.dropbox.com/doc/02-Our-contributor-agreement-Spxagu3vtsQ4SJhPZ3Bcf)
-

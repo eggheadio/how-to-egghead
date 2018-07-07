@@ -31,7 +31,3 @@ Same with egghead lessons. Before you hit record, explain your code example to y
 You’ll probably trip over your words. You might realize you know how to do something but not how to *articulate* it. That’s okay—write notes to yourself and put your knowledge into words.
 
 When it’s time to record, you’ll be more than ready.
-
-Next up → [Speak concisely](https://paper.dropbox.com/doc/07-Speak-concisely-v5Rk1EjXfhwrri6cRuPGA)
-
-

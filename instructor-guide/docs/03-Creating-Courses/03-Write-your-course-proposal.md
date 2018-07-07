@@ -77,6 +77,3 @@ For example:
 Your coach will, first of all, be psyched that you’re ready to take the plunge into courses. Share your proposal with then on Slack. Did we mention that Google Docs is the way to go?
 
 Now hop to it.
-
-Next up → [Your course code example](https://paper.dropbox.com/doc/04-Your-course-code-example-YOZpqOm2L1SYX4C0Wk2ng)
-

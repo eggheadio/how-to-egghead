@@ -50,7 +50,3 @@ When you’re going through the process of crafting a lesson—creating your [co
 Never fear, courses are here.
 
 Turn that excess info into a string of lessons, and you’ll have yourself a course. A course will take one code example and use a few different diffs to show different concepts. If you’re feeling hamstrung by the bite-sized nature of individual lessons, courses give you a little more room to play and showcase what you know.
-
-Next up → [How to structure your course](https://paper.dropbox.com/doc/02-How-to-structure-your-course-YfYDW8HSjx7DsAEShXc4X)
-
-

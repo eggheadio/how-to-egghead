@@ -34,6 +34,3 @@ Your first few lessons will feel like a major effort to produce because you have
 Believe us: You’ll get better. And better. And better. Just keep practicing and keep recording.
 
 Need help or advice? Please, #ask! You aren’t the first person to do this or struggle at it. Your coach and the other friendly folks on Slack were all in your shoes once, and now we’re here to help you succeed.
-
-Next up → [Sharing your code](https://paper.dropbox.com/doc/05-Sharing-your-code-XPt8sCs1hyoeAEuyK8aQr)
-

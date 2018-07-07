@@ -19,6 +19,3 @@ Even after you’ve published a few lessons, your coach is available whenever yo
 
 Plus, you can reach out to egghead's founders John Lindquist (@john) and Joel Hooks (@joel) with any questions or concerns. John and Joel are 100% dedicated to you and the rest of the egghead instructors. Slack us!
 
-Next up → [Create your 30-second lesson](https://paper.dropbox.com/doc/0wwXUm3M924ym22w3ZpPZ)
-
-

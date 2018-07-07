@@ -59,7 +59,3 @@ One of our primary motivations for creating egghead was to help smart humans get
 Hopefully you’re already in that position, but if not, we want to help you get there. We're totally obsessed, and will do everything we can to support and amplify our instructors. We're in this to have a job that we love, work with amazing, diverse people across the globe, and help people improve their lives by learning how to develop software.
 
 If you want to create a sustainable passive income stream by creating useful learning content for fellow developers, stick with us. We’ll make it happen for you.
-
-Next Chapter →  [Creating lessons](https://paper.dropbox.com/folder/show/02-Creating-lessons-e.1gg8YzoPEhbTkrhvQwJ2zz3VfQM0GHrAFnCB2CIJpePjqONCg0lV)
-Next up → [What makes a great lesson?](https://paper.dropbox.com/doc/01-What-makes-a-great-lesson-qagM68kHsKm9PwtLpnQgx)
-

@@ -73,6 +73,3 @@ We have zero qualms about repeating topics. Actually, [we encourage it](https://
 Truly stuck? #ask us for a jumpstart, or come up with some ideas and we’ll pare them down.
 
 Remember: Think small. Don’t explain how to build the internet. Just a small corner of it.
-
-Next up → [What if that lesson already exists?](https://paper.dropbox.com/doc/03-What-if-a-lesson-already-exists-EkgS7A0FsyKtftFTs2Yr1)
-

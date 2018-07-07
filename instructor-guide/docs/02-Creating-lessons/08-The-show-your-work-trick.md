@@ -27,7 +27,3 @@ It should be obvious from the visuals what you’re teaching. You may notice per
 
 
 With this one trick, you’ll quickly turn one lesson with a lot of tangents into a focused, concise lesson about one topic. Or if you’re interested in creating a course, those tangents could each be a separate lesson.
-
-Next up → [Record and upload your lesson](https://paper.dropbox.com/doc/09-Record-and-upload-your-lesson-XTmUn4NSEShbJ9RQcYDgd)
-
-

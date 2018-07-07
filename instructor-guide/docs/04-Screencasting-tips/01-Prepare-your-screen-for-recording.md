@@ -86,5 +86,3 @@ Note: If you’re on Mac and using Bash, you also need to add a `~/.bash_profile
 This tells Mac to load your `~/.bashrc` when loading a terminal emulator.
 
 Now that your screen is ready to record, sound up. Time to get your audio ready.
-
-Next up → [Set up your audio](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ)

@@ -16,5 +16,3 @@ You’ll get:
 
 Our [technical guide](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ) covers setup and how each item works.
 
-Next up → [Getting paid](https://paper.dropbox.com/doc/FRoGSwr8LPNxoyd6ViWiE)
-

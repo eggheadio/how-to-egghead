@@ -38,7 +38,3 @@ Trevor D. Miller's [React Testing Cookbook](https://egghead.io/courses/react-tes
 *[Illustration: brainstorming]*
 
 You're smart and creative, and definitely not limited to any of these course types. If you've got an idea for a new way to structure your course, let's hear it!
-
-Next up → [Write your course proposal](https://paper.dropbox.com/doc/03-Write-your-course-proposal-FEMzHM8qNiv4BdZiDhJvO)
-
-

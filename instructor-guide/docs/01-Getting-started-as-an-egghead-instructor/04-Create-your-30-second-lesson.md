@@ -65,4 +65,3 @@ We hope you’ll turn this snippet into your first published lesson, or you migh
 
 Pro tip: You’ll have a better chance of submitting a 👍 30-second video and getting invited to egghead if you read this whole guide. So keep reading! Then show us what you got!
 
-Next up → [Getting feedback on your video](https://paper.dropbox.com/doc/XAWAJxUQNnXO69QWntwp3)

@@ -51,6 +51,3 @@ If we *haven’t* sent you an invitation, we’re equally glad to see you. You c
 ### No more questions?
 
 Great! We have more answers anyway.
-
-Next up → [Why be an instructor?](https://paper.dropbox.com/doc/01-Why-be-an-instructor-u68jBYc1Ly1F5wWoi4jXT)
-

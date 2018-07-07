@@ -62,7 +62,3 @@ So our title and summary are:
 > In this lesson, you will learn to dynamically update a React component's state based on the properties that are passed into it. We will take a look at the React component `componentWillReceiveProps` lifecycle method, and how to use it effectively.
 
 ✅✅
-
-Next up → [Create your code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY)
-
-

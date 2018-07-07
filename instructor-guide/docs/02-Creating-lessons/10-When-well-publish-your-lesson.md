@@ -34,7 +34,3 @@ After publishing, lessons are added to egghead’s social media sharing queue. T
 You did it. You’re a published instructor.
 
 Ready to do it all again?
-
-Next chapter → [Creating Courses](https://paper.dropbox.com/folder/show/03-Creating-Courses-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmUAdE5S3JSeZuhI7wEA2BNaqR)
-Next up -> [Why create a course](https://paper.dropbox.com/doc/01-Why-create-a-course-iZcSERF74YnnkF5oDYKrD)
-

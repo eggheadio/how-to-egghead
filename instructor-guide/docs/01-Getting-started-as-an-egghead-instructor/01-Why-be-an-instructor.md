@@ -43,6 +43,3 @@ Here’s a serious perk: Every egghead instructor gets a lifetime membership to 
 You should always do your due diligence before partnering with any organization. But we give you our word: egghead is a low-key company whose sole focus is making web developers better at what they do.
 
 Most of us at egghead HQ are developers too, so we know how busy you are. [We’ll support you](https://paper.dropbox.com/doc/03-Meeting-your-coach-48kv2z4NI0EXDNAAdxN09), we won’t give you deadlines (seriously—you produce content only when you want to), and we’ll [pay you](https://paper.dropbox.com/doc/07-Getting-paid-FRoGSwr8LPNxoyd6ViWiE) fairly and quickly. Honestly, egghead is the company we always wanted to work with, so we created it for ourselves and for all the smart, badass developers out there.
-
-Next up → [Joining Slack](https://paper.dropbox.com/doc/OK2qnPz6WWGvITGMDTeCE)
-
