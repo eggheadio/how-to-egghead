@@ -1,4 +1,4 @@
-# 06 - **Receiving your equipment**
+## Receiving your equipment
 If you’re looking at your laptop and wondering how you’ll juke the microphone settings to create professional-quality sound quality...no need. We got you!
 
 Once you've created a draft lesson that is *almost* ready to be published, we’ll ship you a case packed with audio recording toys. With our compliments, of course.

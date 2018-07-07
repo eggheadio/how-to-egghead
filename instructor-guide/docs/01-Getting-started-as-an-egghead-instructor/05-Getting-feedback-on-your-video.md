@@ -1,8 +1,8 @@
-# 05 - **Getting feedback on your video**
-Think of your 30-second video as a very rough draft. It won’t be perfect—and it shouldn’t be! It’s a gut check to see how we can help steer you toward egghead style. 
+## Getting feedback on your video
+Think of your 30-second video as a very rough draft. It won’t be perfect—and it shouldn’t be! It’s a gut check to see how we can help steer you toward egghead style.
 
 
-## Questions? Just #ask.
+### Questions? Just #ask.
 
 We’re here to help you. Before you record your video, use your private Slack channel to fire over any questions or works in progress, like:
 
@@ -15,21 +15,21 @@ We’re all about supportive, ongoing feedback at egghead, so when you’re read
 
 ![An illustration would work here too 🙂](https://media1.giphy.com/media/111ebonMs90YLu/giphy.gif)
 
-## Feedback
+### Feedback
 
 Before you upload your video (if we’ve invited you to be an instructor) or tweet it at [@eggheadio](https://twitter.com/eggheadio) (if you’re auditioning), ask yourself:
 
 
 - Is my screen set to 1280x720 (720p)? (In HiDPI, if possible?)
-- Is my code example easy to understand? 
-- Did I guide the viewer’s eyes with the mouse? 
-- Did I use those 30 seconds to share useful insights? 
+- Is my code example easy to understand?
+- Did I guide the viewer’s eyes with the mouse?
+- Did I use those 30 seconds to share useful insights?
 
-We’ll use those questions to guide our feedback, which we’ll share with you over Slack. 
+We’ll use those questions to guide our feedback, which we’ll share with you over Slack.
 
-After that, we may go through a few rounds of rerecording and feedback until we feel you’re ready to go off and record your first lesson. 
+After that, we may go through a few rounds of rerecording and feedback until we feel you’re ready to go off and record your first lesson.
 
 Remember: We want you to succeed. We want you to absolutely crush it. Feedback—especially right when you start with egghead—will help you get there.
 
-Next up → [Receiving your equipment](https://paper.dropbox.com/doc/KykT89A667Oibi8cqBdkE) [**](https://paper.dropbox.com/doc/KykT89A667Oibi8cqBdkE)
+Next up → [Receiving your equipment](https://paper.dropbox.com/doc/KykT89A667Oibi8cqBdkE) [](https://paper.dropbox.com/doc/KykT89A667Oibi8cqBdkE)
 
