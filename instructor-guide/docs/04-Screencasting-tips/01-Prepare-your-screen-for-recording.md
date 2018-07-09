@@ -1,4 +1,4 @@
-# 01 - Prepare your screen for recording
+## Prepare your screen for recording
 
 **Success on egghead comes down to mechanics**. This guide will help you nail the technical aspects of presentation and accessibility, so you can present lessons that are visually clear and accessible for all learners and devices.
 
@@ -8,7 +8,7 @@ Screencasting isn’t easy. It’s a difficult skill to nail—and on top of tha
 
 **Always remember accessibility.** A wide range of people will access your lessons on a variety of devices of varying quality. Maximizing the legibility of the code you present helps all learners absorb the information to the best of their abilities.
 
-## Set your settings
+### Set your settings
 
 Before you do anything else, adopt these settings:
 
@@ -25,7 +25,7 @@ HiDPI mode—also known broadly as DPI scaling, or Retina display on Macs—doub
 
 ![Image courtesy of designmodo.com](https://lh3.googleusercontent.com/rMZ4R1qkndexRllRnPZxX1LwwlXyQ-pEd9FzJFqOLuyg-ly7ciad5X57pRjji2GhYL9CBaEpfocx3u0OQoC_2-tj1HqixMVmu3SGk0hKtp7ZCwn351_c9M4UXLXs7ECdzfLSb-K4)
 
-## DPI scaling on Windows
+### DPI scaling on Windows
 
 On Windows, we've had success boosting the code fonts to max out the screen. Aspect ratio is key here, so set your screen to the highest 16x9 resolution and kick the fonts up.
 
@@ -33,7 +33,7 @@ Using DPI scaling features is helpful—you can scale the OS chrome and make UI 
 
 [This article](http://www.eizoglobal.com/support/compatibility/dpi_scaling_settings_windows/) can tell you more about pixel scaling on Windows.
 
-## Access HiDPI mode on macOS
+### Access HiDPI mode on macOS
 
 On Mac, you’ll get the best results if you record at **1280x720(HiDPI) mode**. This resolution is achievable on 27" monitors and Retina MBPs. It effectively gives you a visible resolution of 1280x720, but it’s extremely crisp and readable on phones and tablets.
 
@@ -45,7 +45,7 @@ Another application that works well is [**SwitchRezX**](http://www.madrau.com/).
 
 By constraining to this small window, you can fill the screen effectively for coding screencasts. The most import thing to get correct is the aspect ratio. We don't want to present with any black bars around the screen. We want to give the user maximum code visibility at all times.
 
-## Screen and code layout
+### Screen and code layout
 
 The code is the champion of an egghead.io screencast, so it must be comfortably readable for all learners.
 
@@ -67,7 +67,7 @@ In some cases, the example is replaced by a terminal, or a terminal window share
 
 Remember that your lesson viewers are here to see the code. Make it the starring feature!
 
-## Command line prompt
+### Command line prompt
 
 If you will be showing your command line, we suggest using a minimal prompt to reduce distractions. This example prompt works well for screencasting:
 
@@ -86,5 +86,3 @@ Note: If you’re on Mac and using Bash, you also need to add a `~/.bash_profile
 This tells Mac to load your `~/.bashrc` when loading a terminal emulator.
 
 Now that your screen is ready to record, sound up. Time to get your audio ready.
-
-Next up → [Set up your audio](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ)

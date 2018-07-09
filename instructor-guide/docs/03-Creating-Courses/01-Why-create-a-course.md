@@ -1,5 +1,5 @@
-# 01 - Why create a course
-Courses are the bread and butter of egghead. 
+## Why create a course
+Courses are the bread and butter of egghead.
 
 A course is a composed set of bite-sized lessons. The course itself should be bite-sized, covering a single topic in depth through a sequence of individual lessons.
 
@@ -21,7 +21,7 @@ If that sounds like a lot of work, that’s because it *is*. Each lesson takes a
 But the payoff is worth it. Why?
 
 
-## egghead members love them
+### egghead members love them
 
 Humans love curated knowledge. They want to learn a topic in depth, but at a pace that works for them.
 
@@ -32,25 +32,21 @@ egghead courses give hungry learners a sequence to follow, with the promise of g
 Which brings us to our next point...
 
 
-## You make more money!
+### You make more money!
 
 No two ways about it, courses get more eyeballs than individual lessons. It just makes sense: When you publish courses, you publish several lessons at a time. That’s more content and more chances for views.
 
 *[Illustration: $$$$]*
 
-Not only that: Learners often watch those lessons consecutively. (Obviously. That’s what a course is meant for.) 
+Not only that: Learners often watch those lessons consecutively. (Obviously. That’s what a course is meant for.)
 
 Once your course is published, it can continue to create a passive revenue stream for you. Learners will keep watching, and the royalties will keep coming in.
 
 
-## You want to do more with your code
+### You want to do more with your code
 
 When you’re going through the process of crafting a lesson—creating your [code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY) and using the [“show your work” trick](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe)—you might need to cut out some cool information. Either because it’s off-topic, or because it widens the scope of your lesson way beyond 10 minutes.
 
 Never fear, courses are here.
 
 Turn that excess info into a string of lessons, and you’ll have yourself a course. A course will take one code example and use a few different diffs to show different concepts. If you’re feeling hamstrung by the bite-sized nature of individual lessons, courses give you a little more room to play and showcase what you know.
-
-Next up → [How to structure your course](https://paper.dropbox.com/doc/02-How-to-structure-your-course-YfYDW8HSjx7DsAEShXc4X)
-
-

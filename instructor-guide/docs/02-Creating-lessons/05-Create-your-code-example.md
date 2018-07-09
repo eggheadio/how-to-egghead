@@ -1,33 +1,33 @@
-# 05 - Create your code example
+## Create your code example
 The code example shows your concept in action. It’s the foundation of your lesson.
 
-A good example is simple and focused on one ultra-specific concept. After watching your lesson, the learner will have access to the code in Plunker to play around with, so your example should be easy to run with in just a few simple steps without in-depth knowledge of a specific domain. 
+A good example is simple and focused on one ultra-specific concept. After watching your lesson, the learner will have access to the code in Plunker to play around with, so your example should be easy to run with in just a few simple steps without in-depth knowledge of a specific domain.
 
 
-## What should your example look like?
+### What should your example look like?
 
 Your code example will almost definitely have two different states: a start and a finish.
 
 The *start* state could either be:
 
 - a blank screen, if you’re starting from scratch
-- a structured shell that you add to 
+- a structured shell that you add to
 
-The *finished* state will reflect the concept that you’ve just explained. 
+The *finished* state will reflect the concept that you’ve just explained.
 
 *[Gif: showing the transition from start to finish]*
 
 The difference between *start* and *finish* directly defines the scope and complexity of the lesson. If you can’t get to *finish* in under 10 minutes or without using complex steps, you should probably [revisit your title and summary](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST) and scale back a bit. Don’t try to boil the ocean!
 
 
-## If there’s more you want to cover...
+### If there’s more you want to cover...
 
 There’s always more to learn. Always. We can’t teach it all, and we especially can’t teach everything in a single lesson.
 
 If you’re an experienced egghead instructor with a few published lessons and you want to keep expanding on your example, it might be time to [create a course](https://paper.dropbox.com/doc/01-Why-create-a-course-iZcSERF74YnnkF5oDYKrD). With courses, one example is used as a connective thread throughout several lessons. Courses are a great challenge, and they often make you more money. 💰
 
 
-## Your code embedded
+### Your code embedded
 
 Every egghead lesson page has a spot for the viewer to find the relevant code. Depending on the lesson’s context, the code may be linked to a GitHub repo/gist, or embedded from one of several popular “code playground” sites like Plunker and CodeSandbox.
 
@@ -38,9 +38,6 @@ Every egghead lesson page has a spot for the viewer to find the relevant code. D
 Embedded examples let learners play around with your code to apply what they’ve just learned. It’s a good reminder: Though your lesson may feel like a performance, it exists to help other web developers learn. For more information, check out Sharing your code.
 
 
-## Slack us!
+### Slack us!
 
 Need help with Plunker or want a second pair of eyes on your example? Share it with your coach on Slack. They’ve seen hundreds of examples—some extraordinary, some ehh—so don’t be self-conscious about your coding skills. Your coach will kindly point out anything to fix or ways to tighten your scope.
-
-Next up → [How to instruct](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS)
-
