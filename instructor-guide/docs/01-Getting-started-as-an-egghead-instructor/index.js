@@ -16,5 +16,30 @@ export default [
     component: JoiningSlack,
     title: "Joining Slack",
     slug: "joining-slack"
+  },
+  {
+    component: MeetingYourCoach,
+    title: "Meeting Your Coach",
+    slug: "meeting-your-coach"
+  },
+  {
+    component: CreateYour30SecondLesson,
+    title: "Create your 30 second lesson",
+    slug: "create-your-30-second-lesson"
+  },
+  {
+    component: GettingFeedbackOnYourVideo,
+    title: "Getting Feedback on Your Video",
+    slug: "getting-feedback-on-your-video"
+  },
+  {
+    component: ReceivingYourEquipment,
+    title: "Receiving Your Equipment",
+    slug: "receiving-your-equipment"
+  },
+  {
+    component: GettingPaid,
+    title: "Getting Paid",
+    slug: "getting-paid"
   }
 ]
