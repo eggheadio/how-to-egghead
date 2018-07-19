@@ -14,7 +14,7 @@ Before you do anything else, adopt these settings:
 
 - 1280x720 (720p)
 - 16:9 aspect ratio
-- Stereo audio ([you’ll set up your audio next](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ))
+- Stereo audio ([you’ll set up your audio next](#set-up-your-audio))
 - For best results, use HiDPI mode on your monitor
 
 We deliver content at 720p (1280x720 in pixels). We want this to be a crisp and legible output for the viewer, whether they’re expanding lessons fullscreen on a 65" TV screen or watching them on the bus.

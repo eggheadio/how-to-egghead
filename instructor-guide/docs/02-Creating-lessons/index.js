@@ -18,7 +18,7 @@ export default [
   {
     component: WhatShouldYouTeach,
     title: "What Should You Teach",
-    slug: "what-makes-a-great-lesson"
+    slug: "what-should-you-teach"
   },
   {
     component: WhatIfALessonAlreadyExists,

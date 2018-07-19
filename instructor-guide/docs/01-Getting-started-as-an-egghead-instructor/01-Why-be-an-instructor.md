@@ -4,13 +4,13 @@ We get it. The last thing you need is another commitment. (You probably see the 
 
 ### You get paid
 
-egghead instructors [get paid](https://paper.dropbox.com/doc/07-Getting-paid-FRoGSwr8LPNxoyd6ViWiE) every time someone watches one of your published lessons. More accurately, we pay you monthly based on your views for the preceding month. We market our content quite a bit, but feel free to share your lessons widely.
+egghead instructors [get paid](#getting-paid) every time someone watches one of your published lessons. More accurately, we pay you monthly based on your views for the preceding month. We market our content quite a bit, but feel free to share your lessons widely.
 
 
 ![03_eggo_raining_money](https://d2mxuefqeaa7sj.cloudfront.net/s_12F044CEE45D0F4D2D29675E09CDBFF3658A88B44F244372E9483DF7DAEBE7CC_1530529694287_file.png)
 
 
-The more content you publish, the more money you’re likely to make. [More on payment](https://paper.dropbox.com/doc/07-Getting-paid-FRoGSwr8LPNxoyd6ViWiE).
+The more content you publish, the more money you’re likely to make. [More on payment](#getting-paid).
 
 
 ### You’re an expert
@@ -42,4 +42,4 @@ Here’s a serious perk: Every egghead instructor gets a lifetime membership to 
 
 You should always do your due diligence before partnering with any organization. But we give you our word: egghead is a low-key company whose sole focus is making web developers better at what they do.
 
-Most of us at egghead HQ are developers too, so we know how busy you are. [We’ll support you](https://paper.dropbox.com/doc/03-Meeting-your-coach-48kv2z4NI0EXDNAAdxN09), we won’t give you deadlines (seriously—you produce content only when you want to), and we’ll [pay you](https://paper.dropbox.com/doc/07-Getting-paid-FRoGSwr8LPNxoyd6ViWiE) fairly and quickly. Honestly, egghead is the company we always wanted to work with, so we created it for ourselves and for all the smart, badass developers out there.
+Most of us at egghead HQ are developers too, so we know how busy you are. [We’ll support you](#meeting-your-coach), we won’t give you deadlines (seriously—you produce content only when you want to), and we’ll [pay you](#getting-paid) fairly and quickly. Honestly, egghead is the company we always wanted to work with, so we created it for ourselves and for all the smart, badass developers out there.

@@ -1,6 +1,6 @@
 ## Create your 30-second lesson
 
-We want to help new instructors get the hang of egghead style as fast as possible. We know you won’t nail it right away—that’s okay! That’s expected!—so instead of creating an entire lesson, we ask you to record a 30-second video first. That snippet will tell us plenty, and we’ll be able to give you feedback on your [code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY), [instruction style](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS), and the [technical stuff](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB).
+We want to help new instructors get the hang of egghead style as fast as possible. We know you won’t nail it right away—that’s okay! That’s expected!—so instead of creating an entire lesson, we ask you to record a 30-second video first. That snippet will tell us plenty, and we’ll be able to give you feedback on your [code example](#create-your-code-example), [instruction style](#how-to-instruct), and the [technical stuff](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB).
 
 ![08_30second_lesson](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530122820_file.png)
 
@@ -8,14 +8,14 @@ We want to help new instructors get the hang of egghead style as fast as possibl
 
 Don't be too concerned about subject matter, audio, or video quality at this point. You want to dial in your:
 
-- [basic instruction style](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS)
-- [code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY)
-- [screen dimensions](https://paper.dropbox.com/doc/01-Prepare-your-screen-for-recording-ead8DoI0Psy8Oz0wYQGlG)
-- [font sizes](https://paper.dropbox.com/doc/01-Prepare-your-screen-for-recording-ead8DoI0Psy8Oz0wYQGlG)
+- [basic instruction style](#how-to-instruct)
+- [code example](#create-your-code-example)
+- [screen dimensions](#prepare-your-screen-for-recording)
+- [font sizes](#prepare-your-screen-for-recording)
 
 ![09_lesson_basics](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530162355_file.png)
 
-Our [technical guide](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB) has you all the details you need to confidently press record. Think you have it figured out? Share a screenshot of your screen setup on [Slack](https://paper.dropbox.com/doc/01-egghead-on-Slack-VSi6vqVpXCmyahsf660Y2).
+Our [technical guide](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB) has you all the details you need to confidently press record. Think you have it figured out? Share a screenshot of your screen setup on [Slack](#egghead-on-slack).
 
 ### Pick a topic
 
@@ -31,15 +31,15 @@ Some quick ideas:
 
 ![10_quick_ideas](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530247464_file.png)
 
-Need help? Hit us up in your private [Slack channel](https://paper.dropbox.com/doc/01-egghead-on-Slack-VSi6vqVpXCmyahsf660Y2).
+Need help? Hit us up in your private [Slack channel](#egghead-on-slack).
 
 ### Start with the code
 
 ![11_start_with_code](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530275859_file.png)
 
-Before you record your clip, create your [example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY): a before and after of your concept explained in code. You might provide the code in two states with a small diff explaining at a glance what your 30 seconds will teach. For simple topics, the before might be a blank screen—totally fine.
+Before you record your clip, create your [example](#create-your-code-example): a before and after of your concept explained in code. You might provide the code in two states with a small diff explaining at a glance what your 30 seconds will teach. For simple topics, the before might be a blank screen—totally fine.
 
-Need a gut check? Share your code on Slack using a [Github gist](https://paper.dropbox.com/doc/05-Sharing-your-code-XPt8sCs1hyoeAEuyK8aQr).
+Need a gut check? Share your code on Slack using a [Github gist](#sharing-your-code).
 
 ### Hit record
 

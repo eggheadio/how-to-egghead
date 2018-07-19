@@ -45,7 +45,7 @@ Once your course is published, it can continue to create a passive revenue strea
 
 ### You want to do more with your code
 
-When you’re going through the process of crafting a lesson—creating your [code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY) and using the [“show your work” trick](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe)—you might need to cut out some cool information. Either because it’s off-topic, or because it widens the scope of your lesson way beyond 10 minutes.
+When you’re going through the process of crafting a lesson—creating your [code example](#create-your-code-example) and using the [“show your work” trick](#the-show-your-work-trick)—you might need to cut out some cool information. Either because it’s off-topic, or because it widens the scope of your lesson way beyond 10 minutes.
 
 Never fear, courses are here.
 

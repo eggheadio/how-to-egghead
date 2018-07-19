@@ -56,16 +56,16 @@ Think you have your lesson topic? Great! Now you need to stress test your topic 
 
 Create these three supporting materials:
 
-- [**Your lesson title**](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST). Use that “How do I” trick. Does it work for your topic? Does your title cover one thing clearly—and can you cover that thing in a short amount of time? Then you’re good.
-- [**Your lesson summary**](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST). If it’s too long or requires a lot of detail to summarize, you might need to reduce the lesson’s scope.
-- [**The code example**](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY) you’ll use to demonstrate the lesson concept. It should be easy to run with very few simple steps. If it requires several steps and screens—and if you anticipate needing to give a lot of background and contextual information to explain those steps—tighten your scope.
+- [**Your lesson title**](#write-the-title-and-summary). Use that “How do I” trick. Does it work for your topic? Does your title cover one thing clearly—and can you cover that thing in a short amount of time? Then you’re good.
+- [**Your lesson summary**](#write-the-title-and-summary). If it’s too long or requires a lot of detail to summarize, you might need to reduce the lesson’s scope.
+- [**The code example**](#create-your-code-example) you’ll use to demonstrate the lesson concept. It should be easy to run with very few simple steps. If it requires several steps and screens—and if you anticipate needing to give a lot of background and contextual information to explain those steps—tighten your scope.
 
 Think of these items as the outline you’d create before writing a school essay. If that outline gets too long and ambitious, you need to reel in the scope a bit.
 
 
 ### That lesson already exists? Do it anyway!
 
-We have zero qualms about repeating topics. Actually, [we encourage it](https://paper.dropbox.com/doc/03-What-if-a-lesson-already-exists-EkgS7A0FsyKtftFTs2Yr1). No one knows exactly what you know or phrases things in your particular way. What’s your take? Tell us! Tell everybody.
+We have zero qualms about repeating topics. Actually, [we encourage it](#what-if-a-lesson-already-exists). No one knows exactly what you know or phrases things in your particular way. What’s your take? Tell us! Tell everybody.
 
 
 ### Slack us!

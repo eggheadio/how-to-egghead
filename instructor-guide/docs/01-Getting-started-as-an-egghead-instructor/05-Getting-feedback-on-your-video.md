@@ -6,9 +6,9 @@ Think of your 30-second video as a very rough draft. It won’t be perfect—and
 
 We’re here to help you. Before you record your video, use your private Slack channel to fire over any questions or works in progress, like:
 
-- [**Lesson ideas**](https://paper.dropbox.com/doc/02-What-should-you-teach-ebbyW6MTdvsU8GPCkJUn3)**.** We can help you brainstorm or fine-tune an idea you have. (Chances are, we’ll suggest you scale back the scope of your example. Your lesson should cover one topic and one topic only. No more, no less.)
-- [**Your lesson title and summary**](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST). These should be concise and hyper-focused. Before you write any code, make sure you’ve chiseled your lesson idea until it’s simple and able to be tackled in a short video.
-- [**A draft of your code example**](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY). Share it over screen sharing technology with your coach on Slack. Walk them through the steps it took to create the example, and think through any changes your coach suggests.
+- [**Lesson ideas**](#what-should-you-teach)**.** We can help you brainstorm or fine-tune an idea you have. (Chances are, we’ll suggest you scale back the scope of your example. Your lesson should cover one topic and one topic only. No more, no less.)
+- [**Your lesson title and summary**](#write-the-title-and-summary). These should be concise and hyper-focused. Before you write any code, make sure you’ve chiseled your lesson idea until it’s simple and able to be tackled in a short video.
+- [**A draft of your code example**](#create-your-code-example). Share it over screen sharing technology with your coach on Slack. Walk them through the steps it took to create the example, and think through any changes your coach suggests.
 
 We’re all about supportive, ongoing feedback at egghead, so when you’re ready to press record, you’re *really* ready.
 

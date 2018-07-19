@@ -17,14 +17,14 @@ The *finished* state will reflect the concept that you’ve just explained.
 
 *[Gif: showing the transition from start to finish]*
 
-The difference between *start* and *finish* directly defines the scope and complexity of the lesson. If you can’t get to *finish* in under 10 minutes or without using complex steps, you should probably [revisit your title and summary](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST) and scale back a bit. Don’t try to boil the ocean!
+The difference between *start* and *finish* directly defines the scope and complexity of the lesson. If you can’t get to *finish* in under 10 minutes or without using complex steps, you should probably [revisit your title and summary](#write-the-title-and-summary) and scale back a bit. Don’t try to boil the ocean!
 
 
 ### If there’s more you want to cover...
 
 There’s always more to learn. Always. We can’t teach it all, and we especially can’t teach everything in a single lesson.
 
-If you’re an experienced egghead instructor with a few published lessons and you want to keep expanding on your example, it might be time to [create a course](https://paper.dropbox.com/doc/01-Why-create-a-course-iZcSERF74YnnkF5oDYKrD). With courses, one example is used as a connective thread throughout several lessons. Courses are a great challenge, and they often make you more money. 💰
+If you’re an experienced egghead instructor with a few published lessons and you want to keep expanding on your example, it might be time to [create a course](#why-create-a-course). With courses, one example is used as a connective thread throughout several lessons. Courses are a great challenge, and they often make you more money. 💰
 
 
 ### Your code embedded

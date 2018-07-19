@@ -9,7 +9,7 @@ Your coach is a seasoned instructor who will help you nail egghead style through
 
 Slack with your coach to:
 
-- Brainstorm [lesson ideas](https://paper.dropbox.com/doc/02-What-should-you-teach-ebbyW6MTdvsU8GPCkJUn3)
+- Brainstorm [lesson ideas](#what-should-you-teach)
 - Solidify the theme, scope, and goals of a code example
 - Get a second pair of eyes before uploading screencasts
 - Talk through feedback

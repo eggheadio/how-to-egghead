@@ -57,14 +57,14 @@ Here’s the summary from the [example we shared](https://docs.google.com/docume
 
 > In this course we will build an image gallery application that connects to the Flickr API to load its data. We are going to start from an empty directory, and build the application incrementally, discussing the problems that we might encounter along the way. The image gallery is a simple application, but even the simplest applications need to deal with application state. We will use Redux to help us with that aspect of the image gallery. For asynchronous communication, we will learn about redux-saga, a wonderful library that uses JavaScript generator functions to make complex async application “side effects” a pleasure to construct.
 
-Keep in mind that your approved summary will be presented along with the course on egghead.io, so only include content in your proposal that you’d want to publish. [These guidelines](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST) will help you write a succinct and successful summary.
+Keep in mind that your approved summary will be presented along with the course on egghead.io, so only include content in your proposal that you’d want to publish. [These guidelines](#write-the-title-and-summary) will help you write a succinct and successful summary.
 
 
 ### List of lessons
 
 Finally, the course lists each lesson in the course, including the titles and summaries for each lesson.
 
-There’s [an art to writing a lesson title](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST). By now, instructors should know how to write them. For a refresher, they should be concise and follow the "how do I..." format. The [lesson summary](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST) should be just that: a summary of the technology covered and the goals for the lesson.
+There’s [an art to writing a lesson title](#write-the-title-and-summary). By now, instructors should know how to write them. For a refresher, they should be concise and follow the "how do I..." format. The [lesson summary](#write-the-title-and-summary) should be just that: a summary of the technology covered and the goals for the lesson.
 
 For example:
 

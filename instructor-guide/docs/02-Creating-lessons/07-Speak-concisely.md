@@ -6,7 +6,7 @@ Consider this example:
 
 > Hello! Before we get started using Webpack you are going to need to install node. We are going to visit this URL and find the link to install it. Now we press "download" and we should get a file. We can now open that file and extract its contents. Now that node is installed, we can use npm to install webpack globally. Great. Now that webpack is installed globally, we can use it! Open up Sublime or your favorite editor to start working on the config.
 
-Holy backstory! If you think back to our [cheesecake-stuffed cookie cake example](https://paper.dropbox.com/doc/01-What-makes-a-great-lesson-qagM68kHsKm9PwtLpnQgx), we don't have to explain or justify each step in the instruction. We can assume we’re delivering content to smart, capable humans who can fill in some blanks. We have to. There’s instructing to do, and the clock is ticking.
+Holy backstory! If you think back to our [cheesecake-stuffed cookie cake example](#what-makes-a-great-lesson), we don't have to explain or justify each step in the instruction. We can assume we’re delivering content to smart, capable humans who can fill in some blanks. We have to. There’s instructing to do, and the clock is ticking.
 
 *[Image: A cheesecake-stuffed cookie cake]*
 
@@ -20,4 +20,4 @@ Note how active those sentences are: *install webpack. Run init. Open the config
 
 ### How much personality can we bring to our lessons?
 
-Bring all your charm and favorite idioms to your narration *as long as they support your code example*. That’s what egghead learners come to see: good code. Use the [“show your work” trick](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe) to determine if you should talk less, code more.
+Bring all your charm and favorite idioms to your narration *as long as they support your code example*. That’s what egghead learners come to see: good code. Use the [“show your work” trick](#the-show-your-work-trick) to determine if you should talk less, code more.

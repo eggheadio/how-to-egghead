@@ -34,7 +34,7 @@ There are three ways to record your screencasts. Each is completely 👌
 
 **Video first** means you narrate over video playback. It can be challenging to sync and get a natural feeling with narration. Like most things, it takes practice.
 
-For more on audio, see our guide to [audio setup](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ).
+For more on audio, see our guide to [audio setup](#set-up-your-audio).
 
 ### Record one thought at a time
 
@@ -45,7 +45,7 @@ Think of your lesson as a series of paragraphs that take 20 seconds to record. *
 ![](https://media.giphy.com/media/GJycRLp6zYGFq/giphy.gif)
 
 
-When you record in chunks, you get better short takes. (You’re not trying to set a record for the longest unedited take here.) By pausing between each section, you can visibly see where you need to [ripple delete](https://paper.dropbox.com/doc/04-Edit-your-lesson-MeWShbq74RFNerLauz5AH).
+When you record in chunks, you get better short takes. (You’re not trying to set a record for the longest unedited take here.) By pausing between each section, you can visibly see where you need to [ripple delete](#edit-your-lesson).
 
 Need an example? Watch John Lindquist show how to record one thought at a time.
 

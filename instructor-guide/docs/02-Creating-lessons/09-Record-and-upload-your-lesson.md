@@ -1,15 +1,15 @@
 ## Record and upload your lesson
-Now that you know how to [be concise](https://paper.dropbox.com/doc/07-Speak-concisely-v5Rk1EjXfhwrri6cRuPGA), [narrate your lesson](https://paper.dropbox.com/doc/06-How-to-instruct-z72d73FEvscPjJwwGDLIS), and [show your work](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe), it’s time to record for real.
+Now that you know how to [be concise](https://paper.dropbox.com/doc/07-Speak-concisely-v5Rk1EjXfhwrri6cRuPGA), [narrate your lesson](#how-to-instruct), and [show your work](#the-show-your-work-trick), it’s time to record for real.
 
 
 ### Recording your screencast
 
 We’ve put together an entire Technical Guide to help you *record* your screencasts. Find out how to:
 
-- [Prepare your screen for recording](https://paper.dropbox.com/doc/01-Prepare-your-screen-for-recording-ead8DoI0Psy8Oz0wYQGlG)
-- [Set up your audio equipment](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ)
+- [Prepare your screen for recording](#prepare-your-screen-for-recording)
+- [Set up your audio equipment](#set-up-your-audio)
 - [Record and edit your lesson](https://paper.dropbox.com/doc/03-Record-your-lesson-5sBpHCVOxhPhlZYEVxrhY)
-- [Set up and share your code](https://paper.dropbox.com/doc/05-Sharing-your-code-XPt8sCs1hyoeAEuyK8aQr)
+- [Set up and share your code](#sharing-your-code)
 
 Okay, that handles the specifics of recording. But the word *record* is so...official. What if you mess up?
 

@@ -30,14 +30,14 @@ Your summary should quickly tell learners what they’ll gain from your lesson. 
 
 Your title is the summary of your summary. It should finish the thought, “How do I...”
 
-[More on writing titles and summaries](https://paper.dropbox.com/doc/04-Write-the-title-and-summary-iVzKqXCdSUWZbV5oKOrST)
+[More on writing titles and summaries](#write-the-title-and-summary)
 
 
 ### The code example is simple and effective
 
-[The code example](https://paper.dropbox.com/doc/05-Create-your-code-example-cDZZONYRKCLyHsIKaIuSY) is arguably the most important part of a lesson. The learner should be able to look at the difference between the *before* and *after* code to understand how you’ve applied the concept in the lesson.
+[The code example](#create-your-code-example) is arguably the most important part of a lesson. The learner should be able to look at the difference between the *before* and *after* code to understand how you’ve applied the concept in the lesson.
 
-If your example is airtight, it will do the instructing for you. Your narration will just serve to support it. Use the [“show your work” trick](https://paper.dropbox.com/doc/08-The-show-your-work-trick-LSi5Afd81Ougalm84MYWe) to see if you’ve shown enough.
+If your example is airtight, it will do the instructing for you. Your narration will just serve to support it. Use the [“show your work” trick](#the-show-your-work-trick) to see if you’ve shown enough.
 
 **John Lindquist - Show then maybe explain**
 

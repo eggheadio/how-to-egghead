@@ -14,5 +14,5 @@ You’ll get:
 - 1 XLR Cable to connect the Microphone to the USB Interface
 - Badass by Kathy Sierra
 
-Our [technical guide](https://paper.dropbox.com/doc/02-Set-up-your-audio-oyhAegdRyTG7R1IkdNajZ) covers setup and how each item works.
+Our [technical guide](#set-up-your-audio) covers setup and how each item works.
 
