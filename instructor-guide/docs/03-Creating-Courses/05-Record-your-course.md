@@ -3,7 +3,7 @@ With all the prep you've already done for your course, a lot of the hard work is
 
 Once your proposal has been reviewed and approved, you can spend some time **iterating your lesson plans on paper** and building a solid curriculum that will be useful for thousands of developers for years to come!
 
-*[Illustration: putting pen to paper]*
+![building_a_course](/instructor-guide/illos/ch3_s5_buildingcourse.png)
 
 When you’re ready, record your lessons and upload them one by one as they’re finished.
 
