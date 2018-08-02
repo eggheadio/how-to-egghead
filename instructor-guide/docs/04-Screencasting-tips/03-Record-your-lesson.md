@@ -1,7 +1,7 @@
 ## Record your lesson
 Screencasting is one of those iceberg-like tasks: 90% of the work is behind the scenes. Only 10% is visible.
 
-*[Illustration: Lesson scope, code example, etc. 90%, recording 10%]*
+![iceberg](/instructor-guide/illos/ch4_s3_iceberg.png)
 
 Recording your screencast is that 10%. You’ve put tons of thought and time into your lesson scope, code example, and points you want to cover. What distinguishes your success in this final stage is high-quality technical tools. (And careful editing—that’s next.)
 
