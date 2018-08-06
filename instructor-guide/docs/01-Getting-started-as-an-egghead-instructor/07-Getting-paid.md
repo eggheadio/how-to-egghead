@@ -56,6 +56,8 @@ Many people create a lesson or two, then stop. There are a variety of reasons pe
 
 One of our primary motivations for creating egghead was to help smart humans get reliable recurring income by sharing their knowledge. This kind of income can change how you think of employment. If you're making $1,000 a month from some content you made a year ago, what can that do for you? That's rent! (Unless you live in the Bay Area or NYC—sorry!) egghead royalties could be the difference between staying in a high-paying gig you hate and taking a position you truly love with an organization that can't afford talent of your caliber. How great would that be?
 
+![piggy_bank](/instructor-guide/illos/ch1_s7_piggybank.png)
+
 Hopefully you’re already in that position, but if not, we want to help you get there. We're totally obsessed, and will do everything we can to support and amplify our instructors. We're in this to have a job that we love, work with amazing, diverse people across the globe, and help people improve their lives by learning how to develop software.
 
 If you want to create a sustainable passive income stream by creating useful learning content for fellow developers, stick with us. We’ll make it happen for you.
