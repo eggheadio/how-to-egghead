@@ -22,6 +22,8 @@ The amount you’re paid depends on the overall gross subscription revenue, and 
 
 *egghead_monthly_revenue * ( your_segments / total_segments ) * royalty_percent*
 
+![royalty_crown](/instructor-guide/illos/ch1_s2_royaltycrown.png)
+
 When you start making one-off lessons, the royalties will be small. But stick with it, keep producing, and your monthly royalties could hit four figures. Cha-ching.
 
 

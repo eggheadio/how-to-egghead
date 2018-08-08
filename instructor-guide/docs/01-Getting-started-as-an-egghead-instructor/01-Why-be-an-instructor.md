@@ -4,7 +4,7 @@ We get it. The last thing you need is another commitment. (You probably see the 
 
 ### You get paid
 
-egghead instructors [get paid](#getting-paid) every time someone watches one of your published lessons. More accurately, we pay you monthly based on your views for the preceding month. We market our content quite a bit, but feel free to share your lessons widely.
+egghead instructors [get paid](#getting-paid) every time someone watches one of your published lessons. More accurately, we pay you monthly based on your views for the preceding month. We market our content quite a bit, but feel free to share your lessons widµely.
 
 
 ![03_eggo_raining_money](https://d2mxuefqeaa7sj.cloudfront.net/s_12F044CEE45D0F4D2D29675E09CDBFF3658A88B44F244372E9483DF7DAEBE7CC_1530529694287_file.png)
