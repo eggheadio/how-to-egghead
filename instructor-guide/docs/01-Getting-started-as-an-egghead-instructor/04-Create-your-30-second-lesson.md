@@ -25,11 +25,12 @@ _[Illustration: brainstorming]_
 
 Some quick ideas:
 
-- Adding elements to an array
-- Using variables in JavaScript template strings
-- Centering elements in a div
+![Bracket](/instructor-guide/illos/ch1_s4_icon-bracket.png)  Adding elements to an array
 
-![10_quick_ideas](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530247464_file.png)
+![Star](/instructor-guide/illos/ch1_s4_icon-star.png) Using variables in JavaScript template strings
+
+![Equals](/instructor-guide/illos/ch1_s4_icon-equals.png) Centering elements in a div
+
 
 Need help? Hit us up in your private [Slack channel](#egghead-on-slack).
 
@@ -53,7 +54,7 @@ Don't worry about it. Don't edit it. Don't fuss over it. Just let it start the c
 
 You can upload your video by submitting an application on [egghead.io](http://egghead.io).
 
-![12_gold_invitation](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530359256_file.png)
+![gold_invitation](/instructor-guide/illos/ch1_s4_invitation.png)
 
 **If we invited you to be an egghead instructor,** you’ll then finish your egghead registration and be prompted to join Slack if you haven’t already.
 
@@ -64,4 +65,3 @@ We hope you’ll turn this snippet into your first published lesson, or you migh
 **If we didn’t send you an invitation,** welcome! We’re thrilled you want to join our team of instructors. After you’ve uploaded your video to [egghead.io](http://egghead.io/), we’ll review it. If we like the direction your video is headed in, we’ll send you an invitation.
 
 Pro tip: You’ll have a better chance of submitting a 👍 30-second video and getting invited to egghead if you read this whole guide. So keep reading! Then show us what you got!
-
