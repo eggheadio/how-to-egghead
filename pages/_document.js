@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <link rel="stylesheet" href="https://use.typekit.net/xkw2skg.css" />
         </Head>
         <body>
           <Main />

@@ -3,13 +3,12 @@ import styled, { hydrate, injectGlobal } from "react-emotion"
 import { css } from "emotion"
 import { loadGetInitialProps } from "next/dist/lib/utils"
 import Head from "next/head"
-import Eggo from "../components/Eggo"
-import Docs from "../components/InstructorGuide"
-import GlobalStyles from "../components/GlobalStyles"
-import { Color } from "../components/Colors"
+import Docs from "../components/ReviewersGuide"
 import codeStyles from "../components/CodeStyles"
+import Eggo from "../components/Eggo"
 import ToC from "../components/ToC"
 import { mq } from "../components/Breakpoints"
+import { Color } from "../components/Colors"
 
 let ReactGA
 if (process.browser) {
@@ -20,57 +19,42 @@ if (typeof window !== "undefined") {
   hydrate(window.__NEXT_DATA__.ids)
 }
 
-injectGlobal`
-${GlobalStyles}
-${codeStyles}
-`
+
 class App extends Component {
   constructor(props) {
     super(props)
     if (process.browser) {
       ReactGA.initialize("UA-36512724-5")
     }
-    this.state = {isToggleOn: true, isDesktop: false}
+    this.state = {isToggleOn: true}
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this)
     this.hide = this.hide.bind(this)
-    this.updatePredicate = this.updatePredicate.bind(this)
   }
 
   componentDidMount() {
     const page = window.location.pathname
     ReactGA.set({ page })
     ReactGA.pageview(page)
-    this.updatePredicate()
-    window.addEventListener("resize", this.updatePredicate)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updatePredicate)
-  }
-
-  updatePredicate() {
-    this.setState({ isDesktop: window.innerWidth > 768 })
+    
   }
 
   handleClick() {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
-    }))
+    }));
   }
-
   hide() {
-    this.setState(prevState => ({
-      isToggleOn: true
-    }))
+      this.setState(prevState => ({
+          isToggleOn: true
+        }));
   }
 
   render() {
-    const isDesktop = this.state.isDesktop
     return (
       <div>
         <Head>
-          <title>How to egghead — Instructor 101 Guide</title>
+          <title>How to egghead — Reviewer 101 Guide</title>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -126,17 +110,17 @@ class App extends Component {
           />
         </Head>
         <div
-        className={css`
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: flex-start; 
-          ${mq.large(css` 
-          flex-direction: row;
-          `)};
-        `}
+          className={css`
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start; 
+            ${mq.large(css` 
+            flex-direction: row;
+            `)};
+          `}
         >
-        <aside className={css`z-index: 9999;`}>
+       <aside className={css`z-index: 9999;`}>
           <div className={css`
             z-index: 1000;
             transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -155,7 +139,7 @@ class App extends Component {
               left: 0px;
               `
             }`} >
-            <ToC Instructor={true} Expanded={this.state.isToggleOn && true } />
+            <ToC Instructor={false} Expanded={this.state.isToggleOn && true } />
           </div>  
           </div>
             <button onClick={this.handleClick} className={css`
@@ -252,10 +236,8 @@ class App extends Component {
             `)};
             `}>
           <div>
-          <header className={css`
-            h1 {
-              color: ${Color.instructorPrimary};
-              font-weight: 500;}
+            <header className={css`
+            h1 {color: ${Color.reviewerPrimary};}
               white-space: nowrap;
             ${mq.medium(css`
               padding: 3rem 2rem;
@@ -269,47 +251,49 @@ class App extends Component {
               flex-direction: row;
               justify-content: space-between;
               text-align: left;
+              
             `)};
             margin-bottom: 3rem;
             text-align: center;
             display: flex;
-            padding: 6rem 0 3rem 0;
+            padding: 6rem 1rem 3rem 1rem;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
             z-index: 999;
             `}>
-              <div>
-                <h1 className={css`
-                margin: 0;
-                padding: 0;
-                `}>
-                  Instructor 101 Guide
-                </h1>
-                <h3 className={css`
-                font-size: 1rem;
-                font-weight: 300;
-                margin-top: 1rem;
-                ${mq.medium(css`
-                margin-top: 1rem;
-              `)}; 
-                padding: 0;
-                opacity: 0.5;
-                `}>
-                  Lorem ipsum dolor sit amet.
-                </h3>
-              </div>
-              <img 
-                src="../static/eggoInstructor.png"
+            <div>
+            <h1 className={css`
+            margin: 0;
+            padding: 0;
+            `}>
+             Reviewer 101 Guide
+            </h1>
+            <h3 className={css`
+            font-size: 1rem;
+            font-weight: 300;
+            margin-top: 1rem;
+            ${mq.medium(css`
+            margin-top: 1rem;
+          `)};
+         
+            padding: 0;
+            opacity: 0.5;
+            `}>
+              Lorem ipsum dolor sit amet.
+            </h3>
+            </div>
+            <img 
+                src="../static/eggoReviewer.png"
                 alt="How to egghead - 101 Instructor Guide" 
                 className={css`
                 ${mq.medium(css`
-                  max-width: 45%;
+                max-width: 45%;
                 `)};
                 max-width: 70%;
-                height: auto;
-              `} />
+              height: auto;
+            `} />
             </header>
           <Docs />
           </div>
