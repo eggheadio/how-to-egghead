@@ -1,0 +1,30 @@
+# Review Template
+
+```
+Review Author:
+Date of Review:
+Transcripts Enhanced? (Y / N):
+Link to Course:
+```
+
+```
+Course Notes:
+```
+
+```
+Breaking Changes Between Video and Latest Version:
+```
+
+```
+Ideas for Potential Lessons:
+```
+
+#### Lesson Title → Updated Title
+
+```
+ Notes:
+ Summary:
+ Updated Description:
+ Link to Plunker:
+ Changes Made in Code:
+```
