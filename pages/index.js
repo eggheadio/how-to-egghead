@@ -287,7 +287,7 @@ class App extends Component {
                 `}>
                   Instructor 101 Guide
                 </h1>
-                <h3 className={css`
+                {/* <h3 className={css`
                 font-size: 1rem;
                 font-weight: 300;
                 margin-top: 1rem;
@@ -298,7 +298,7 @@ class App extends Component {
                 opacity: 0.5;
                 `}>
                   Lorem ipsum dolor sit amet.
-                </h3>
+                </h3> */}
               </div>
               <img 
                 src="../static/eggoInstructor.png"
