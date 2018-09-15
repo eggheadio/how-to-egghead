@@ -1,5 +1,4 @@
 ## How to structure your course
-*Illustration note: I’m at a loss for how to explain these concepts visually.* @Maggie A *, any ideas?*
 
 There are several types of egghead courses. The most important aspects of a course are tight focus and high-quality examples. If you have those two things, the style doesn't matter.
 

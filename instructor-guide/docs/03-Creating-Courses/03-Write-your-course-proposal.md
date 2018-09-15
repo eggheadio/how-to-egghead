@@ -1,7 +1,5 @@
 ## Write your course proposal
 
-*[This article doesn’t lend itself to much illustration.* @Maggie A *, do you have any ideas?]*
-
 Before you start producing your egghead course, we ask you to write and submit a course proposal.
 
 For you, the proposal defines your intent for the course, and gives you a chance to craft great titles for the course and its lessons to guide your work.
@@ -29,7 +27,7 @@ Let’s look at each of these in more detail.
 
 Your course proposal starts with a *user story*. This is similar to the agile software practice of writing a story to describe **who**, **what**, and **why** we’re creating this thing.
 
-*[Image: someone building an application with React and Redux. Is that possible? Or some other representation of a user story?]*
+[Image: Someone building something]
 
 For example:
 
