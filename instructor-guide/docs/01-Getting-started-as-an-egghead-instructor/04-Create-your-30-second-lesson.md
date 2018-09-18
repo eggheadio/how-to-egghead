@@ -25,11 +25,11 @@ _[Illustration: brainstorming]_
 
 Some quick ideas:
 
-![Bracket](/instructor-guide/illos/ch1_s4_icon-bracket.png)  Adding elements to an array
+![Bracket](static/illos/ch1_s4_icon-bracket.png)  Adding elements to an array
 
-![Star](/instructor-guide/illos/ch1_s4_icon-star.png) Using variables in JavaScript template strings
+![Star](static/illos/ch1_s4_icon-star.png) Using variables in JavaScript template strings
 
-![Equals](/instructor-guide/illos/ch1_s4_icon-equals.png) Centering elements in a div
+![Equals](static/illos/ch1_s4_icon-equals.png) Centering elements in a div
 
 
 Need help? Hit us up in your private [Slack channel](#egghead-on-slack).
@@ -54,7 +54,7 @@ Don't worry about it. Don't edit it. Don't fuss over it. Just let it start the c
 
 You can upload your video by submitting an application on [egghead.io](http://egghead.io).
 
-![gold_invitation](/instructor-guide/illos/ch1_s4_invitation.png)
+![gold_invitation](static/illos/ch1_s4_invitation.png)
 
 **If we invited you to be an egghead instructor,** you’ll then finish your egghead registration and be prompted to join Slack if you haven’t already.
 

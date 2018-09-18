@@ -35,6 +35,7 @@ const mq = Object.keys(breakpoints).reduce(
 
 const DocsWrapper = styled("div")`
   max-width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +70,14 @@ const DocsWrapper = styled("div")`
    }
    a:visited {
     color: ${Color.reviewerPrimary};
+   }
+   div {
+     width: 100%;
+     max-width: 100vw;
+   }
+    code {
+     max-width: 800px;
+     width: 100%;
    }
 `
 
@@ -138,7 +147,7 @@ export default () => (
                   justify-content: center;
                   align-items: center;
                   padding: 0 1.5rem 0 1.5rem;
-                  ${mq.small(css` padding: 0.5 2rem; margin-top: 0; `)};
+                  ${mq.small(css` padding: 0.5rem 2rem; margin-top: 0; `)};
                   ${mq.large(css` padding: 1.5rem 4rem; `)};
                 `}
               >

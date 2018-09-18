@@ -42,7 +42,7 @@ This is the most common action taken by the reviewer. The lesson code sample sho
 
 When there is some significant breaking difference in the lesson video and code sample, we can create a notification to be displayed prominently on the lesson page. This notification comes in the form of an `errata` which is shown below:
 
-![Errata Example](../images/01-title-lessons/00-errata-example.png)
+![Errata Example](static/illos/reviewers/01-title-lessons/00-errata-example.png)
 
 ### Replace the lesson video/code
 

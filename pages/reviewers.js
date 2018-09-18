@@ -226,7 +226,7 @@ class App extends Component {
               <header
                 className={css`
                   h1 {
-                    color: ${Color.instructorPrimary};
+                    color: ${Color.reviewerPrimary};
                     font-weight: 500;
                   }
                   white-space: nowrap;
@@ -263,19 +263,18 @@ class App extends Component {
                   >
                     egghead Reviewers Guide
                   </h1>
-                  {/* <h3 className={css`
-                font-size: 1rem;
-                font-weight: 300;
-                margin-top: 1rem;
-                ${mq.medium(css`
-                margin-top: 1rem;
-              `)}; 
-                padding: 0;
-                opacity: 0.5;
-                `}>
-                  Lorem ipsum dolor sit amet.
-                </h3> */}
                 </div>
+                <img
+                  src="static/eggoReviewer.png"
+                  alt="How to egghead - 101 Instructor Guide"
+                  className={css`
+                    ${mq.medium(css`
+                      max-width: 45%;
+                    `)};
+                    max-width: 70%;
+                    height: auto;
+                  `}
+                />
               </header>
               <Docs />
             </div>

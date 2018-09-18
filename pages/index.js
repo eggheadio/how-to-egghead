@@ -3,13 +3,11 @@ import styled, { hydrate, injectGlobal } from "react-emotion"
 import { css } from "emotion"
 import { loadGetInitialProps } from "next/dist/lib/utils"
 import Head from "next/head"
-import Eggo from "../components/Eggo"
-import Docs from "../components/InstructorGuide"
 import GlobalStyles from "../components/GlobalStyles"
 import { Color } from "../components/Colors"
 import codeStyles from "../components/CodeStyles"
-import ToC from "../components/ToC"
 import { mq } from "../components/Breakpoints"
+import Link from 'next/link'
 
 let ReactGA
 if (process.browser) {
@@ -24,6 +22,7 @@ injectGlobal`
 ${GlobalStyles}
 ${codeStyles}
 `
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -70,7 +69,7 @@ class App extends Component {
     return (
       <div>
         <Head>
-          <title>How to egghead — Instructor 101 Guide</title>
+          <title>How to egghead</title>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -125,199 +124,91 @@ class App extends Component {
             content="https://learnreduxwithdanabramov.com/"
           />
         </Head>
-        <div
-        className={css`
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: flex-start; 
-          ${mq.large(css` 
-          flex-direction: row;
-          `)};
-        `}
-        >
-        <aside className={css`z-index: 9999;`}>
-          <div className={css`
-            z-index: 1000;
-            transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-            `}
-          > 
-          <div className={css`
-            z-index: 1000;
-            transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-            ${this.state.isToggleOn ? 
-              `
-              position: absolute;
-              left: -320px;
-              ` : 
-              `
-              position: absolute;
-              left: 0px;
-              `
-            }`} >
-            <ToC Instructor={true} Expanded={this.state.isToggleOn && true } />
-          </div>  
-          </div>
-            <button onClick={this.handleClick} className={css`
-             ${mq.large(css`
-             background-color: white;
-              `)};
-              background-color: white;
-              :hover {
-                background-color: #F0F0F0;
-              }
-              cursor: pointer;
-              position: fixed;
-              z-index: 1000;
-              width: 40px;
-              height: 40px;
-              display: flex;
-              padding-top: 3px;
-              justify-content: center;  
-              align-items: center;
-              background: white;
-              border: 0;
-              left: 0;
-              outline: transparent;
-              transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-              margin-top: 1rem;
-              ${mq.medium(css` 
-              ${this.state.isToggleOn ? 
-                `margin-left: 1rem;` : 
-                `margin-left: 280px;`
-              }`)}
-              ${this.state.isToggleOn ? 
-                `margin-left: 1rem;` : 
-                `margin-left: 230px;`
-              }
-              ${this.state.isToggleOn ? 
-                `
-                border: 1px solid #eee;
-                ::before {
-                  content: '';
-                  position: absolute;
-                  width: 20px;
-                  height: 1px;
-                  margin-top: -5px;
-                  background: #747474;
-                  transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-                }
-                ::after {
-                  content: '';
-                  position: absolute;
-                  width: 20px;
-                  height: 1px;
-                  margin-top: 5px;
-                  background: #747474;
-                  transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-                }
-                ` : 
-                `
-                border: 1px solid #fafafa;
-                ::before {
-                  content: '';
-                  position: absolute;
-                  width: 15px;
-                  height: 1px;
-                 
-                  background: #747474;
-                  transform: rotate(-180deg);
-                  transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-                }
-                ::after {
-                  content: '';
-                  position: absolute;
-                  width: 15px;
-                  height: 1px;
-                  
-                  background: #747474;
-                  transform: rotate(180deg);
-                  transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-                }
-                `
-              }
-              `}>
-        </button>
-          </aside>
-          <div className={css`
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-            ${mq.large(css` 
-            ${this.state.isToggleOn ? 
-              `width: 100vw;` :
-              `width: 100vw;`
-            }
-            `)};
-            `}>
-          <div>
-          <header className={css`
-            h1 {
-              color: ${Color.instructorPrimary};
-              font-weight: 500;}
-              white-space: nowrap;
-            ${mq.medium(css`
-              padding: 3rem 2rem;
-              flex-direction: column;
-              text-align: center;
-              margin-bottom: 5rem;
-            `)};
-            ${mq.large(css`
-              padding: 5rem 3rem;
-              margin-bottom: 5rem;
-              flex-direction: row;
-              justify-content: space-between;
-              text-align: left;
-            `)};
-            margin-bottom: 3rem;
-            text-align: center;
-            display: flex;
-            padding: 6rem 0 3rem 0;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            z-index: 999;
-            `}>
-              <div>
-                <h1 className={css`
-                margin: 0;
-                padding: 0;
-                `}>
-                  Instructor 101 Guide
-                </h1>
-                {/* <h3 className={css`
-                font-size: 1rem;
-                font-weight: 300;
-                margin-top: 1rem;
-                ${mq.medium(css`
-                margin-top: 1rem;
-              `)}; 
-                padding: 0;
-                opacity: 0.5;
-                `}>
-                  Lorem ipsum dolor sit amet.
-                </h3> */}
-              </div>
-              <img 
-                src="../static/eggoInstructor.png"
-                alt="How to egghead - 101 Instructor Guide" 
-                className={css`
-                ${mq.medium(css`
-                  max-width: 45%;
-                `)};
-                max-width: 70%;
-                height: auto;
-              `} />
-            </header>
-          <Docs />
-          </div>
-          </div>
-        </div>
+        <Main>
+      <div className={`${css`
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      `}`}>
+        <Link href="/instructors">
+          <LinkBlock>
+            <img src="../static/eggoInstructor.png" alt="Instructor Guide" />
+            <h1>Instructor Guide</h1>
+          </LinkBlock>
+        </Link>
+      </div>
+      <div>
+        <Link href="/reviewers">
+          <LinkBlock>
+            <img src="../static/eggoReviewer.png" alt="Instructor Guide" />
+            <h1>Reviewer Guide</h1>
+          </LinkBlock>
+        </Link>
+      </div>
+       </Main>
       </div>
     )
   }
 }
 
 export default App
+
+const Main = styled.main`
+display: flex;
+${mq.medium(css`
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  `)}
+  flex-direction: column;
+  min-height: 200px;
+  width: 100vw;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const LinkBlock = styled.div`
+${mq.medium(css`
+  width: 400px;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  margin: 2.5rem;
+  border: 1px solid rgba(0,0,0, 0.1);
+`)}
+min-height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: auto;
+cursor: pointer;
+height: 40vh;
+margin-top: 2rem;
+background-color: #white;
+border: 0px solid transparent;
+box-sizing: border-box;
+h1 {
+  opacity: 0.7
+  ${mq.medium(css`
+  font-size: 2rem;
+  margin-top: 3rem;
+`)}
+  font-size: 2rem;
+}
+img {
+${mq.medium(css`
+  max-width: 100%;
+`)}
+max-width: 75%;
+}
+&:hover {
+  background-color: #fafafa;
+}
+`

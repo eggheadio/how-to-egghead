@@ -4,15 +4,15 @@ _*These steps require a working knowledge of git and interacting with github, if
 
 You'll need to locate the lesson code on the [eggheadio-projects](https://github.com/eggheadio-projects) in github. This can be done using the url `slug` found on the course page of a given course:
 
-![course url slug](../images/02-Update-Code/00-find-course-url-slug.png)
+![course url slug](static/illos/reviewers/02-Update-Code/00-find-course-url-slug.png)
 
 - Copy the `slug` into the github search bar to find the corresponding repository.
 
-![corresponding repository](../images/02-Update-Code/00-find-corresponding-repository.png)
+![corresponding repository](static/illos/reviewers/02-Update-Code/00-find-corresponding-repository.png)
 
 - Navigate into the repository and get the link to clone the repository.
 
-![corresponding repository](../images/02-Update-Code/00-copy-link-to-clone-repo.png)
+![corresponding repository](static/illos/reviewers/02-Update-Code/00-copy-link-to-clone-repo.png)
 
 - Navigate to your terminal
 

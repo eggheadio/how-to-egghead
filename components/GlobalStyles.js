@@ -30,10 +30,10 @@ export default `
         font-size: 2rem;
         ${mq.medium(css`
         font-size: 3rem;
+        line-height: 3rem;
         padding-bottom: 1rem;
         `)};
       }
-      
       h2 {
         font-size: 1.75rem;
         margin: 4rem 0 1rem 0;
@@ -77,7 +77,6 @@ export default `
         padding: 25px;
         overflow-wrap: break-word;
         word-break: break-all;
-        max-width: 200px;
         overflow-x: auto;
         ${mq.medium(css` 
         max-width: 800px;
