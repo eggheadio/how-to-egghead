@@ -1,3 +1,13 @@
 {
-  "alias": ["howtoegghead.com"]
+  "env": {
+      "GOOGLE_ANALYTICS": "",
+      "NODE_ENV": "production"
+    },
+    "alias": "howtoegghead.com",
+    "scale": {
+      "sfo1": {
+        "min": 1,
+        "max": "auto"
+      }
+    }
 }
