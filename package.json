@@ -3,19 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "now": {
-    "env": {
-      "GOOGLE_ANALYTICS": "",
-      "NODE_ENV": "production"
-    },
-    "alias": "howtoegghead.com",
-    "scale": {
-      "sfo1": {
-        "min": 1,
-        "max": "auto"
-      }
-    }
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",
