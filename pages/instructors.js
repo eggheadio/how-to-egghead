@@ -90,7 +90,7 @@ class App extends Component {
           <meta property="og:image:height" content="279" />
           <meta property="og:title" content="Learn how to egghead like a pro." />
           <meta property="og:description" content="Instructor 101 Guide" />
-          <meta property="og:url" content="https://learnreduxwithdanabramov.com/" />
+          <meta property="og:url" content="https://howtoegghead.com/" />
         </Head>
         <div
           className={css`
@@ -149,7 +149,7 @@ class App extends Component {
               height: 40px;
               display: flex;
               padding-top: 3px;
-              justify-content: center;  
+              justify-content: center;
               align-items: center;
               background: white;
               border: 0;
@@ -191,7 +191,7 @@ class App extends Component {
                   position: absolute;
                   width: 15px;
                   height: 1px;
-                 
+
                   background: #747474;
                   transform: rotate(-180deg);
                   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -201,7 +201,7 @@ class App extends Component {
                   position: absolute;
                   width: 15px;
                   height: 1px;
-                  
+
                   background: #747474;
                   transform: rotate(180deg);
                   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);

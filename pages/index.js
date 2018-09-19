@@ -121,7 +121,7 @@ class App extends Component {
           />
           <meta
             property="og:url"
-            content="https://learnreduxwithdanabramov.com/"
+            content="https://howtoegghead.com/"
           />
         </Head>
         <Main>

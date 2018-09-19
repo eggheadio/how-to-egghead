@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eggheadio/learnreduxwithdanabramov.com/issues"
+    "url": "https://github.com/eggheadio/how-to-egghead/issues"
   },
-  "homepage": "https://github.com/eggheadio/learnreduxwithdanabramov.com#readme",
+  "homepage": "https://github.com/eggheadio/how-to-egghead#readme",
   "dependencies": {
     "@mdx-js/loader": "^0.13.0-0",
     "@mdx-js/mdx": "^0.13.0-0",
