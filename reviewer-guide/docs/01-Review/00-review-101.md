@@ -18,22 +18,6 @@ When differences exist we can take several courses of action:
 
 <br/>
 
-## Identify Change(s) in a Framework or Library
-
-JavaScript frameworks are constantly changing and updating. A lot of the time this is not an issue for our lessons. Patch updates to software shouldn't break existing code.
-
-However, when `Major` or `Minor` changes occur in a framework this can cause previous versions of the software to break. 
-
-You need to identify these **Breaking Changes** and keep them in mind when watching the video.
-
-Each framework or library will have a `CHANGELOG.md` that will record the changes of that specific framework. ([link to example](https://github.com/facebook/react/blob/master/CHANGELOG.md)) Usually found on the respective frameworks github page.
-
-Most frameworks use Semantic Versioning ([semver](http://semver.org/)) to keep track of updates. We are mostly interested in `Major` and `Minor`
-
-Under each new version, there will be a **Breaking Changes** section that is where you will see what exactly will break any lesson examples that egghead might have.
-
-New features are also tracked in a frameworks `CHANGELOG.md` and should be noted down for possible lesson ideas in the future.
-
 ### Update Lesson Code Sample
 
 This is the most common action taken by the reviewer. The lesson code sample should reflect the current version(s) for the libraries it is demonstrating (libraries are updated often!). The sample code can correct for minor differences in the code demonstrated in the lesson video, noting with comments when this has been done.
@@ -42,7 +26,7 @@ This is the most common action taken by the reviewer. The lesson code sample sho
 
 When there is some significant breaking difference in the lesson video and code sample, we can create a notification to be displayed prominently on the lesson page. This notification comes in the form of an `errata` which is shown below:
 
-![Errata Example](static/illos/reviewers/01-title-lessons/00-errata-example.png)
+![Errata Example](static/illos/reviewers/01-Review/00-errata-example.png)
 
 ### Replace the lesson video/code
 
