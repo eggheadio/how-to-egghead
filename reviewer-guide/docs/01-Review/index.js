@@ -1,6 +1,7 @@
 import Review101 from "./00-review-101.md"
-import TitleLessons from "./01-title-lessons.md"
-import ReviewTemplate from "./02-review-template.md"
+import IdentifyChanges from "./01-identify-changes-in-framework.md"
+import TitleLessons from "./02-title-lessons.md"
+import ReviewTemplate from "./03-review-template.md"
 
 
 export default [
@@ -8,6 +9,11 @@ export default [
     component: Review101,
     title: "Review 101",
     slug: "review-101"
+  },
+  {
+    component: IdentifyChanges,
+    title: "Identify Changes in Frameworks",
+    slug: "identify-changes"
   },
   {
     component: TitleLessons,
