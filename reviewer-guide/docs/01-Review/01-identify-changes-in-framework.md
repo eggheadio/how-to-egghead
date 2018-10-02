@@ -68,13 +68,11 @@ This is why SemVer has version ranges which can be denoted a few different ways.
 
 For review, a range specifying `>15.3.0 <16.4.1` says the course started at version `15.3.0` and is valid up to all version (excluding) `16.4.1` where a `<=16.4.1` will specify the version including `16.4.1`.
 
+Simply putting `15 - 16` is another way to specify a range that will encompass all MINOR and PATCH versions contained within the MAJOR versions `15` and `16`. **This is preferred** as it is the most flexible way to specify a version range. If more specifics are required, other operators can be used.
+
 To make versions easier to specify, the squiggly `~` and caret `^` also identify ranges. When `~` is placed before version (e.g., `~15.0.0`), it specifies all versions incremented at the PATCH level. In other words `15.0.1`, `15.0.3`, or `15.0.19` are all valid. In other words, `~15.0.0` equals `>=15.0.0 <15.1.0`.
 
 The caret `^` specifies all version increments at the MINOR and PATCH levels. `^15.0.0` specifies that any of these following versions are valid: `15.0.1`, `15.1.3`, or `15.5.0`. in other words, `^15.0.0` would equal the range `>=15.0.0 <16.0.0`.
-
-### Fine-grain Version Specification
-
-The `||` operator combines versions and version ranges. `^15 || ^16` specifies all MINOR and PATCH version increments in the MAJOR versions `15` and `16`.
 
 A great place to explore semantic versioning is the [npm SemVer calculator](https://semver.npmjs.com/)
 
@@ -109,8 +107,8 @@ Data for this looks like: 
 {
         slug: 'manage-complex-state-in-react-apps-with-mobx',
         dependencies: {
-          mobx: '>=2.6.3 <=5.0.3',
-          react: '>=15.3.0 <=16.4.1',
+          mobx: '2 - 5',
+          react: '15 - 16',
         },
         reviews: [
           {
@@ -137,4 +135,4 @@ Data for this looks like: 
 
 As seen above, every review is recorded with the date it was done (in YYYY-MM-DD format), the scope, and most importantly, any notes or issues that came up during the review.
 
-The range specifies the range that starts with package versions that the course was released on and ends with the latest version the course was updated to. For the example specified above, the course was released with React v15.3.0 and has since been updated to React v16.4.1.
+The range specifies the range that starts with package versions that the course was released on and ends with the latest version the course was updated to. For the example specified above, the course was released with React v15 and has since been updated to React v16. The specific MINOR and PATCH versions aren't necessary to specify here because there are no major breaking changes of concern apart from the notes provided.
