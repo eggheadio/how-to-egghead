@@ -1,4 +1,6 @@
 ## Why create a course
+After you've created 5 or so stand-alone lessons, it will be time to start discussing your first course.
+
 Courses are the bread and butter of egghead.
 
 A course is a composed set of bite-sized lessons. The course itself should be bite-sized, covering a single topic in depth through a sequence of individual lessons.
