@@ -21,8 +21,6 @@ Our [technical guide](https://paper.dropbox.com/folder/show/04-Screencasting-tip
 
 ...but of course, you’ll need to cover something specific. Since your video isn't intended for publication, keep it simple. No need to solve the internet just to impress us! Just pick a topic other web developers would find interesting, in the language of your choice. Python, Ruby, Rust, whatever you’re feeling.
 
-_[Illustration: brainstorming]_
-
 Some quick ideas:
 
 ![Bracket](static/illos/ch1_s4_icon-bracket.png)  Adding elements to an array
