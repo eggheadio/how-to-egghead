@@ -31,8 +31,6 @@ If you want a second pair of eyes before uploading your lesson, reach out to you
 
 When your draft is complete, upload it to [egghead.io](https://egghead.io/). When you upload any lesson video, it’s automatically processed to make sure its audio is in stereo, the resolution is as expected, and that it’s uploaded to the appropriate storage channels.
 
-*[ Image: Screenshot of lesson being uploaded]*
-
 You’ll almost certainly get feedback, ❗***which isn’t the same as criticism***❗ . Your coach knows exactly what we’re looking for and how to tweak lessons to get there. As you go through the editing process, ask your coach to screen share with you so you can get some guidance for the first pass. This can save you hours of trying to figure things out on your own! 🙂
 
 Feedback in hand, you’ll be able to edit and update your video. When your coach gives you a thumbs up, you can update your lesson video for final review and publication.
