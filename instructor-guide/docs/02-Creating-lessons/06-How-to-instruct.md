@@ -1,5 +1,5 @@
 ## How to instruct
-Once you’ve nailed your title, summary, and code example, it’s time to figure out what you’re going to say.
+You’ve nailed your title, summary, and code example. Now it’s time to figure out what you’re going to say.
 
 The “instructor” title can feel daunting. Don’t let it! If you’ve ever shown someone how to do something, you’re an experienced instructor.
 
@@ -15,16 +15,12 @@ You won’t be asking questions that teachers typically do, like “What themes 
 
 Your narration should sound casual but informed, like you’re showing something to a coworker. Some instructors find it helpful to **write out a script** beforehand so they’re never in doubt of what to say. It’s a great way to cut the “umm”s and “uhh”s and make your explanation as tight as possible.
 
-*[Illustration: bullet points on paper]*
-
 If you’d rather sound more conversational, less scripted, **write out an outline**. We’re talking bullet points—the keywords you want to say, the points you want to hit. This approach may require you to edit a few seconds of dead air here and there, but the published narration will sound polished.
 
 
 ### Do a dress rehearsal
 
 Have you ever conducted a workshop? Talked at a conference? Presented to your sixth grade class? You know how essential it is to practice your talk before showtime.
-
-*[ Illustration: speaking aloud ]*
 
 Same with egghead lessons. Before you hit record, explain your code example to yourself. Out loud. Enunciate! Be confident! Believe you’re the most qualified instructor in the history of egghead!
 
