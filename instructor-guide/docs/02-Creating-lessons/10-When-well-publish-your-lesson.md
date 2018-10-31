@@ -3,8 +3,6 @@ You’ve made it to the finish line. Hooray!
 
 Once you’ve uploaded your lesson and gotten the official thumbs up, your lesson enters egghead’s lesson publishing queue.
 
-*[ Image: publishing queue ]*
-
 The queue automatically publishes lessons from top to bottom. We publish several times per week and sometimes daily, depending on how many lessons are in the queue. This way, we make sure we’re keeping our subscribers happy with a steady stream of great content.
 
 
@@ -25,8 +23,6 @@ We trust you to make sure the quality of your lesson is high. You can still ask 
 ### Sharing your lesson on social media
 
 After publishing, lessons are added to egghead’s social media sharing queue. This drives a lot of eyeballs to our lessons—our Twitter account has over 45,000 followers.
-
-*[ Image: tweet announcing a new lesson ]*
 
 
 ### That’s it!
