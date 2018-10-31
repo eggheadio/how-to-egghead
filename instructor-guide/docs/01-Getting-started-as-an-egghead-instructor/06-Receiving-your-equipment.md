@@ -3,8 +3,6 @@ If you’re looking at your laptop and wondering how you’ll juke the microphon
 
 Once you've created a draft lesson that is *almost* ready to be published, we’ll ship you a case packed with audio recording toys. With our compliments, of course.
 
-*[Image: Case full of goodies]*
-
 You’ll get:
 
 - K & M 23150-500-55 Tabletop Microphone Stand with 5/8" Threaded Connector and Mini Boom Arm
