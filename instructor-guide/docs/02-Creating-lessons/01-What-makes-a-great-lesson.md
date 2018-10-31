@@ -1,7 +1,5 @@
 ## What makes a great lesson?
 
-*Illustration note: instead of links to lessons, embed the the videos.*
-
 Imagine calling a coworker over to your desk to show them something cool you just learned. Would you make a slide deck? Use star-dissolve transitions? Nah, you’d just dive right in.
 
 That’s what egghead learners want you to do. They’re looking for concise, efficient information that respects their time and shows them how to do something. Nothing fancy, just badass.
