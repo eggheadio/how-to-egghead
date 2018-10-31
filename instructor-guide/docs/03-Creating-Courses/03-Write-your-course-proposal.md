@@ -27,8 +27,6 @@ Let’s look at each of these in more detail.
 
 Your course proposal starts with a *user story*. This is similar to the agile software practice of writing a story to describe **who**, **what**, and **why** we’re creating this thing.
 
-[Image: Someone building something]
-
 For example:
 
 
