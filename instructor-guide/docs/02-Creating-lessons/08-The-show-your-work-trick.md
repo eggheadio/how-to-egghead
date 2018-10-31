@@ -8,8 +8,6 @@ Too many ideas in one lesson means you’re glossing over concepts. Let’s say 
 
 *Show your work!* You probably heard this when your high school math teacher forced you to write out the steps to a solution to get full credit for your answer.
 
-*[Image: math problem supported by written steps]*
-
 It applies to coding instruction, too. The simple act of typing something out, highlighting a block with your mouse, or logging something in the console makes concepts infinitely more approachable.
 
 If a user sees you walk through those steps, they gain confidence that they can do it, too. If they only hear you *talking* about concepts, they can’t readily tie the concepts back to the code. Worse yet, they might stop paying attention altogether.
@@ -21,9 +19,6 @@ Here’s the trick: Turn off your audio and watch your lesson without sound.
 
 It should be obvious from the visuals what you’re teaching. You may notice periods of 5+ seconds where nothing is happening. “Nothing” usually means you’re getting off-topic and thought it would be tough to *show* what you’re talking about. When you catch a section of “nothing,” write down the topic you weren’t showing. Save it for another lesson!
 
-*[ Gif: Screen with very active mouse.]*
-
 ![](https://www.cat-gifs.com/w3/CAT-GIF-Funny-Cat-watching-the-mouse-cursor-on-PC-monitor.gif)
-
 
 With this one trick, you’ll quickly turn one lesson with a lot of tangents into a focused, concise lesson about one topic. Or if you’re interested in creating a course, those tangents could each be a separate lesson.
