@@ -15,8 +15,6 @@ The *start* state could either be:
 
 The *finished* state will reflect the concept that you’ve just explained.
 
-*[Gif: showing the transition from start to finish]*
-
 The difference between *start* and *finish* directly defines the scope and complexity of the lesson. If you can’t get to *finish* in under 10 minutes or without using complex steps, you should probably [revisit your title and summary](#write-the-title-and-summary) and scale back a bit. Don’t try to boil the ocean!
 
 
