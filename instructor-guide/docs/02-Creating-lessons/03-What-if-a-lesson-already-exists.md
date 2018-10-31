@@ -11,8 +11,6 @@ This was said by nobody, ever. We firmly believe that hard topics need the funda
 
 At egghead, we want to cover concepts in layers. We want to tuck our members in under cotton, wool, and down and help them fully and completely understand complex concepts one bite-sized lesson at a time.
 
-*[Image: peeling an onion ↑; or many voices singing together ↓]*
-
 Having one “expert” rule a concept only gives learners a one-sided, one-dimensional understanding of it. Imagine if only one songwriter in the history of music had written a love song, and all the other songwriters had said, “Oh, that concept has been covered before.” We’d be robbed of so many musical love stories, and the essential soundtrack to our own.
 
 So what’s your take on the concept? It’s an essential layer. Add it to the mix.
