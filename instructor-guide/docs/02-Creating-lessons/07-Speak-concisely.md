@@ -8,8 +8,6 @@ Consider this example:
 
 Holy backstory! If you think back to our [cheesecake-stuffed cookie cake example](#what-makes-a-great-lesson), we don't have to explain or justify each step in the instruction. We can assume we’re delivering content to smart, capable humans who can fill in some blanks. We have to. There’s instructing to do, and the clock is ticking.
 
-*[Image: A cheesecake-stuffed cookie cake]*
-
 Without the over-instruction, we have a much more concise, energetic start to the lesson.
 
 
