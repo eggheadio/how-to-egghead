@@ -27,8 +27,6 @@ In time, you can 💥 kick it up a notch 💥 with more sophisticated editing so
 
 In traditional videography, “in-camera editing” refers to the idea of capturing content so well, it doesn’t need to be edited much at all.
 
-*[Gif: something about perfection]*
-
 Your first few lessons will feel like a major effort to produce because you have to consider so many different things. You’re teaching complex concepts (web development) and learning complex concepts (screencasting) at the same time.
 
 Believe us: You’ll get better. And better. And better. Just keep practicing and keep recording.
