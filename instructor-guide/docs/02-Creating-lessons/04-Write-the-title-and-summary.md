@@ -8,8 +8,6 @@ Giving your lesson a solid title and summary *before you hit record* helps you d
 
 There are thousands of lessons on egghead that learners find via site and Google search. The best way for them to find your lesson is with a robust, descriptive title.
 
-[Image or gif of someone writing]
-
 ![](https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif)
 
 
