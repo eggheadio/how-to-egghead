@@ -3,7 +3,7 @@ Yes! egghead instructors make money! You receive royalties for all the views you
 
 How much you get paid can range from "lunch money" to "paying the bills!", and primarily varies with the quality and quantity of what you publish. [Courses](#why-create-a-course) take the most effort, but they also make the most money. Even a single lesson can net you rewarding royalties for a long time; with a keyword-rich summary and title, a lesson can surface in search engine results years after it’s published.
 
-*[Illustration: Money]*
+$$ BREAK TO DO THE MONEY DANCE $$
 
 The best way to make money is to produce interesting, useful content. Quantity is good, but quality is better. Good content sells itself.
 
