@@ -7,8 +7,6 @@ A course is a composed set of bite-sized lessons. The course itself should be bi
 
 The lessons in a course can be enjoyed and understood solo—but together, those lessons allow learners to follow a collective thread and understand a topic in much more depth.
 
-*[Image: screenshot of a course ]*
-
 A course will include:
 
 - a robust summary that can include links to pre-requisites and other resources
@@ -27,8 +25,6 @@ But the payoff is worth it. Why?
 
 Humans love curated knowledge. They want to learn a topic in depth, but at a pace that works for them.
 
-*[ Some illustration of curated knowledge? ]*
-
 egghead courses give hungry learners a sequence to follow, with the promise of greater understanding at the end of ~8–12 lessons. We’ve found that developers are willing to sit down and watch courses—and pay for them.
 
 Which brings us to our next point...
@@ -37,8 +33,6 @@ Which brings us to our next point...
 ### You make more money!
 
 No two ways about it, courses get more eyeballs than individual lessons. It just makes sense: When you publish courses, you publish several lessons at a time. That’s more content and more chances for views.
-
-*[Illustration: $$$$]*
 
 Not only that: Learners often watch those lessons consecutively. (Obviously. That’s what a course is meant for.)
 
