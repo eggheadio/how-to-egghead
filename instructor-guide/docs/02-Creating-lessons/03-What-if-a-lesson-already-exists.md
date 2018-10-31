@@ -20,8 +20,6 @@ So what’s your take on the concept? It’s an essential layer. Add it to the m
 
 One of the things that makes egghead different from other learn-to-code services is how much we prioritize our instructors’ diversity. Our instructors live on six continents—Antarctica, you’re next!—and they all have different backgrounds, perspectives, and approaches to coding. That’s awesome!
 
-*[Illustration: diversity on egghead]*
-
 Our instructors’ diversity also reflects the learners who watch our lessons. One instructor’s way of explaining a concept might not break through to someone, but another instructor’s might. It’s all about the code example you create, your unique turns of phrase, the you that *you* bring to it.
 
 
