@@ -8,8 +8,6 @@ Well, it affects egghead.io courses. Video is a tough format, and because librar
 
 Our egghead content team works hard to keep your course as viable as possible, as long as possible. Every day, they review courses on egghead.io to confirm the code and examples are relevant and still work.
 
-[ Illustration: QAing—something like this, but more fun ]
-
 ![](https://lh5.googleusercontent.com/DOu4jQBDloo8qDy6C7GnImChI7LBJQSZ88KsSDhK-BGBMcO98SP3Df86Jp0dYvOiM2_rsy6nju8wvaI8_gH3Uj3OdOUuouAf_qw6F4Yw1gjSqSwLIcejTnAsY-mA6Ch6C5oPGnOC)
 
 
