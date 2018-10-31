@@ -3,8 +3,6 @@ A course typically has one code example that acts as a connecting thread through
 
 As soon as your course proposal is approved, you should start building your code example [in a tool like Plunker](#sharing-your-code). The best format of your code example will depend on [the style of your course](https://paper.dropbox.com/doc/02-How-to-structure-your-course-YfYDW8HSjx7DsAEShXc4X). As always, #ask your coach for guidance and a second pair of eyes as you build.
 
-*[Gif: code being built]*
-
 
 ### Sharing your code
 
