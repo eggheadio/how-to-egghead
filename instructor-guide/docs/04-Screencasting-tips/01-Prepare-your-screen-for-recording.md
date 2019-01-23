@@ -67,6 +67,23 @@ In some cases, the example is replaced by a terminal, or a terminal window share
 
 Remember that your lesson viewers are here to see the code. Make it the starring feature!
 
+#### Visual Studio Code settings
+If you are using VSCode, egghead instructor [Andy Van Slaars](https://twitter.com/avanslaars) has put together a [GitHub repo with a screencasting profile](https://github.com/avanslaars/code-profiles) that loads the settings he uses when recording screencasts.
+
+Here are some more settings that help remove some of the distractions:
+```
+"editor.minimap.enabled": false,
+"explorer.confirmDragAndDrop": false,
+"editor.fontSize": 18,
+"terminal.integrated.fontSize": 18,
+"workbench.activityBar.visible": false,
+"editor.quickSuggestions": false,
+"editor.suggestOnTriggerCharacters": false,
+"editor.wordBasedSuggestions": false,
+"editor.quickSuggestionsDelay": 1000000,
+"editor.parameterHints.enabled": false
+```
+
 ### Command line prompt
 
 If you will be showing your command line, we suggest using a minimal prompt to reduce distractions. This example prompt works well for screencasting:
