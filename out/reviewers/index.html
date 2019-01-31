@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" class="next-head next-head"/><title class="next-head">How to egghead — Content Reviewers Guide</title><link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" class="next-head"/><link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" class="next-head"/><link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" class="next-head"/><link rel="manifest" href="/static/site.webmanifest" class="next-head"/><link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5" class="next-head"/><link rel="shortcut icon" href="/static/favicon.ico" class="next-head"/><meta name="viewport" content="width=device-width, initial-scale=1" class="next-head"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" class="next-head"/><meta name="google-site-verification" content="IIrF63zU-1tJ9wTakA176fZd_hNrbW1QD_5oticuUv0" class="next-head"/><meta name="description" content="Learn how to egghead like a pro." class="next-head"/><meta name="msapplication-TileColor" content="#da532c" class="next-head"/><meta name="msapplication-config" content="/static/browserconfig.xml" class="next-head"/><meta name="theme-color" content="#ffffff" class="next-head"/><meta property="og:image" content="/static/og-image.jpg" class="next-head"/><meta property="og:image:width" content="279" class="next-head"/><meta property="og:image:height" content="279" class="next-head"/><meta property="og:title" content="Learn how to egghead like a pro." class="next-head"/><meta property="og:description" content="Reviewers Guide" class="next-head"/><meta property="og:url" content="https://learnreduxwithdanabramov.com/" class="next-head"/><link rel="preload" href="/_next/a7563e1a-a145-4cfe-8ab5-ee241b4b61ff/page/reviewers.js" as="script"/><link rel="preload" href="/_next/a7563e1a-a145-4cfe-8ab5-ee241b4b61ff/page/_app.js" as="script"/><link rel="preload" href="/_next/a7563e1a-a145-4cfe-8ab5-ee241b4b61ff/page/_error.js" as="script"/><link rel="preload" href="/_next/static/commons/main-e6bdebc0cceaa47511b5.js" as="script"/><style>html,body{margin:0;padding:0;background:white;font-family:'nimbus-sans',Helvetica,Arial,sans-serif;css-1t9ejpg;css-1vw1xnx;font-size:1rem;line-height:1.43rem;color:hsl(0,0%,10%);font-weight:400;}h1,h2,h3,h4{font-family:'nimbus-sans',Helvetica,Arial,sans-serif;color:hsl(0,0%,0%);font-weight:300;}h1{font-size:2rem;css-c0gk8t;}h2{font-size:1.75rem;margin:4rem 0 1rem 0;css-mujjaj;line-height:2rem;font-weight:500;position:relative;z-index:999;}h3{font-size:1.5rem;margin:2.5rem 0 1rem 0;css-1g7ot6q;line-height:1.5rem;font-weight:500;color:rgba(0,0,0,0.85);}h4{font-size:1.2rem;text-transform:uppercase;margin:6.5rem 0 1rem 0;-webkit-letter-spacing:3px;-moz-letter-spacing:3px;-ms-letter-spacing:3px;letter-spacing:3px;}img{max-width:98%;height:auto;padding:1rem 0;css-1lpk9wz;}pre{background:#fafafa;padding:25px;overflow-wrap:break-word;word-break:break-all;overflow-x:auto;css-y0c7vf;}pre > code{overflow-wrap:break-word;word-break:break-all;max-width:800px;}strong{font-weight:600;}p{font-weight:200;color:rgba(0,0,0,0.95);}p > a{overflow-wrap:break-word;word-break:break-all;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}a{-webkit-text-decoration:none;text-decoration:none;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);}a:hover{-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-color:inherit;text-decoration-color:inherit;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);}p > code{word-break:break-all;}ul > li{font-weight:200;color:rgba(0,0,0,0.85);margin-left:1.2rem;css-sywd4f padding:0.3rem 0;}strong{font-weight:500;}blockquote{color:rgba(0,0,0,0.85);font-style:italic;margin:0;padding:0 0 0 1rem;display:block;border-left:2px solid rgba(0,0,0,0.1);}ul{padding:0;}ol{margin-left:0;list-style-type:decimal;}ol,ol li{margin-left:0;padding-left:0;padding:0.3rem 0;}ol{margin-left:1.2rem;}.hljs-comment,.hljs-quote{color:#969896;}.hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-deletion{color:#cc6666;}.hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-meta,.hljs-link{color:#de935f;}.hljs-attribute{color:#f0c674;}.hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition{color:#b5bd68;}.hljs-title,.hljs-section{color:#81a2be;}.hljs-keyword,.hljs-selector-tag{color:#b294bb;}.hljs{display:block;overflow-x:auto;background:#1d1f21;color:#c5c8c6;padding:0.5em;}.hljs-emphasis{font-style:italic;}.hljs-strong{font-weight:bold;}.css-1c9ksjm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}@media (min-width:992px){.css-1c9ksjm{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}.css-1t6s810{z-index:9999;}.css-1hwv08q{z-index:1000;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);}.css-17eiiwp{z-index:1000;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);position:absolute;left:-320px;}.css-kpayab{background-color:white;cursor:pointer;position:fixed;z-index:1000;width:40px;height:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-top:3px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:white;border:0;left:0;outline:transparent;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);margin-top:1rem;margin-left:1rem;border:1px solid #eee;}@media (min-width:992px){.css-kpayab{background-color:white;}}.css-kpayab:hover{background-color:#F0F0F0;}@media (min-width:768px){.css-kpayab{margin-left:1rem;}}.css-kpayab::before{content:'';position:absolute;width:20px;height:1px;margin-top:-5px;background:#747474;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);}.css-kpayab::after{content:'';position:absolute;width:20px;height:1px;margin-top:5px;background:#747474;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);}.css-1c8ho0r{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);transition:all 500ms cubic-bezier(0.785,0.135,0.15,0.86);}@media (min-width:992px){.css-1c8ho0r{width:100vw;}}.css-1l95nvm{margin:0;padding:0;}.css-fa4c6k{max-width:70%;height:auto;}@media (min-width:768px){.css-fa4c6k{max-width:45%;}}.css-1ervvns{position:fixed;overflow-y:scroll;padding:2rem;-webkit-transition:all 250ms ease;transition:all 250ms ease;margin-left:0;background-color:white;box-shadow:0 10px 50px -10px rgba(0,0,0,0.15);}@media (min-width:992px){.css-1ervvns{position:fixed;top:0;height:100vh;padding:2rem 2rem;overflow-y:scroll;height:inherit;background-color:#fafafa;width:auto;box-shadow:none;}}.css-1ervvns::-webkit-scrollbar{width:0px;}.css-1ervvns::-webkit-scrollbar-track{background-color:#fafafa;}.css-1ervvns::-webkit-scrollbar-thumb{background-color:#f1f1f1;}.css-1088vzs{padding:0;margin:0;-webkit-transition:all 250ms ease;transition:all 250ms ease;}.css-1oqo186{-webkit-text-decoration:none;text-decoration:none;color:rgba(0,0,0,0.55);cursor:pointer;-webkit-transition:all 250ms ease;transition:all 250ms ease;font-size:0.85rem;padding-top:1rem;text-transform:uppercase;opacity:0.7;}.css-1oqo186:hover{color:rgba(0,0,0,1);-webkit-transition:all 250ms ease;transition:all 250ms ease;}.css-143pzod{-webkit-text-decoration:none;text-decoration:none;color:rgba(0,0,0,0.55);cursor:pointer;-webkit-transition:all 250ms ease;transition:all 250ms ease;}.css-143pzod:hover{color:rgba(0,0,0,1);-webkit-transition:all 250ms ease;transition:all 250ms ease;}.css-wkpw2c{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-5jd9fv{margin-top:-120px;padding-bottom:6rem;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-1seqt9b{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 1.25rem;}@media (min-width:576px){.css-1seqt9b{padding:0 2rem;}}@media (min-width:992px){.css-1seqt9b{padding:0 4rem;}}.css-qu36pk{margin-top:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 1.5rem 0 1.5rem;}@media (min-width:576px){.css-qu36pk{padding:0.5rem 2rem;margin-top:0;}}@media (min-width:992px){.css-qu36pk{padding:1.5rem 4rem;}}.css-1evodgs{opacity:0.2;background:black;height:1px;border:0;width:100%;margin-top:2rem;margin-bottom:1rem;}@media (min-width:576px){.css-1evodgs{margin-top:4rem;margin-bottom:0;}}.css-1uiogyi{white-space:nowrap;margin-bottom:3rem;text-align:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:6rem 0 3rem 0;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:relative;z-index:999;}.css-1uiogyi h1{color:#E8A304;font-weight:500;}@media (min-width:768px){.css-1uiogyi{padding:3rem 2rem;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;margin-bottom:5rem;}}@media (min-width:992px){.css-1uiogyi{padding:5rem 3rem;margin-bottom:5rem;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;text-align:left;}}.css-1kjaivd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;left:0;top:0;height:100vh;width:230px;}.css-1kjaivd h4{margin:0;}.css-1kjaivd a{font-size:0.85rem;-webkit-text-decoration:none;text-decoration:none;}.css-1kjaivd >:last-child{margin-bottom:6rem;}@media (min-width:768px){.css-1kjaivd >:last-child{margin-bottom:6rem;}}.css-1kjaivd >:first-child{margin-top:0;padding:0;}.css-1kjaivd >:nth-child(3){margin-top:0;padding:0;}.css-1kjaivd >:nth-child(2){display:none;visibility:hidden;}.css-14skxn6{max-width:800px;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow-wrap:break-word;word-wrap:break-word;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}.css-14skxn6 h4:first-child{display:none;visibility:hidden;}.css-14skxn6 h1{font-weight:300;font-size:2.35rem;margin-bottom:3.5rem;color:#E8A304;}@media (min-width:768px){.css-14skxn6 h1{font-size:3.5rem;}}@media (min-width:992px){.css-14skxn6 h1{font-size:3rem;}}.css-14skxn6 p > a{color:#E8A304;}.css-14skxn6 a{color:#E8A304;}.css-14skxn6 a:visited{color:#E8A304;}.css-14skxn6 div{width:100%;max-width:100vw;}.css-14skxn6 code{max-width:800px;width:100%;}</style><link rel="stylesheet" href="https://use.typekit.net/xkw2skg.css"/></head><body><div id="__next"><div><div class="css-1c9ksjm"><aside class="css-1t6s810"><div class="css-1hwv08q"><div class="css-17eiiwp"><nav class="css-1ervvns"><div><div class="css-1kjaivd"><span class="css-1oqo186 ew1l4fs1"></span><a href="#introduction"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Introduction</span></ul></a><span class="css-1oqo186 ew1l4fs1">Review</span><a href="#review-101"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Review 101</span></ul></a><a href="#identify-changes"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Identify Changes in Frameworks</span></ul></a><a href="#title-lessons"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Title Lessons</span></ul></a><a href="#review-template"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Review Template</span></ul></a><span class="css-1oqo186 ew1l4fs1">Update Code</span><a href="#set-up-github"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Set Up Github</span></ul></a><a href="#update-plunker"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Update Plunker</span></ul></a><a href="#build-plnkr-embed-link"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Build Plnkr Embed Link</span></ul></a><a href="#review-template"><ul class="css-1088vzs"><span class="css-143pzod ew1l4fs0">Review Template</span></ul></a></div></div></nav></div></div><button class="css-kpayab"></button></aside><div class="css-1c8ho0r"><div><header class="css-1uiogyi"><div><h1 class="css-1l95nvm">egghead Reviewers Guide</h1></div><img src="static/eggoReviewer.png" alt="How to egghead - 101 Instructor Guide" class="css-fa4c6k"/></header><div class="css-wkpw2c"><div class="css-5jd9fv"><div class="css-1seqt9b"><div class="css-14skxn6 ej2s8sg0"><h4></h4></div></div><article id="introduction" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h2>Overview</h2>
+<p>egghead.io content must be constantly reviewed to ensure that it is up to date so that members are delivered learning materials that help them meet their personal and professional goals.</p>
+<p>To accomplish this, humans must watch the lesson videos, follow the instructions, and make the code work. Often the content in the video will become out of date because of the nature of software. New versions are released constantly. In addition to video content, we provide and maintain text based code content with the lessons. Unlike the videos, this code content can be updated and maintained by a lesson reviewer.</p>
+<h3>Standard operating procedures:</h3>
+<ol>
+<li>Watch the lesson video.</li>
+<li>Review the lesson code for consistency with the video.</li>
+<li>Update the lesson code to latest versions of the main libraries/tools that are central to the lesson.</li>
+<li>Note any major differences (add code comments as required)</li>
+<li>If discrepancies are major, seek a second opinion.</li>
+<li>If issues can’t be salvaged, add a warning on the lesson (errata) and notify review team lead for next steps.</li>
+</ol>
+<p>For a detailed description of what you need to do click this link —&gt; +Review egghead.io Content </p>
+<h3>Build Strong Context</h3>
+<p>In addition to these steps, we want to ensure that the lessons have strong titles, meaningful tags associated with them, have a transcript, and maintain the software versions presented to the user.</p>
+<p>We want the support copy (titles and description) to add context to the lesson so that the lesson can stay laser focused on a single topic. The <a href="https://instructor.egghead.io/guide/02-Creating-Lessons/04-what-should-I-teach.html#clearly-summarize-the-lessons">egghead.io instructor guide</a> defines exactly what we want from a description. The guide in general is great for understanding what we want from lessons. </p>
+<h3>Review Documents</h3>
+<p>When the review is complete, notes should be compiled into a lesson review report including any links to updated code and recommendations. When these notes have been reviewed and approved, the lesson will be updated accordingly.</p>
+<p>A large portion of the content on egghead.io is in courses. Courses consist of a series of individual lessons, so for the most part, reviewing a course is a repetition of the steps above for the individual lessons. As with individual lesson review, a course review will produce a report that will be shared with the review team lead for feedback before implementing any changes.</p>
+<p>An example template can be found here: +Review Template </p>
+<h3>Tools for Reviewing</h3>
+<p>While specific knowledge of the frameworks and libraries being taught on egghead isn’t required, a working knowledge of basic programming concepts is required. The majority of our lessons are aimed at JavaScript developers, and we don’t cater to beginners. </p>
+<p>We utilize git extensively, so a working knowledge of the tool is required. Generally speaking we will use Github. Git is used to maintain transcripts and lesson code.</p>
+<p>We also use several “live” code tools. Plunker is the primary tool we use for the purpose of displaying working code examples in the browser.</p>
+<p>For help installing the various tools involved in the review process you can follow +Prerequisites to Content Excellence </p></div></div><hr class="css-1evodgs ej2s8sg1"/></article></div><div class="css-5jd9fv"><div class="css-1seqt9b"><div class="css-14skxn6 ej2s8sg0"><h4>Review</h4></div></div><article id="review-101" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Review 101</h1>
+<p>Video training content goes stale. egghead.io should be as up to date as possible when it comes to content. Because of the nature of video we need to monitor each lesson on multiple levels.</p>
+<br/>
+<h2>Lesson Video</h2>
+<p>An excellent coding screencast will focus on core concepts and have the ability to remain “evergreen” through minor revisions of the library that it is demonstrating. We need to continue to monitor this to make sure that it is the case.</p>
+<p>When differences exist we can take several courses of action:</p>
+<ul>
+<li>update the code sample and use comments in the code to notify the user that it has changed from the video</li>
+<li>Annotate the lesson’s page to tell the student what is wrong with the lesson</li>
+<li>Replace the lesson video/code with an updated version</li>
+<li>mark the lesson as obsolete/deprecated</li>
+<li>record a new version (vs replacement)</li>
+</ul>
+<br/>
+<h3>Update Lesson Code Sample</h3>
+<p>This is the most common action taken by the reviewer. The lesson code sample should reflect the current version(s) for the libraries it is demonstrating (libraries are updated often!). The sample code can correct for minor differences in the code demonstrated in the lesson video, noting with comments when this has been done.</p>
+<h3>Annotate the lesson page</h3>
+<p>When there is some significant breaking difference in the lesson video and code sample, we can create a notification to be displayed prominently on the lesson page. This notification comes in the form of an <code>errata</code> which is shown below:</p>
+<p><img src="static/illos/reviewers/01-Review/00-errata-example.png" alt="Errata Example"/></p>
+<h3>Replace the lesson video/code</h3>
+<p>If the lesson still has significant value conceptually, we can re-record the lesson and produce an updated code sample. We want to do this for popular lessons and maintain our SEO.</p>
+<p>Make a note of why you think the lesson needs to be re-recorded in the review document.</p>
+<h3>Mark as obsolete</h3>
+<p>Like Annotation above, but <strong>more deadly</strong>! :skull:</p>
+<h3>Record a new lesson</h3>
+<p>Sometimes we will want to record a new lesson that presents the underlying concept with the updated version instead of replacing it in-place</p></div></div><hr class="css-1evodgs ej2s8sg1"/></article><article id="identify-changes" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Identify Change(s) in a Framework</h1>
+<h2>Project Structure</h2>
+<p>JavaScript frameworks are continually changing and updating. A lot of the time this is not an issue for our lessons.</p>
+<p>JavaSript projects keep track of changes through a <code>package.json</code> that can be found in the root of the project. The <code>package.json</code> file contains the meta-data for the project like the authors&#x27; name, a <code>scripts</code> section, <code>dependencies</code> section, and <code>devDependencies</code> section. </p>
+<p>The <code>dependencies</code> section contains the list of all the libraries used in the project that are essential for the application to run (e.g., React, Angular, Redux, RxJS).</p>
+<pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;redux-course&quot;</span>,
+  <span class="hljs-attr">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>,
+  <span class="hljs-attr">&quot;private&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;dependencies&quot;</span>: {
+    <span class="hljs-attr">&quot;json-server&quot;</span>: <span class="hljs-string">&quot;^0.13.0&quot;</span>,
+    <span class="hljs-attr">&quot;react&quot;</span>: <span class="hljs-string">&quot;^16.4.0&quot;</span>,
+    <span class="hljs-attr">&quot;react-dom&quot;</span>: <span class="hljs-string">&quot;^16.4.0&quot;</span>,
+    <span class="hljs-attr">&quot;react-redux&quot;</span>: <span class="hljs-string">&quot;^5.0.5&quot;</span>,
+    <span class="hljs-attr">&quot;react-router-dom&quot;</span>: <span class="hljs-string">&quot;^4.1.1&quot;</span>,
+    <span class="hljs-attr">&quot;redux&quot;</span>: <span class="hljs-string">&quot;^4.0.0&quot;</span>,
+    <span class="hljs-attr">&quot;redux-devtools-extension&quot;</span>: <span class="hljs-string">&quot;^2.13.2&quot;</span>,
+    <span class="hljs-attr">&quot;redux-thunk&quot;</span>: <span class="hljs-string">&quot;^2.2.0&quot;</span>,
+    <span class="hljs-attr">&quot;yarn&quot;</span>: <span class="hljs-string">&quot;^1.6.0&quot;</span>
+  },
+  <span class="hljs-attr">&quot;devDependencies&quot;</span>: {
+    <span class="hljs-attr">&quot;react-scripts&quot;</span>: <span class="hljs-string">&quot;1.1.4&quot;</span>
+  },
+  <span class="hljs-attr">&quot;scripts&quot;</span>: {
+    <span class="hljs-attr">&quot;start&quot;</span>: <span class="hljs-string">&quot;react-scripts start&quot;</span>,
+    <span class="hljs-attr">&quot;production&quot;</span>: <span class="hljs-string">&quot;json-server --static ./build db.json&quot;</span>,
+    <span class="hljs-attr">&quot;build&quot;</span>: <span class="hljs-string">&quot;react-scripts build&quot;</span>,
+    <span class="hljs-attr">&quot;test&quot;</span>: <span class="hljs-string">&quot;react-scripts test --env=jsdom&quot;</span>,
+    <span class="hljs-attr">&quot;eject&quot;</span>: <span class="hljs-string">&quot;react-scripts eject&quot;</span>,
+    <span class="hljs-attr">&quot;dev-server&quot;</span>: <span class="hljs-string">&quot;json-server -p 8080 db.json&quot;</span>
+  }
+}</code></pre>
+<p>Each of these dependencies has a version number listed that informs npm (or Yarn) to download the version specified.</p>
+<p>The version number follows the Semantic Versioning Specification (SemVer).</p>
+<h2>Semantic Versioning (SemVer)</h2>
+<p>SemVer attempts to provide more meaning of the underlying changes in a project through additional structure to version numbers. </p>
+<p>Each Version X.Y.Z must be non-negative numbers starting and (supposed to) have non-leading zeroes (though many libraries start at <code>0.1.0</code>).</p>
+<ul>
+<li>
+<p>X is a <strong>MAJOR</strong> version</p>
+</li>
+<li>
+<p>Y is a <strong>MINOR</strong> version</p>
+</li>
+<li>
+<p>Z is a <strong>PATCH</strong> version</p>
+</li>
+</ul>
+<p>With these versions specified, <code>0.2.10</code> is ordered before <code>0.3.1</code> and subsequently, <code>1.0.0</code> comes after both <code>0.2.10</code> and <code>0.3.1</code>.</p>
+<p>A PATCH version is incremented when internal bugs are fixed in a library that does not affect any projects. MINOR versions are incremented when there is &#x27;backward compatible&#x27; features introduced to a library or significant improvements to the internal workings of the library are added. MAJOR versions are incremented when there are <strong>Breaking Changes</strong> introduced to the library.</p>
+<p>In the previously mentioned example, theoretically, there are backward compatible features added in-between the packages <code>0.2.10</code> and <code>0.3.1</code> versions. When the package reached <code>1.0.0</code>, it can be assumed that it contains breaking changes if you wrote your application on a previous version (e.g., <code>0.2.10</code> or <code>0.3.1</code>).</p>
+<h3>SemVer Version Ranges</h3>
+<p>A lot of the time, specifying a single version of a technology is too fine grain and restrictive because subsequent MINOR and PATCH updates won&#x27;t break the project that the dependency is in. It can be annoying to have to update version numbers <em>every</em> time a MINOR or PATCH version is released.</p>
+<p>This is why SemVer has version ranges which can be denoted a few different ways. The simplest ways are to use a set of primitive operators, which are: <code>&lt;</code> Less than, <code>&lt;=</code> Less than or equal to, <code>&gt;</code> Greater than, <code>&gt;=</code> Greater than or equal to, and <code>=</code> Equal. <code>=</code> can be assumed when no operator is present. </p>
+<p>For review, a range specifying <code>&gt;15.3.0 &lt;16.4.1</code> says the course started at version <code>15.3.0</code> and is valid up to all version (excluding) <code>16.4.1</code> where a <code>&lt;=16.4.1</code> will specify the version including <code>16.4.1</code>.</p>
+<p>Simply putting <code>15 - 16</code> is another way to specify a range that will encompass all MINOR and PATCH versions contained within the MAJOR versions <code>15</code> and <code>16</code>. <strong>This is preferred</strong> as it is the most flexible way to specify a version range. If more specifics are required, other operators can be used.</p>
+<p>To make versions easier to specify, the squiggly <code>~</code> and caret <code>^</code> also identify ranges. When <code>~</code> is placed before version (e.g., <code>~15.0.0</code>), it specifies all versions incremented at the PATCH level. In other words <code>15.0.1</code>, <code>15.0.3</code>, or <code>15.0.19</code> are all valid. In other words, <code>~15.0.0</code> equals <code>&gt;=15.0.0 &lt;15.1.0</code>.</p>
+<p>The caret <code>^</code> specifies all version increments at the MINOR and PATCH levels. <code>^15.0.0</code> specifies that any of these following versions are valid: <code>15.0.1</code>, <code>15.1.3</code>, or <code>15.5.0</code>. in other words, <code>^15.0.0</code> would equal the range <code>&gt;=15.0.0 &lt;16.0.0</code>.</p>
+<p>A great place to explore semantic versioning is the <a href="https://semver.npmjs.com/">npm SemVer calculator</a></p>
+<h3>Pre-release Versions</h3>
+<p>Many projects will have several pre-release versions published before an official version is published. These pre-release versions are subject to change and can be typically ignored when updating lesson code. </p>
+<p>Pre-release tags range from alpha, beta, and rc (release candidate). With the specified order as follows: 1.0.0-alpha &lt; 1.0.0-alpha.1 &lt; 1.0.0-alpha.beta &lt; 1.0.0-beta &lt; 1.0.0-beta.2 &lt; 1.0.0-beta.11 &lt; 1.0.0-rc.1 &lt; 1.0.0.</p>
+<p>It is good to note that a pre-release is available and what stage they are in as that likely means a MAJOR version update is close to being published and will trigger more reviews.</p>
+<h2>Review with SemVer Versions in Mind</h2>
+<p>You need to identify these <strong>Breaking Changes</strong>​​​​​​​ and keep them in mind when watching through lessons.</p>
+<p>Each framework or library will have a CHANGELOG.md that will record the changes of that specific framework. (link to example) Usually found on the respective frameworks github page.</p>
+<p>Most frameworks use Semantic Versioning (SemVer) to keep track of updates. We are mostly interested in Major and Minor</p>
+<p>Under each new version, there will be a Breaking Changes (or similarly named) section that is where you will see what exactly will break any lesson examples that egghead might have.</p>
+<h2>Track Course Dependency Information</h2>
+<p>egghead is now keeping track of all the relevant dependency versions related to a course</p>
+<p>i.e., A course on &quot;State Management with Mobx in React&quot; will track the version range that starts with the course published version and ends with the current version the course example.</p>
+<p>Data for this looks like: </p>
+<pre><code class="hljs language-json">{
+        slug: &#x27;manage-complex-state-in-react-apps-with-mobx&#x27;,
+        dependencies: {
+          mobx: &#x27;<span class="hljs-number">2</span> - <span class="hljs-number">5</span>&#x27;,
+          react: &#x27;<span class="hljs-number">15</span> - <span class="hljs-number">16</span>&#x27;,
+        },
+        reviews: [
+          {
+            performedOn: &#x27;<span class="hljs-number">2018</span><span class="hljs-number">-07</span><span class="hljs-number">-17</span>&#x27;,
+            performedBy: <span class="hljs-number">248653</span>,
+            scopeOfReview: &#x27;full course lesson review&#x27;,
+            notes: [
+              {
+                type: &#x27;major issue&#x27;,
+                title: &#x27;removed line- “useStrict(<span class="hljs-literal">true</span>);&#x27;,
+                details: &#x27;The useStrict terminology is no longer recognized&#x27;,
+              },
+              {
+                type: &#x27;major issue&#x27;,
+                title: &#x27;Keys and values now return iterators&#x27;,
+                details:
+                  &#x27;keys and values now return iterators, to return an array, use Array.from with the iterator https://github.com/mobxjs/mobx/issues/<span class="hljs-number">1488</span>&#x27;,
+              },
+            ],
+          },
+        ],
+      },</code></pre>
+<p>As seen above, every review is recorded with the date it was done (in YYYY-MM-DD format), the scope, and most importantly, any notes or issues that came up during the review.</p>
+<p>The range specifies the range that starts with package versions that the course was released on and ends with the latest version the course was updated to. For the example specified above, the course was released with React v15 and has since been updated to React v16. The specific MINOR and PATCH versions aren&#x27;t necessary to specify here because there are no major breaking changes of concern apart from the notes provided.</p></div></div><hr class="css-1evodgs ej2s8sg1"/></article><article id="title-lessons" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Title a egghead.io lesson</h1>
+<h2>[How Do I…]<!-- --> Standard</h2>
+<p>The title of the video needs to reflect the question that is answered in the video.  Finishing the <code>How do I…</code> question is a great way to accomplish this and is the standard for our lessons.</p>
+<p>This is a standard that we have adopted recently so many of our older lessons and courses do not have this standard applied and need to be updated accordingly.</p>
+<p>Another way to think about the title of a video is that it is the summary of the description (of the video). If the summary answers the question the title proposes, you are on the right track.</p>
+<p><strong>90 character limit</strong></p>
+<h2>Search Engine Optimization (SEO)</h2>
+<p>Our titles are also one of the main resources we use for exposing our content to the internet. We want to include the technology that the lesson is covering in the title.</p>
+<p>Here&#x27;s a list of lesson title examples and how we updated the titles to our new standard.</p>
+<h3>Old Title</h3>
+<ul>
+<li>Filters</li>
+<li>Observables are almost like Functions</li>
+<li>Creation operator: of()</li>
+<li>Understand Elm’s Bool Type</li>
+</ul>
+<h3>Updated Title</h3>
+<ul>
+<li>Filter Input in AngularJS</li>
+<li>Return Multiple Values with Observables in RxJS</li>
+<li>Deliver Synchronous Values with the RxJS of() Operator</li>
+<li>Pattern Match Expressions with Elm’s Boolean Type</li>
+</ul></div></div><hr class="css-1evodgs ej2s8sg1"/></article><article id="review-template" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Review Template</h1>
+<pre><code>Review Author:
+Date of Review:
+Transcripts Enhanced? (Y / N):
+Link to Course:
+</code></pre>
+<pre><code>Course Notes:
+</code></pre>
+<pre><code>Breaking Changes Between Video and Latest Version:
+</code></pre>
+<pre><code>Ideas for Potential Lessons:
+</code></pre>
+<h4>Lesson Title → Updated Title</h4>
+<pre><code> Notes:
+ Summary:
+ Updated Description:
+ Link to Plunker:
+ Changes Made in Code:
+</code></pre></div></div><hr class="css-1evodgs ej2s8sg1"/></article></div><div class="css-5jd9fv"><div class="css-1seqt9b"><div class="css-14skxn6 ej2s8sg0"><h4>Update Code</h4></div></div><article id="set-up-github" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h2>Set Up the Existing Github Repo Locally</h2>
+<p><em>*These steps require a working knowledge of git and interacting with github, if you need a tutorial watch: <a href="https://egghead.io/courses/practical-git-for-everyday-professional-use">Practical Git for Everyday Professional Use</a></em></p>
+<p>You&#x27;ll need to locate the lesson code on the <a href="https://github.com/eggheadio-projects">eggheadio-projects</a> in github. This can be done using the url <code>slug</code> found on the course page of a given course:</p>
+<p><img src="static/illos/reviewers/02-Update-Code/00-find-course-url-slug.png" alt="course url slug"/></p>
+<ul>
+<li>Copy the <code>slug</code> into the github search bar to find the corresponding repository.</li>
+</ul>
+<p><img src="static/illos/reviewers/02-Update-Code/00-find-corresponding-repository.png" alt="corresponding repository"/></p>
+<ul>
+<li>Navigate into the repository and get the link to clone the repository.</li>
+</ul>
+<p><img src="static/illos/reviewers/02-Update-Code/00-copy-link-to-clone-repo.png" alt="corresponding repository"/></p>
+<ul>
+<li>
+<p>Navigate to your terminal</p>
+</li>
+<li>
+<p>Create a directory where the egghead repositories can live (e.g. a folder on your Desktop).</p>
+</li>
+</ul>
+<p>Run:</p>
+<pre><code class="hljs language-bash">$ git <span class="hljs-built_in">clone</span> link-you-copied-from-github</code></pre>
+<p>Now you are finally ready to update the code example.</p></div></div><hr class="css-1evodgs ej2s8sg1"/></article><article id="update-plunker" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Update Plunker</h1>
+<p>If you&#x27;re here, you&#x27;ve determined that the lesson code in the current video you are reviewing needs to be updated.</p>
+<p>Note which lesson this is in the Review Document but go ahead and update the example.</p>
+<p>Our plunker examples load through github. This means we will need to check that the updated code will work in plunker then update the code found in github.</p>
+<h2>Update the Code</h2>
+<p>The code examples are found underneath the video discription in the <code>code</code> tab of the lesson
+<img src="static/illos/reviewers/02-Update-Code/01-plunker-code-example.png" alt="Code Example"/></p>
+<p><em>Step 1</em>
+<img src="static/illos/reviewers/02-Update-Code/01-navigate-to-index.png" alt="Navigate to index.html"/></p>
+<p><em>Step 2</em>
+<img src="static/illos/reviewers/02-Update-Code/01-note-version.png" alt="Note the version"/></p>
+<p>In step 2 you’re also going to note the name of the framework, which is found right after the version number. Copy it but leave off the extension. So copy rxjs but leave of the .js in our case.</p>
+<p><em>Step 3</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/01-use-unpkg.png" alt="Navigate to unkpg"/></p>
+<p>You’ll then type in your search bar <code>unpkg.com/</code> then you’ll paste in the framework you just copied, you’ll then type in a <code>/</code> and hit enter.</p>
+<p><em>Step 4</em> </p>
+<p><img src="static/illos/reviewers/02-Update-Code/01-Click-the-framework+js-link.png" alt="click the framework + JS link"/></p>
+<p>Note that the <code>bundle</code> file will often be named <code>umd</code> or <code>dist</code> but should contain the correct file regardless.</p>
+<p><em>Step 5</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/01-test-functionality-plnkr.gif" alt="Test the functionality of the app"/></p>
+<p><em>Step 6</em>
+<img src="static/illos/reviewers/02-Update-Code/01-update-the-cdn-plnkr.gif" alt="Replace the cdn"/></p>
+<p><em>Final Step</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/01-verify-the-app-works-plnkr.gif" alt="Verify the app works"/></p></div></div><hr class="css-1evodgs ej2s8sg1"/></article><article id="build-plnkr-embed-link" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Linking to Plunker</h1>
+<p>Plunker has a public UI, but we primary use its embeds. The first is the typical approach, where you use the public UI and setup your example code there. This is very functional, and will work just fine. This has been done for some stand-alone lessons on eggheadio.</p>
+<p>Plunker also supports loading the code for examples directly into the embed via Github 😳 This is an amazing feature as it allows us to version control the examples that are presented to the user. This means that we (egghead) can handle maintenance on the code examples and keep them updated and supported for a much longer time. This is critical for course content!</p>
+<h2>Link a Plunker embed to a Github repo</h2>
+<p>Linking a Github repository to plunker is fairly simple and involves configuring the plunker embed url. We start with <code>https://embed.plnkr.co/</code>, which is the base embed url. To link to Github we configure the url by adding:</p>
+<pre><code>https://embed.plnkr.co/github/{profile-name}/{repository}/{branch} 
+</code></pre>
+<p><strong>Note:</strong> We have to load our embeds through <code>https</code> (instead of <code>http</code>) or the embed won&#x27;t load on egghead.</p>
+<p>{branch} can be replaced with {tag|sha1} depending on how your repo is set up. If your repo is set up with an example in individual folders, you can add that /path to the embed url.</p>
+<p><a href="https://github.com/eggheadio-projects/nlp-in-javascript-with-natural">Click here to see an example repo</a>. This is divided into a folder per lesson.</p>
+<h2>Additional Plunker embed config</h2>
+<p>URL parameters can be added to affect how the embed presents itself. The most used feature is showing specific files (the default being the index and preview). Add <code>?show=</code> to the end of the url with the various filenames separated via commas.</p>
+<pre><code>https://embed.plnkr.co/github/eggheadio-projects/egghead-wikipedia-demo/angular-2-building-an-instant-search-with-angular-2-combining-observables-with-flatmap?preview=plnkr.html&amp;show=src%2Fapp%2Fapp.component.ts,preview
+</code></pre>
+<p>Notice the additional parameters appended to the end of the link.</p>
+<pre><code>?preview=plnkr.html&amp;show=src%2Fapp%2Fapp.component.ts,preview
+</code></pre>
+<p><code>?preview=plnkr.html</code> allows us to set the preview panel to display the <code>plnkr.hmtl</code> page that we made instead of <code>index.html</code> which would be the default case.</p>
+<p><code>&amp;show=src%2Fapp%2Fapp.component.ts,preview</code> tells plunker to show the file <code>src/app/app.component.ts</code> as well as run the code in the <code>preview</code> pane.</p>
+<p>We specify which file we want shown to the viewer on load as often times the instructors will work on a single.</p>
+<p>An complex example of this is shown <a href="https://embed.plnkr.co/github/eggheadio-projects/egghead-wikipedia-demo/angular-2-building-an-instant-search-with-angular-2-combining-observables-with-flatmap?preview=plnkr.html&amp;show=src%2Fapp%2Fapp.component.ts,preview">here</a>. There are quite a few additional parameters that can be used which are all documented in this <a href="https://ggoodman.gitbooks.io/plunker/content/embed.html">gist</a>.</p></div></div><hr class="css-1evodgs ej2s8sg1"/></article><article id="review-template" class="css-qu36pk"><div class="css-14skxn6 ej2s8sg0"><span></span><div><h1>Update a JSBin Code Example</h1>
+<p>The new standard for our code examples is to use plunker. If you are here, that means you found a rogue lesson that is still using JSBin.</p>
+<p>Note which lesson this is in the <strong>Review Document</strong> but go ahead and update the example.</p>
+<p>This process requires that you are logged in with eggheadio JSBin credentials. If you don&#x27;t already have this, request it. 😄</p>
+<h2>Watch the Video</h2>
+<p>First thing’s first, you have to watch the egghead video that you are tasked with reviewing.</p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-watch-the-video.png" alt="Watch the video"/></p>
+<p>There are a few things you need to keep in mind while you watch the video</p>
+<ol>
+<li>Pay attention to the code in the video, does it match the example code down bellow? </li>
+<li>Pay attention to how the resulting app works at the end of the video</li>
+</ol>
+<p>After watching the video and keeping these things in mind you are next going to check out the example code below the video.</p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-example-code.png" alt="Example Code"/></p>
+<p>First you’re going to update the example code to the latest version of the framework used.</p>
+<p>Let’s see how this is done.</p>
+<h2>Update JS Bin</h2>
+<p><em>Step 1</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-switch-to-html-tab.png" alt="Switch to HTML tab"/></p>
+<p><em>Step 2</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-locate-script-tags.png" alt="Switch to HTML tab"/></p>
+<p>In step 2 you’re also going to note the name of the framework, which is found right after the version number. Copy it but leave off the extension. So copy angular but leave of the .js in our case. </p>
+<p><em>Step 3</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-use-unpkg.png" alt="Navigate to unkpg"/></p>
+<p>You’ll then type in your search bar unpkg.com/  then you’ll paste in the framework you just copied, you’ll then type in a / and hit enter</p>
+<p><em>Step 4</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-Click-the-framework+js-link.png" alt="Navigate to unkpg"/></p>
+<p>Then you’ll copy the url! </p>
+<p>Return to the lesson page</p>
+<p><em>Step 5</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-click-this-link.png" alt="Navigate to unkpg"/></p>
+<p><em>Step 6</em>
+<img src="static/illos/reviewers/02-Update-Code/03-test-the-app.gif" alt="Test the App"/></p>
+<p><em>Step 7</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-update-the-cdn.gif" alt="Update the Cdn"/></p>
+<p><em>Final Step</em></p>
+<p><img src="static/illos/reviewers/02-Update-Code/03-verify-the-app-works.gif" alt="Update the Cdn"/></p>
+<p>Paste the url to the JSBin in the Review document.</p></div></div><hr class="css-1evodgs ej2s8sg1"/></article></div></div></div></div></div></div></div><div id="__next-error"></div><script>
+          __NEXT_DATA__ = {"props":{"pageProps":{}},"page":"/reviewers","pathname":"/reviewers","query":{},"buildId":"a7563e1a-a145-4cfe-8ab5-ee241b4b61ff","assetPrefix":"","nextExport":true,"err":null,"ids":["1jvxovx","1c9ksjm","1t6s810","1hwv08q","17eiiwp","kpayab","1c8ho0r","1l95nvm","fa4c6k","1ervvns","1088vzs","1oqo186","143pzod","wkpw2c","5jd9fv","1seqt9b","qu36pk","1evodgs","1uiogyi","1kjaivd","14skxn6"],"chunks":[]}
+          module={}
+          __NEXT_LOADED_PAGES__ = []
+          __NEXT_LOADED_CHUNKS__ = []
+
+          __NEXT_REGISTER_PAGE = function (route, fn) {
+            __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+          }
+
+          __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
+            __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
+          }
+
+          false
+        </script><script async="" id="__NEXT_PAGE__/reviewers" src="/_next/a7563e1a-a145-4cfe-8ab5-ee241b4b61ff/page/reviewers.js"></script><script async="" id="__NEXT_PAGE__/_app" src="/_next/a7563e1a-a145-4cfe-8ab5-ee241b4b61ff/page/_app.js"></script><script async="" id="__NEXT_PAGE__/_error" src="/_next/a7563e1a-a145-4cfe-8ab5-ee241b4b61ff/page/_error.js"></script><script src="/_next/static/commons/main-e6bdebc0cceaa47511b5.js" async=""></script></body></html>
