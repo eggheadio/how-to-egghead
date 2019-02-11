@@ -12,13 +12,11 @@ We’re here to help you. Before you record your video, use your private Slack c
 
 We’re all about supportive, ongoing feedback at egghead, so when you’re ready to press record, you’re *really* ready.
 
-
 ![An illustration would work here too 🙂](https://media1.giphy.com/media/111ebonMs90YLu/giphy.gif)
 
 ### Feedback
 
-Before you upload your video (if we’ve invited you to be an instructor) or tweet it at [@eggheadio](https://twitter.com/eggheadio) (if you’re auditioning), ask yourself:
-
+Before you upload your video to your slack channel (if we’ve invited you to be an instructor), ask yourself:
 
 - Is my screen set to 1280x720 (720p)? (In HiDPI, if possible?)
 - Is my code example easy to understand?
