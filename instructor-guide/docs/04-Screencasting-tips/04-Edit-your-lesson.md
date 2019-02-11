@@ -12,6 +12,24 @@ In the egghead lesson shown below, John Lindquist shows how he uses ripple delet
 
 https://www.dropbox.com/s/a5ahcas02qtxu99/egghead-edit-with-ripple-delete.mp4?dl=0
 
+## ⚡️ speed up/slow down video
+
+Sometimes you want to speed over some unimportant parts or slow down important parts. You can do this in a controlled percentage wide format in Screenflow ([instructions here](https://www.youtube.com/watch?v=Pu4b-ECFAYk)).
+
+Alternatively, you can do it interactively by holding down `Option` while dragging the edges of a clip to do the same thing. Sped up clips will show a :rabbit2: and slowed clips will have a :turtle:. This is handy for stretching or shrinking a clip to be a specific size, **and** you can do it with multiple clips at once.
+
+![stretch clip time](https://user-images.githubusercontent.com/6764957/52251445-fb72e480-28a0-11e9-8b32-304670ce2e0e.gif)
+
+
+## ⚡️ annotate video
+
+You can annotate your videos with arrows and boxes by using the Annotations tool in the top right in the inspector pane.
+
+![image](https://user-images.githubusercontent.com/6764957/52251395-ad5de100-28a0-11e9-9b18-e80056582711.png)
+
+
+They act like regular video clips so you can fade them in and out, apply animations, etc.
+
 
 
 ### Editing with Premiere
