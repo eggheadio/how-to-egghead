@@ -22,7 +22,7 @@ The amount you’re paid depends on the overall gross subscription revenue, and 
 
 *egghead_monthly_revenue * ( your_segments / total_segments ) * royalty_percent*
 
-![royalty_crown](static/illos/ch1_s2_royaltycrown.png)
+![royalty_crown](/static/illos/ch1_s2_royaltycrown.png)
 
 When you start making one-off lessons, the royalties will be small. But stick with it, keep producing, and your monthly royalties could hit four figures. Cha-ching.
 
@@ -58,7 +58,7 @@ Many people create a lesson or two, then stop. There are a variety of reasons pe
 
 One of our primary motivations for creating egghead was to help smart humans get reliable recurring income by sharing their knowledge. This kind of income can change how you think of employment. If you're making $1,000 a month from some content you made a year ago, what can that do for you? That's rent! (Unless you live in the Bay Area or NYC—sorry!) egghead royalties could be the difference between staying in a high-paying gig you hate and taking a position you truly love with an organization that can't afford talent of your caliber. How great would that be?
 
-![piggy_bank](static/illos/ch1_s7_piggybank.png)
+![piggy_bank](/static/illos/ch1_s7_piggybank.png)
 
 Hopefully you’re already in that position, but if not, we want to help you get there. We're totally obsessed, and will do everything we can to support and amplify our instructors. We're in this to have a job that we love, work with amazing, diverse people across the globe, and help people improve their lives by learning how to develop software.
 

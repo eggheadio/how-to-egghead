@@ -3,7 +3,7 @@ Good audio starts with quality gear. Your laptop’s built-in microphone sounds 
 
 When you become an egghead instructor, we hook you up! As soon as you have a draft lesson almost ready to publish, we’ll send you a waterproof Pelican case full of professional-grade audio recording equipment. 📬
 
-![photo of open case with egghead gear inside](static/instructor/audio-setup/open-case.jpg)
+![photo of open case with egghead gear inside](/static/instructor/audio-setup/open-case.jpg)
 
 Here’s what you’ll be getting:
 
@@ -14,21 +14,21 @@ Here’s what you’ll be getting:
 - 1 XLR cable to connect the microphone to the USB interface
 - Badass by Kathy Sierra (to inspire your great ideas)
 
-![all the contents layed out to view](static/instructor/audio-setup/all-contents.jpg)
+![all the contents layed out to view](/static/instructor/audio-setup/all-contents.jpg)
 
 Let’s go through each piece of equipment and explain how you’ll use it.
 
 
 ### Microphone boom
 
-![photo of microphone boom](static/instructor/audio-setup/stand.jpg)
+![photo of microphone boom](/static/instructor/audio-setup/stand.jpg)
 
 The boom is a stand for your mic. Booms can range in size and shape. (Action movies require bigger booms than egghead lessons.) This is a very nice, sturdy boom from Germany that folds down for easy storage in the case.
 
 
 ### The microphone
 
-![photo of microphone](static/instructor/audio-setup/mic.jpg)
+![photo of microphone](/static/instructor/audio-setup/mic.jpg)
 
 Obviously an important piece of equipment! The **Shure BETA 87a** is a [supercardioid](http://blog.shure.com/multi-pattern-microphones-what-where-and-how/) mic, which refers to how it picks up sound: It’s forgiving and blocks out ambient noise.
 
@@ -43,7 +43,7 @@ Positioning of the mic is important. You should be 2–6 inches away for optimal
 
 ### Shock mount (right)
 
-![photo of preamp and shock mount](static/instructor/audio-setup/pre-amp-and-shock.jpg)
+![photo of preamp and shock mount](/static/instructor/audio-setup/pre-amp-and-shock.jpg)
 
 This little piece connects to the boom, and the microphone slides into it before being attached to the XLR cable. It will dampen any footsteps or other vibrations that might be picked up through the stand to the mic. (You’ll most likely be sitting down, but who knows what your kids or roommates are up to.)
 
@@ -65,7 +65,7 @@ XLR is a plug used in professional audio applications. It isn't completely neces
 
 Your final setup should look something like this:
 
-![photo of setup all done](static/instructor/audio-setup/full-set-up.jpg)
+![photo of setup all done](/static/instructor/audio-setup/full-set-up.jpg)
 
 
 ### Check audio input levels
