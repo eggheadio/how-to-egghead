@@ -1,7 +1,7 @@
 ## Record your lesson
 Screencasting is one of those iceberg-like tasks: 90% of the work is behind the scenes. Only 10% is visible.
 
-![iceberg](/static/illos/ch4_s3_iceberg.png)
+![iceberg](static/illos/ch4_s3_iceberg.png)
 
 Recording your screencast is that 10%. You’ve put tons of thought and time into your lesson scope, code example, and points you want to cover. What distinguishes your success in this final stage is high-quality technical tools. (And careful editing—that’s next.)
 
@@ -50,3 +50,4 @@ When you record in chunks, you get better short takes. (You’re not trying to s
 Need an example? Watch John Lindquist show how to record one thought at a time.
 
 **[John Lindquist - Record One Thought at a Time](https://egghead.io/lessons/tools-record-one-thought-at-a-time)**
+

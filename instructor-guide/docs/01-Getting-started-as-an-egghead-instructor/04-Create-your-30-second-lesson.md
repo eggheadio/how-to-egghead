@@ -57,9 +57,3 @@ You can upload your video by submitting an application on [egghead.io](http://eg
 **If we invited you to be an egghead instructor,** you’ll then finish your egghead registration and be prompted to join Slack if you haven’t already.
 
 We hope you’ll turn this snippet into your first published lesson, or you might start fresh with a whole new topic. Either way, you’ll come out of this exercise understanding the advantages to recording in small chunks with a tight feedback loop. And then you’ll be ready to record for real.
-
-![13_audition_stage](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530391607_file.png)
-
-**If we didn’t send you an invitation,** welcome! We’re thrilled you want to join our team of instructors. After you’ve uploaded your video to [egghead.io](http://egghead.io/), we’ll review it. If we like the direction your video is headed in, we’ll send you an invitation.
-
-Pro tip: You’ll have a better chance of submitting a 👍 30-second video and getting invited to egghead if you read this whole guide. So keep reading! Then show us what you got!
