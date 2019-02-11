@@ -8,8 +8,6 @@ egghead was created by a small team of web developers who know how essential it 
 
 ![01_sharing_knowledge](https://d2mxuefqeaa7sj.cloudfront.net/s_5998CB8F4ACAE04353DF55D78578CAC9F495218C5B780DCB121ECA0E8390328B_1530529136099_file.png)
 
-
-
 Have 10 spare minutes? You can learn a skill.
 
 Have a skill? You can be an instructor (and [get paid](/#getting-paid) for it).
@@ -22,21 +20,18 @@ Every egghead lesson consists of a single screencast that’s 1–10 minutes lon
 
 There’s an art to [teaching concepts as an egghead instructor](#how-to-instruct), but you don’t need to be nervous. Or shy. Just be yourself, no matter who you are or what your lesson is about. Just be sure to [edit out](#edit-your-lesson) the “umm”s and “uhh”s.
 
-
 ### What makes egghead different?
 
 We believe variety is the spice of learning. No two people learn the same way, so no one person can be the de facto teacher of anything. You’ll find two, sometimes three egghead lessons covering the very same topic. If one lesson doesn’t offer a breakthrough moment for a learner, we bet another will.
 
-
 ![02_diverse_instructors](https://d2mxuefqeaa7sj.cloudfront.net/s_5998CB8F4ACAE04353DF55D78578CAC9F495218C5B780DCB121ECA0E8390328B_1530529160184_file.png)
-
 
 So if your dream [topic is already taken](#what-if-a-lesson-already-exists), it’s not taken at all. Go ahead, press record, and share what you know from your perspective.
 
 
 ### Who should be an instructor?
 
-You should be an instructor. [Here’s why.](https://paper.dropbox.com/doc/01-Why-be-an-instructor-u68jBYc1Ly1F5wWoi4jXT)
+You should be an instructor. [Here’s why.](#why-be-an-instructor)
 
 
 ### How do I get started?

@@ -1,6 +1,13 @@
 ## Why be an instructor?
 We get it. The last thing you need is another commitment. (You probably see the word “commit” in your sleep.) Good news: egghead instructors have zero obligations. It’s a lowkey side hustle that can seriously pay off.
 
+import { TwitterTweetEmbed } from 'react-twitter-embed';
+
+<div style={{flex: 1}}>
+<TwitterTweetEmbed
+  tweetId={'1075494004580478976'}
+/>
+</div>
 
 ### You get paid
 

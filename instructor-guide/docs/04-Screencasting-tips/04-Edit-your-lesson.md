@@ -1,16 +1,14 @@
 ## Edit your lesson
 Editing is your lesson’s critical last stop between you and your audience. It’s your quality filter.
 
-
 ### Ripple delete
 
 ⚡️Ripple delete is your greatest ally. ⚡️ It’s basically deleting the bad parts, a chunk of seconds at a time—like that tangent you go on, that five-second period where you stammer over a word, and those dozens of “umm”s and “like”s you had no idea you said so often. Ripple delete couldn’t be easier or more essential, and it’s available in both Camtasia and Screenflow. 🙌
 
 In the egghead lesson shown below, John Lindquist shows how he uses ripple delete to trim a video from 7:28 to 2:17. Yes, really.
 
-**John Lindquist - Edit with Ripple Delete**
+**[John Lindquist - Edit with Ripple Delete](https://egghead.io/lessons/tools-edit-with-ripple-delete)**
 
-https://www.dropbox.com/s/a5ahcas02qtxu99/egghead-edit-with-ripple-delete.mp4?dl=0
 
 ## ⚡️ speed up/slow down video
 
@@ -20,17 +18,13 @@ Alternatively, you can do it interactively by holding down `Option` while draggi
 
 ![stretch clip time](https://user-images.githubusercontent.com/6764957/52251445-fb72e480-28a0-11e9-8b32-304670ce2e0e.gif)
 
-
 ## ⚡️ annotate video
 
 You can annotate your videos with arrows and boxes by using the Annotations tool in the top right in the inspector pane.
 
 ![image](https://user-images.githubusercontent.com/6764957/52251395-ad5de100-28a0-11e9-9b18-e80056582711.png)
 
-
 They act like regular video clips so you can fade them in and out, apply animations, etc.
-
-
 
 ### Editing with Premiere
 
@@ -39,7 +33,6 @@ In time, you can 💥 kick it up a notch 💥 with more sophisticated editing so
 - [Editing with John Lindquist](https://www.youtube.com/watch?v=_YqhKP-yZzo&index=1&list=PL219naRJXQKbQJ60WxsuGfTFv7_fvna51)
 - [Going through the process with JS Leonard](https://www.youtube.com/watch?v=faINApx4-4g&list=PL219naRJXQKbQJ60WxsuGfTFv7_fvna51&index=2)
 - [Voiceover and editing with Joel Hooks](https://www.youtube.com/watch?v=faINApx4-4g&list=PL219naRJXQKbQJ60WxsuGfTFv7_fvna51&index=2)
-
 
 ### The easiest way to edit is to capture it well
 

@@ -1,5 +1,5 @@
 ## Record and upload your lesson
-Now that you know how to [be concise](https://paper.dropbox.com/doc/07-Speak-concisely-v5Rk1EjXfhwrri6cRuPGA), [narrate your lesson](#how-to-instruct), and [show your work](#the-show-your-work-trick), it’s time to record for real.
+Now that you know how to [be concise](#speak-concisely), [narrate your lesson](#how-to-instruct), and [show your work](#the-show-your-work-trick), it’s time to record for real.
 
 
 ### Recording your screencast
@@ -8,7 +8,7 @@ We’ve put together an entire Technical Guide to help you *record* your screenc
 
 - [Prepare your screen for recording](#prepare-your-screen-for-recording)
 - [Set up your audio equipment](#set-up-your-audio)
-- [Record and edit your lesson](https://paper.dropbox.com/doc/03-Record-your-lesson-5sBpHCVOxhPhlZYEVxrhY)
+- [Record and edit your lesson](#record-your-lesson)
 - [Set up and share your code](#sharing-your-code)
 
 Okay, that handles the specifics of recording. But the word *record* is so...official. What if you mess up?
@@ -16,10 +16,7 @@ Okay, that handles the specifics of recording. But the word *record* is so...off
 
 - **Make mistakes!** Your video isn't a live presentation. Mistakes and restarts are fine. Sometimes you need to cough, kids run through, a train rolls by. Edit it out later.
 
-
 ![](https://media1.giphy.com/media/3oKIPoAP1wLvewc7QI/giphy.gif)
-
-
 
 - Stumbling? Rambling? **Pause and think it through.** Pauses are SO easy to edit out.
 - **Slow down**. Newbie instructors tend to rush through their lessons. Be slow and deliberate so learners can follow what you’re saying. Slowing down also helps your mouse keep up with your voice.

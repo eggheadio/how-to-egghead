@@ -13,12 +13,7 @@ An egghead lesson discusses a single topic. Don’t stray—stay on point and be
 
 Learners should walk away with a better understanding of the concept covered in the lesson. In just a few minutes, they should increase their vocabulary and learn through a high-quality example.
 
-**John Lindquist - Stay on topic**
-
-https://www.dropbox.com/s/2p6opnh0qn8r9ao/egghead-stay-on-topic.mp4?dl=0
-
-
-
+**[John Lindquist - Stay on topic](https://egghead.io/lessons/tools-stay-on-topic)**
 
 ### Its title and summary are precise
 
@@ -37,11 +32,7 @@ Your title is the summary of your summary. It should finish the thought, “How 
 
 If your example is airtight, it will do the instructing for you. Your narration will just serve to support it. Use the [“show your work” trick](#the-show-your-work-trick) to see if you’ve shown enough.
 
-**John Lindquist - Show then maybe explain**
-
-https://www.dropbox.com/s/5fxdwvnttkxb2lr/egghead-show-then-maybe-explain.mp4?dl=0
-
-
+**[John Lindquist - Show then maybe explain](https://egghead.io/lessons/tools-show-first-then-maybe-explain)**
 
 ### It cuts intros, outros, and stage-setting
 
@@ -55,12 +46,7 @@ This video doesn't talk about the chicken recipe it covered for the dinner cours
 
 When creating your lessons, assume your viewers have working knowledge of the topics covered or will pause the video to learn on their own time. Don’t waste time in your lesson reinventing the wheel (or explaining what wheels are and why they’re helpful).
 
-**John Lindquist - Avoid intros and outros**
-
-https://www.dropbox.com/s/6x6o608fwiwv28b/egghead-avoid-intros-and-outros.mp4?dl=0
-
-
-
+**[John Lindquist - Avoid intros and outros](https://egghead.io/lessons/tools-avoid-intros-and-outros)**
 
 ### It guides the eyes
 
@@ -68,12 +54,7 @@ Your audience is trying to follow what you're saying. It's crucial that you keep
 
 Highlight the area of the screen you're teaching. Use the mouse to select/click/drag or anything that creates a sense of movement to tell them "You should be looking here!" Remember, this is a video, they're here for the movement, so keep it movin'!
 
-**John Lindquist - Guide their eyes**
-
-https://www.dropbox.com/s/izvlyf41j6kk6kw/egghead-guide-their-eyes.mp4?dl=0
-
-
-
+**[John Lindquist - Guide their eyes](https://egghead.io/lessons/tools-guide-their-eyes)**
 
 ### Slack us!
 

@@ -49,6 +49,4 @@ When you record in chunks, you get better short takes. (You’re not trying to s
 
 Need an example? Watch John Lindquist show how to record one thought at a time.
 
-**John Lindquist - Record One Thought at a Time**
-
-https://www.dropbox.com/s/cyy9swbl3ga38kd/egghead-record-one-thought-at-a-time.mp4?dl=0
+**[John Lindquist - Record One Thought at a Time](https://egghead.io/lessons/tools-record-one-thought-at-a-time)**

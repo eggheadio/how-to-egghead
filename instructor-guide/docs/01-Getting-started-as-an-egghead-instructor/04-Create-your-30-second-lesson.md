@@ -1,6 +1,6 @@
 ## Create your 30-second lesson
 
-We want to help new instructors get the hang of egghead style as fast as possible. We know you won’t nail it right away—that’s okay! That’s expected!—so instead of creating an entire lesson, we ask you to record a 30-second video first. That snippet will tell us plenty, and we’ll be able to give you feedback on your [code example](#create-your-code-example), [instruction style](#how-to-instruct), and the [technical stuff](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB).
+We want to help new instructors get the hang of egghead style as fast as possible. We know you won’t nail it right away—that’s okay! That’s expected!—so instead of creating an entire lesson, we ask you to record a 30-second video first. That snippet will tell us plenty, and we’ll be able to give you feedback on your [code example](#create-your-code-example), [instruction style](#how-to-instruct), and the [technical stuff](#screencasting-tips).
 
 ![08_30second_lesson](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530122820_file.png)
 
@@ -15,7 +15,7 @@ Don't be too concerned about subject matter, audio, or video quality at this poi
 
 ![09_lesson_basics](https://d2mxuefqeaa7sj.cloudfront.net/s_9838C555F24EB65660F8595157C5BEE00A2628AF3D89A31309BA4CB5DEE58428_1530530162355_file.png)
 
-Our [technical guide](https://paper.dropbox.com/folder/show/04-Screencasting-tips-e.1gg8YzoPEhbTkrhvQwJ2zz3VfffmW8lGwgJoc5jCIvamKrIozeHB) has you all the details you need to confidently press record. Think you have it figured out? Share a screenshot of your screen setup on [Slack](#egghead-on-slack).
+Our [technical guide](#screencasting-tips) has you all the details you need to confidently press record. Think you have it figured out? Share a screenshot of your screen setup on [Slack](#egghead-on-slack).
 
 ### Pick a topic
 

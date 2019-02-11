@@ -3,9 +3,7 @@ When your course is "lesson complete," it's time to record a course overview. Gu
 
 Here’s a great example of an overview, from the course [Advanced React Component Patterns](https://egghead.io/courses/advanced-react-component-patterns) by Kent C. Dodds:
 
-**Kent C. Dodds - Introducing Advanced React Component Patterns**
-
-https://www.dropbox.com/s/r6lu0h49v9sbfh3/01-egghead-react-introducing-advanced-react-component-patterns.mp4?dl=0
+**[Kent C. Dodds - Introducing Advanced React Component Patterns](https://egghead.io/lessons/react-introducing-advanced-react-component-patterns)**
 
 
 Here’s what Kent did so well:
