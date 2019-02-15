@@ -4,7 +4,7 @@
 
 Screencasting isn’t easy. It’s a difficult skill to nail—and on top of that, we’re very picky about the screencasts we publish on egghead.io. We can’t publish screencasts with small fonts, blurry text, and low-contrast color schemes that distract from learning. While egghead screencasts are diverse, they must also share a sameness of quality and presentation.
 
-[Video: Remove distractions](https://egghead.io/lessons/tools-remove-distractions?play=true)
+[![Video: Remove distractions](/static/instructor/screenshots/screencasting-tips-01-prepare-your-screen-for-recording.png)](https://egghead.io/lessons/tools-remove-distractions?play=true)
 
 **Always remember accessibility.** A wide range of people will access your lessons on a variety of devices of varying quality. Maximizing the legibility of the code you present helps all learners absorb the information to the best of their abilities.
 

@@ -1,7 +1,7 @@
 ## Record your lesson
 Screencasting is one of those iceberg-like tasks: 90% of the work is behind the scenes. Only 10% is visible.
 
-![iceberg](static/illos/ch4_s3_iceberg.png)
+![iceberg](/static/illos/ch4_s3_iceberg.png)
 
 Recording your screencast is that 10%. You’ve put tons of thought and time into your lesson scope, code example, and points you want to cover. What distinguishes your success in this final stage is high-quality technical tools. (And careful editing—that’s next.)
 
@@ -15,7 +15,7 @@ egghead.io instructors are provided with whatever software licenses you need. Ju
 **On a Mac**, the best options are [ScreenFlow](https://www.telestream.net/screenflow/) and [Camtasia](https://www.techsmith.com/video-editor.html). Both provide editing features. We tend to prefer ScreenFlow for its standalone simplicity, as Joe Maddalone shows in the video show below, but the decision is completely yours.
 
 
-https://www.youtube.com/watch?v=3nlJ_wP9dPE&&index=5&list=PL219naRJXQKbQJ60WxsuGfTFv7_fvna51
+[![](/static/instructor/screenshots/04-screencasting-tips-how-joe-eggheads.png)](https://www.youtube.com/watch?v=3nlJ_wP9dPE&&index=5&list=PL219naRJXQKbQJ60WxsuGfTFv7_fvna51)
 
 
 
@@ -49,5 +49,5 @@ When you record in chunks, you get better short takes. (You’re not trying to s
 
 Need an example? Watch John Lindquist show how to record one thought at a time.
 
-**[John Lindquist - Record One Thought at a Time](https://egghead.io/lessons/tools-record-one-thought-at-a-time)**
+[![John Lindquist - Record One Thought at a Time](/static/instructor/screenshots/04-screencasting-tips-one-thought-at-a-time.png)](https://egghead.io/lessons/tools-record-one-thought-at-a-time)
 

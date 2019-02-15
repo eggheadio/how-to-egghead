@@ -7,7 +7,7 @@ Editing is your lesson’s critical last stop between you and your audience. It�
 
 In the egghead lesson shown below, John Lindquist shows how he uses ripple delete to trim a video from 7:28 to 2:17. Yes, really.
 
-**[John Lindquist - Edit with Ripple Delete](https://egghead.io/lessons/tools-edit-with-ripple-delete)**
+[![John Lindquist - Edit with Ripple Delete](/static/instructor/screenshots/04-screencasting-tips-edit-with-ripple-delete.png)](https://egghead.io/lessons/tools-edit-with-ripple-delete)
 
 
 ## ⚡️ speed up/slow down video

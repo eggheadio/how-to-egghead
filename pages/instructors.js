@@ -1,9 +1,7 @@
 import { Component } from 'react'
 import styled, { hydrate, injectGlobal } from 'react-emotion'
 import { css } from 'emotion'
-import { loadGetInitialProps } from 'next/dist/lib/utils'
 import Head from 'next/head'
-import Eggo from '../components/Eggo'
 import Docs from '../components/InstructorGuide'
 import GlobalStyles from '../components/GlobalStyles'
 import { Color } from '../components/Colors'
@@ -265,7 +263,7 @@ class App extends Component {
                   </h1>
                 </div>
                 <img
-                  src="static/eggoInstructor.png"
+                  src="/static/eggoInstructor.png"
                   alt="How to egghead - 101 Instructor Guide"
                   className={css`
                     ${mq.medium(css`
