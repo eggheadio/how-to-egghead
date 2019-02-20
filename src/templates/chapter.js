@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Layout from '../components/layout'
 import Link from '../components/link'
+import { bpMinLG } from '../utils/breakpoints'
 
 class ChapterTemplate extends React.Component {
   render() {
@@ -18,7 +19,10 @@ class ChapterTemplate extends React.Component {
             text-transform: uppercase;
             letter-spacing: 1px;
             opacity: 0.7;
-            ${guide.frontmatter.chapterTitle && 'margin-top: -10px;'}
+            ${bpMinLG} {
+              ${guide.frontmatter.chapterTitle && 'margin-top: -10px;'}
+            }
+            margin-top: 20px;
           `}>
           {guide.frontmatter.chapterTitle && guide.frontmatter.chapterTitle}
         </h5>
