@@ -92,7 +92,7 @@ const Layout = ({ children }) => (
                   }
                 `}>
                 <ul>
-                  {data.allMdx.edges.map(({ node: data }) => (
+                  {get(data, 'allMdx.edges').map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
                         <Link to={`/${get(data, 'frontmatter.slug')}`}>

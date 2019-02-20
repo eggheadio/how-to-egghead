@@ -79,7 +79,7 @@ const LayoutReview = ({ children }) => (
                   }
                 `}>
                 <ul>
-                  {data.allMdx.edges.map(({ node: data }) => (
+                  {get(data, 'allMdx.edges').map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
                         <Link
@@ -93,14 +93,13 @@ const LayoutReview = ({ children }) => (
                               }
                             }
                           `}>
-                          <h4>{get(data, 'frontmatter.chapterTitle')}</h4>
+                          <h4>{data.frontmatter.chapterTitle}</h4>
                         </Link>
                       )}
-
                       <Link
                         to={`#${data.frontmatter.slug}`}
                         activeClassName='active'>
-                        <li>{get(data, 'frontmatter.title')}</li>
+                        <li>{data.frontmatter.title}</li>
                       </Link>
                     </span>
                   ))}
