@@ -4,11 +4,12 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { css } from '@emotion/core'
 import LayoutReview from '../components/layout-review'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import { get } from 'lodash'
 
 export default function Review({ data: { allMdx } }) {
   return (
     <LayoutReview>
-      {allMdx.edges.map(({ node: data }) => (
+      {get(allMdx, 'edges', []).map(({ node: data }) => (
         <article id={data.frontmatter.slug} key={data.id}>
           {data.frontmatter.chapterTitle && (
             <ScrollableAnchor id={data.frontmatter.slug}>
