@@ -73,11 +73,11 @@ const LayoutReview = ({ children }) => (
               <div
                 css={css`
                   padding-right: 30px;
-                `}>
-                <ul
-                  css={css`
+                  ul {
                     list-style: none;
-                  `}>
+                  }
+                `}>
+                <ul>
                   {data.allMdx.edges.map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (

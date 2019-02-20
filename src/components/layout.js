@@ -86,11 +86,11 @@ const Layout = ({ children }) => (
                   ${bpMaxSM} {
                     display: none;
                   }
-                `}>
-                <ul
-                  css={css`
+                  ul {
                     list-style: none;
-                  `}>
+                  }
+                `}>
+                <ul>
                   {data.allMdx.edges.map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
