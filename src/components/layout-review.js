@@ -79,7 +79,7 @@ const LayoutReview = ({ children }) => (
                     list-style: none;
                   `}>
                   {data.allMdx.edges.map(({ node: data }) => (
-                    <span>
+                    <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
                         <Link
                           to={`#${data.frontmatter.slug}`}
