@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { css } from '@emotion/core'
-import LayoutReview from '../components/layoutReview'
+import LayoutReview from '../components/layout-review'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 export default function Review({ data: { allMdx } }) {
@@ -41,7 +41,7 @@ export default function Review({ data: { allMdx } }) {
 export const pageQuery = graphql`
   query ReviewerGuide {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "//reviewerGuide/" } }
+      filter: { fileAbsolutePath: { regex: "//reviewerguide/" } }
       sort: { order: ASC, fields: [frontmatter___chapter] }
     ) {
       edges {
