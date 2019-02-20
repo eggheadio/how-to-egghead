@@ -6,7 +6,7 @@ import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import reset from '../utils/reset'
 import './layout.css'
-import SEO from '../components/seo'
+import SEO from './seo'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 
