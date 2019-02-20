@@ -108,72 +108,70 @@ const Layout = ({ children }) => (
                   ))}
                 </ul>
               </div>
-              {/*{' '}
-                <Toggle>
-                  {({ on, getTogglerProps }) => (
-                    <div
+              <Toggle>
+                {({ on, getTogglerProps }) => (
+                  <div
+                    css={css`
+                      ${bpMaxSM} {
+                        display: block;
+                      }
+                      display: none;
+                    `}>
+                    <MenuButton
+                      aria-label={`${on ? 'close menu' : 'open menu'}`}
+                      {...getTogglerProps()}>
+                      Menu
+                    </MenuButton>
+
+                    <ul
                       css={css`
-                        ${bpMaxSM} {
-                          display: block;
-                        }
-                        display: none;
+                        list-style: none;
+                        display: ${on ? 'block' : 'none'};
                       `}>
-                      <MenuButton
-                        aria-label={`${on ? 'close menu' : 'open menu'}`}
-                        {...getTogglerProps()}>
-                        Menu
-                      </MenuButton>
-
-                      <ul
-                        css={css`
-                          list-style: none;
-                          display: ${on ? 'block' : 'none'};
-                        `}>
-                        {data.allMdx.edges.map(({ node: data }) => (
-                          <span key={data.id}>
-                            {data.frontmatter.chapterTitle && (
-                              <Link to={`/${data.frontmatter.slug}`}>
-                                <h4>{data.frontmatter.chapterTitle}</h4>
-                              </Link>
-                            )}
-
-                            <Link
-                              to={`/${data.frontmatter.slug}`}
-                              activeClassName='active'>
-                              <li>{data.frontmatter.title}</li>
+                      {get(data, 'allMdx.edges', []).map(({ node: data }) => (
+                        <span key={data.id}>
+                          {data.frontmatter.chapterTitle && (
+                            <Link to={`/${data.frontmatter.slug}`}>
+                              <h4>{data.frontmatter.chapterTitle}</h4>
                             </Link>
-                          </span>
-                        ))}
-                        <Button
-                          css={css`
-                            ${bpMaxSM} {
-                              margin-left: 30px;
-                              margin-bottom: 30px;
-                              display: block;
-                              position: relative;
-                              background: #1f2933;
-                              font-size: 18px;
-                              :hover {
-                                background: #323f4b;
-                              }
-                              ::after {
-                                content: '⟶';
-                                color: white;
-                                margin-left: 15px;
-                                position: absolute;
-                              }
-                            }
-                            display: none;
-                          `}>
-                          <Link to='/review' aria-label='Go to reviewer guide'>
-                            Reviewer guide
+                          )}
+
+                          <Link
+                            to={`/${data.frontmatter.slug}`}
+                            activeClassName='active'>
+                            <li>{data.frontmatter.title}</li>
                           </Link>
-                        </Button>
-                      </ul>
-                    </div>
-                  )}
-                </Toggle>{' '}
-                */}
+                        </span>
+                      ))}
+                      <Button
+                        css={css`
+                          ${bpMaxSM} {
+                            margin-left: 30px;
+                            margin-bottom: 30px;
+                            display: block;
+                            position: relative;
+                            background: #1f2933;
+                            font-size: 18px;
+                            :hover {
+                              background: #323f4b;
+                            }
+                            ::after {
+                              content: '⟶';
+                              color: white;
+                              margin-left: 15px;
+                              position: absolute;
+                            }
+                          }
+                          display: none;
+                        `}>
+                        <Link to='/review' aria-label='Go to reviewer guide'>
+                          Reviewer guide
+                        </Link>
+                      </Button>
+                    </ul>
+                  </div>
+                )}
+              </Toggle>
             </div>
           </SideBar>
           <Main>{children}</Main>
