@@ -58,7 +58,6 @@ module.exports = {
       options: {
         name: 'how-to-egghead',
         short_name: 'egghead',
-        start_url: '/what-is-egghead',
         background_color: '#3852E4',
         theme_color: '#3852E4',
         display: 'minimal-ui',

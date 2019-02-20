@@ -10,6 +10,7 @@ import './layout.css'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 import Toggle from 'react-toggled'
+import { get } from 'lodash'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -94,14 +95,14 @@ const Layout = ({ children }) => (
                   {data.allMdx.edges.map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
-                        <Link to={`/${data.frontmatter.slug}`}>
-                          <h4>{data.frontmatter.chapterTitle}</h4>
+                        <Link to={`/${get(data, 'frontmatter.slug')}`}>
+                          <h4>{get(data, 'frontmatter.chapterTitle')}</h4>
                         </Link>
                       )}
                       <Link
                         to={`/${data.frontmatter.slug}`}
                         activeClassName='active'>
-                        <li>{data.frontmatter.title}</li>
+                        <li>{get(data, 'frontmatter.title')}</li>
                       </Link>
                     </span>
                   ))}

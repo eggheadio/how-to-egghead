@@ -9,6 +9,7 @@ import './layout.css'
 import SEO from './seo'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
+import { get } from 'lodash'
 
 const LayoutReview = ({ children }) => (
   <StaticQuery
@@ -82,7 +83,7 @@ const LayoutReview = ({ children }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
                         <Link
-                          to={`#${data.frontmatter.slug}`}
+                          to={`#${get(data, 'frontmatter.slug')}`}
                           css={css`
                             * {
                               color: black;
@@ -92,14 +93,14 @@ const LayoutReview = ({ children }) => (
                               }
                             }
                           `}>
-                          <h4>{data.frontmatter.chapterTitle}</h4>
+                          <h4>{get(data, 'frontmatter.chapterTitle')}</h4>
                         </Link>
                       )}
 
                       <Link
                         to={`#${data.frontmatter.slug}`}
                         activeClassName='active'>
-                        <li>{data.frontmatter.title}</li>
+                        <li>{get(data, 'frontmatter.title')}</li>
                       </Link>
                     </span>
                   ))}
