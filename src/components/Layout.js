@@ -221,7 +221,6 @@ const SideBar = styled.aside`
       left: 0;
       width: 100%;
       height: 40px;
-
       background-image: linear-gradient(
         -180deg,
         rgba(31, 41, 51, 0) 0%,
@@ -275,18 +274,12 @@ const SideBar = styled.aside`
     ::-webkit-scrollbar {
       width: 0px;
     }
-
-    /* Track */
     ::-webkit-scrollbar-track {
       background: #1f2933;
     }
-
-    /* Handle */
     ::-webkit-scrollbar-thumb {
       background: #616e7c;
     }
-
-    /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       background: rgba(0, 0, 0, 0.25);
     }
