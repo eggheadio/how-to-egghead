@@ -1,41 +1,54 @@
 {
-  "name": "howtoegghead.com",
+  "name": "howtoegghead",
+  "description": "Instructor 101 Guide",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": "egghead.io",
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@mdx-js/mdx": "^0.16.6",
+    "@mdx-js/tag": "^0.16.6",
+    "gatsby": "^2.0.83",
+    "gatsby-image": "^2.0.20",
+    "gatsby-mdx": "^0.3.2",
+    "gatsby-plugin-emotion": "^4.0.3",
+    "gatsby-plugin-manifest": "^2.0.13",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
+    "gatsby-plugin-offline": "^2.0.20",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sharp": "^2.0.21",
+    "gatsby-plugin-typography": "^2.2.7",
+    "gatsby-remark-images": "^3.0.4",
+    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-transformer-remark": "^2.2.5",
+    "gatsby-transformer-sharp": "^2.1.10",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-toggled": "^1.2.7",
+    "react-twitter-embed": "^2.0.4",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18",
+    "typography-theme-bootstrap": "^0.16.18"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggheadio/how-to-egghead.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eggheadio/learnreduxwithdanabramov.com/issues"
-  },
-  "homepage": "https://github.com/eggheadio/learnreduxwithdanabramov.com#readme",
-  "dependencies": {
-    "@mdx-js/loader": "^0.17",
-    "@mdx-js/mdx": "^0.17",
-    "babel-plugin-emotion": "^9.1.2",
-    "chicago-capitalize": "^0.1.0",
-    "classnames": "^2.2.6",
-    "dotenv": "^5.0.1",
-    "emotion": "^9.1.3",
-    "emotion-server": "^9.1.3",
-    "github-slugger": "^1.2.1",
-    "next": "^6.0.3",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-emotion": "^9.1.3",
-    "react-ga": "^2.5.7",
-    "react-scrollspy": "^3.3.5",
-    "react-twitter-embed": "^2.0.4",
-    "remark-highlight.js": "^5.1.0"
+    "url": "https://github.com/christopherbiscardi/gatsby-starter-mdx-basic"
   }
 }
