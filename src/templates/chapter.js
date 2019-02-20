@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { css, keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import Link from '../components/link'
 
 class ChapterTemplate extends React.Component {

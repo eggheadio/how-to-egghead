@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import Link from './Link'
+import Link from '../Link'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
-import reset from '../utils/reset'
+import reset from '../../utils/reset'
 import './layout.css'
-import SEO from './seo'
+import SEO from '../seo'
 import logo from '../images/egghead-logo.svg'
-import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
+import { bpMaxSM, bpMaxMD, bpMinLG } from '../../utils/breakpoints'
 
 const LayoutReview = ({ children }) => (
   <StaticQuery
