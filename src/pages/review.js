@@ -42,8 +42,8 @@ export default function Review({ data: { allMdx } }) {
 export const pageQuery = graphql`
   query ReviewerGuide {
     allMdx(
-      filter: { fileAbsolutePath: { regex: "//reviewerguide/" } }
       sort: { order: ASC, fields: [frontmatter___chapter] }
+      filter: { frontmatter: { guide: { eq: "instructor" } } }
     ) {
       edges {
         node {
