@@ -4,7 +4,6 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { css } from '@emotion/core'
 import LayoutReview from '../components/layout-review'
 import ScrollableAnchor from 'react-scrollable-anchor'
-import { get } from 'lodash'
 
 export default function Review({ data: { allMdx } }) {
   return (
@@ -43,7 +42,7 @@ export const pageQuery = graphql`
   query ReviewerGuide {
     allMdx(
       sort: { order: ASC, fields: [frontmatter___chapter] }
-      filter: { frontmatter: { guide: { eq: "instructor" } } }
+      filter: { frontmatter: { guide: { eq: "reviewer" } } }
     ) {
       edges {
         node {
