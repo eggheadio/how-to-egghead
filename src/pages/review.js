@@ -9,7 +9,7 @@ import { get } from 'lodash'
 export default function Review({ data: { allMdx } }) {
   return (
     <LayoutReview>
-      {get(allMdx, 'edges', []).map(({ node: data }) => (
+      {allMdx.edges.map(({ node: data }) => (
         <article id={data.frontmatter.slug} key={data.id}>
           {data.frontmatter.chapterTitle && (
             <ScrollableAnchor id={data.frontmatter.slug}>
