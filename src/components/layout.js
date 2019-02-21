@@ -6,7 +6,7 @@ import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import reset from '../utils/reset'
 import SEO from './seo'
-import './layout.css'
+import './layout-styles.css'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 import Toggle from 'react-toggled'
@@ -23,17 +23,16 @@ const Layout = ({ children }) => (
         }
         allMdx(
           sort: { order: ASC, fields: [frontmatter___chapter] }
-          filter: { fileAbsolutePath: { regex: "//instructorguide/" } }
+          filter: { frontmatter: { guide: { eq: "instructor" } } }
         ) {
           edges {
             node {
               id
-              fields {
-                slug
-              }
               frontmatter {
                 title
                 slug
+                guide
+                chapter
                 chapterTitle
               }
             }
@@ -95,14 +94,14 @@ const Layout = ({ children }) => (
                   {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
-                        <Link to={`/${get(data, 'frontmatter.slug')}`}>
-                          <h4>{get(data, 'frontmatter.chapterTitle')}</h4>
+                        <Link to={`/${data.frontmatter.slug}`}>
+                          <h4>{data.frontmatter.chapterTitle}</h4>
                         </Link>
                       )}
                       <Link
                         to={`/${data.frontmatter.slug}`}
                         activeClassName='active'>
-                        <li>{get(data, 'frontmatter.title')}</li>
+                        <li>{data.frontmatter.title}</li>
                       </Link>
                     </span>
                   ))}

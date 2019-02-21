@@ -5,7 +5,7 @@ import Link from './link'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import reset from '../utils/reset'
-import './layout.css'
+import './layout-styles.css'
 import SEO from './seo'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
@@ -22,17 +22,16 @@ const LayoutReview = ({ children }) => (
         }
         allMdx(
           sort: { order: ASC, fields: [frontmatter___chapter] }
-          filter: { fileAbsolutePath: { regex: "//reviewerguide/" } }
+          filter: { frontmatter: { guide: { eq: "reviewer" } } }
         ) {
           edges {
             node {
               id
-              fields {
-                slug
-              }
               frontmatter {
                 title
                 slug
+                guide
+                chapter
                 chapterTitle
               }
             }
@@ -83,7 +82,7 @@ const LayoutReview = ({ children }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
                         <Link
-                          to={`#${get(data, 'frontmatter.slug')}`}
+                          to={`#${data.frontmatter.slug}`}
                           css={css`
                             * {
                               color: black;

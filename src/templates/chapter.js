@@ -10,7 +10,7 @@ import { bpMinLG } from '../utils/breakpoints'
 class ChapterTemplate extends React.Component {
   render() {
     const guide = this.props.data.mdx
-    const { previous, next } = this.props.pageContext
+    const { previous } = this.props.pageContext
     return (
       <Layout>
         <h5
@@ -66,6 +66,15 @@ export const pageQuery = graphql`
   }
 `
 
+const ArrowMovement = keyframes`
+from, to {
+margin-left: 8px;
+}
+50% {
+  margin-left: 15px;
+}
+`
+
 const ReadNext = styled.div`
   margin: 60px 0;
   display: flex;
@@ -101,15 +110,6 @@ const ReadNext = styled.div`
       color: #7b8794;
     }
   }
-`
-
-const ArrowMovement = keyframes`
-from, to {
-margin-left: 8px;
-}
-50% {
-  margin-left: 15px;
-}
 `
 
 export default ChapterTemplate
