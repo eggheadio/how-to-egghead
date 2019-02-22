@@ -10,8 +10,12 @@ h3 {
   font-size: 1.4rem;
   line-height: 1.3;
 }
-
 }
+h3 {
+  margin-bottom: 0.5em;
+  margin-top: 1.2em;
+}
+
 .twitter-tweet {
   padding: 10px 0 30px;
 }
@@ -24,6 +28,9 @@ h3 {
   ul, ol {
     list-style-position: inside;
     margin-left: 0;
+    li {
+      margin-left: 0;
+    }
   }
   *,
   *:before,
@@ -43,7 +50,7 @@ h3 {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
   }
   body {
     background-color: white;
@@ -90,7 +97,9 @@ h3 {
     margin-bottom: 1rem;
     overflow: auto;
     white-space: pre;
+    padding: 1em;
   }
+  code { padding: 2px 4px; }
   figure {
     margin: 0 0 1rem 0;
   img {

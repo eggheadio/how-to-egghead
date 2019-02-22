@@ -19,21 +19,27 @@ module.exports = {
             options: {
               maxWidth: 960,
               sizeByPixelDensity: true,
+              linkImagesToOriginal: false,
             },
           },
         ],
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {},
-    },
+    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
+        name: `pages`,
         path: `${__dirname}/src/pages/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/content/`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },

@@ -41,7 +41,7 @@ export default function Review({ data: { allMdx } }) {
 export const pageQuery = graphql`
   query ReviewerGuide {
     allMdx(
-      sort: { order: ASC, fields: [frontmatter___chapter] }
+      sort: { order: ASC, fields: fields___slug }
       filter: { frontmatter: { guide: { eq: "reviewer" } } }
     ) {
       edges {
@@ -51,6 +51,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             slug
+            chapterTitle
           }
           code {
             body

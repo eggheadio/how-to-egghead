@@ -21,7 +21,7 @@ const LayoutReview = ({ children }) => (
           }
         }
         allMdx(
-          sort: { order: ASC, fields: [frontmatter___chapter] }
+          sort: { order: ASC, fields: fields___slug }
           filter: { frontmatter: { guide: { eq: "reviewer" } } }
         ) {
           edges {
@@ -31,7 +31,6 @@ const LayoutReview = ({ children }) => (
                 title
                 slug
                 guide
-                chapter
                 chapterTitle
               }
             }

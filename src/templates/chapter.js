@@ -34,7 +34,6 @@ class ChapterTemplate extends React.Component {
             </Link>
           )}
           */}
-
         {previous && (
           <Link to={`/${previous.frontmatter.slug}`} rel='previous'>
             <ReadNext>
@@ -80,7 +79,6 @@ const ReadNext = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  //justify-content: space-between;
   width: 100%;
   padding: 25px 30px;
   background: #f5f7fa;
