@@ -9,7 +9,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: 'slug',
       node,
-      value: `${value}`,
+      value: `${value}`
     })
   }
 }
@@ -48,19 +48,13 @@ exports.createPages = ({ graphql, actions }) => {
 
         guides.forEach(({ node }, index) => {
           // Redirect index to /how-to-egghead so that we have follow up navigation
-          createRedirect({
-            fromPath: `/`,
-            isPermanent: true,
-            redirectInBrowser: true,
-            toPath: `/what-is-egghead`,
-          })
-          const previous =
-            index === guides.length - 1 ? null : guides[index + 1].node
+
+          const previous = index === guides.length - 1 ? null : guides[index + 1].node
           const next = index === 0 ? null : guides[index - 1].node
           createPage({
             path: node.frontmatter.slug,
             component: path.resolve(`./src/templates/chapter.js`),
-            context: { id: node.id, previous, next },
+            context: { id: node.id, previous, next }
           })
         })
       })
