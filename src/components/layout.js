@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
           }
         }
         allMdx(
-          sort: { order: ASC, fields: [frontmatter___chapter] }
+          sort: { order: ASC, fields: fields___slug }
           filter: { frontmatter: { guide: { eq: "instructor" } } }
         ) {
           edges {
@@ -32,7 +32,6 @@ const Layout = ({ children }) => (
                 title
                 slug
                 guide
-                chapter
                 chapterTitle
               }
             }

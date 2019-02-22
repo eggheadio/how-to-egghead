@@ -9,20 +9,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: 'slug',
       node,
-      value: `${value}`
+      value: `${value}`,
     })
   }
 }
 const path = require('path')
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
           {
-            allMdx(sort: { order: ASC, fields: [frontmatter___chapter] }) {
+            allMdx(sort: { order: ASC, fields: fields___slug }) {
               edges {
                 node {
                   id
@@ -47,14 +47,13 @@ exports.createPages = ({ graphql, actions }) => {
         const guides = result.data.allMdx.edges
 
         guides.forEach(({ node }, index) => {
-          // Redirect index to /how-to-egghead so that we have follow up navigation
-
-          const previous = index === guides.length - 1 ? null : guides[index + 1].node
+          const previous =
+            index === guides.length - 1 ? null : guides[index + 1].node
           const next = index === 0 ? null : guides[index - 1].node
           createPage({
             path: node.frontmatter.slug,
             component: path.resolve(`./src/templates/chapter.js`),
-            context: { id: node.id, previous, next }
+            context: { id: node.id, previous, next },
           })
         })
       })
