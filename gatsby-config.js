@@ -10,6 +10,12 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
+        globalScope: `
+          import ResponsiveEmbed from "react-responsive-embed";
+          import { TwitterTweetEmbed } from "react-twitter-embed";
+
+          export default { ResponsiveEmbed, TwitterTweetEmbed };
+        `,
         defaultLayouts: {
           default: path.resolve('./src/components/layout.js'),
         },
@@ -38,9 +44,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
         path: `${__dirname}/src/content/`,
+        name: 'guides',
         ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'articles',
+        ignore: [`**/\.*`], // ignore files starting with a dot,
       },
     },
     {
