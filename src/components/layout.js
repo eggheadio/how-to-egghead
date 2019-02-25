@@ -129,8 +129,7 @@ const Layout = ({ children }) => (
                         display: ${on ? 'block' : 'none'};
                       `}>
                       <Search />
-                      /*{' '}
-                      {get(data, 'allMdx.edges', []).map(({ node: data }) => (
+                      {/* {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                         <span key={data.id}>
                           {data.frontmatter.chapterTitle && (
                             <Link to={`/${data.frontmatter.slug}`}>
@@ -144,8 +143,7 @@ const Layout = ({ children }) => (
                             <li>{data.frontmatter.title}</li>
                           </Link>
                         </span>
-                      ))}{' '}
-                      */
+                      ))} */}
                       <Button
                         css={css`
                           ${bpMaxSM} {
@@ -209,9 +207,9 @@ const SideBar = styled.aside`
   ${bpMaxSM} {
     max-width: 100%;
     position: static;
-    max-height: 100%;
+    min-height: 100%;
   }
-  max-height: 100vh;
+  min-height: 100vh;
   position: sticky;
   top: 0;
   font-size: 18px;
