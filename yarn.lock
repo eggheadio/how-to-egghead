@@ -4591,6 +4591,7 @@ gatsby-react-router-scroll@^2.0.4:
 gatsby-remark-autolink-headers@^2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.0.14.tgz#8dbcbb51af900bbf80252677341dceaac38e2afb"
+  integrity sha512-t1/gDgek4xNWxt0+5z0cs1bjZXyZh4r0ug5+iDEuKVGK9Uc9qGjE8oc2xDsLwi/UnxlEmHr8ESnPqm2jOkoE+A==
   dependencies:
     "@babel/runtime" "^7.0.0"
     github-slugger "^1.1.1"

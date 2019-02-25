@@ -1,9 +1,9 @@
 import React from 'react'
-import {graphql} from 'gatsby'
-import {css} from '@emotion/core'
+import { graphql } from 'gatsby'
+import { css } from '@emotion/core'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import ArticleLayout from '../components/article-layout'
-import {bpMinLG} from '../utils/breakpoints'
+import { bpMinLG } from '../utils/breakpoints'
 
 class ArticleTemplate extends React.Component {
   render() {
@@ -20,8 +20,7 @@ class ArticleTemplate extends React.Component {
               ${article.frontmatter.title && 'margin-top: -10px;'}
             }
             margin-top: 20px;
-          `}
-        >
+          `}>
           {article.frontmatter.title && article.frontmatter.title}
         </h1>
         <MDXRenderer>{article.code.body}</MDXRenderer>
@@ -32,7 +31,7 @@ class ArticleTemplate extends React.Component {
 
 export const pageQuery = graphql`
   query ArticleQuery($id: String) {
-    mdx(id: {eq: $id}) {
+    mdx(id: { eq: $id }) {
       id
       frontmatter {
         title

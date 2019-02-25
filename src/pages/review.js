@@ -46,7 +46,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          tableOfContents
           id
           frontmatter {
             title

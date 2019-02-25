@@ -24,7 +24,7 @@ module.exports = {
           default: path.resolve('./src/components/layout.js'),
         },
         gatsbyRemarkPlugins: [
-          {resolve: `gatsby-remark-autolink-headers`},
+          { resolve: `gatsby-remark-autolink-headers` },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -92,34 +92,31 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
-        //appId: 'NLOD4N9T1X',
-        //apiKey: 'd84c71f054a14caad8cef14f34d38673',
-        //indexName: 'guides',
         appId: process.env.ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_API_KEY,
         indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
-        //indexName: 'guides',
         queries: [
           {
             query: `
             {
               allMdx(
+                filter: { frontmatter: { guide: { eq: "instructor" } } }
                 sort: { order: ASC, fields: fields___slug }
-                filter: { frontmatter: { guide: { eq: "instructor" } } }) {
+                ) {
                 edges {
                   node {
                     id
-                    rawBody
-                    excerpt(pruneLength: 250)
-                    fields {
-                      slug
-                    }
                     frontmatter {
                       title
                       slug
                       guide
                       chapterTitle 
                     }
+                    fields {
+                      slug
+                    }
+                    excerpt(pruneLength: 250)
+                    rawBody
                   }
                 }
               }
@@ -128,28 +125,19 @@ module.exports = {
             transformer: ({ data }) =>
               data.allMdx.edges.reduce((records, { node }) => {
                 const { title, slug, chapterTitle } = node.frontmatter
+                const path = node.fields.slug
                 // const { excerpt } = node.excerpt
                 // const { slug } = node.fields
-                const base = { slug, title, chapterTitle }
+                const base = { slug, title, chapterTitle, path }
                 const chunks = node.rawBody.split('\n\n')
 
                 return [
                   ...records,
                   {
                     ...base,
-                    objectID: `${slug}-${node.id}`,
+                    objectID: `${path.substring(17)}-${node.id}`,
                     text: node.rawBody,
                   },
-                  // ...chunks.map((text, index) => ({
-                  //   ...base,
-                  //   objectID: `${slug}-${node.id}`,
-                  //   text,
-                  // })),
-                  // ...chunks.map((text, index) => ({
-                  //   ...base,
-                  //   objectID: `${slug}-${index}`,
-                  //   text,
-                  // })),
                 ]
               }, []),
           },

@@ -81,8 +81,8 @@ const Layout = ({ children }) => (
                   <h1>How to egghead</h1>
                 </Link>
               </Logo>
-              <Search />
-              {/* <div
+
+              <div
                 css={css`
                   ${bpMaxSM} {
                     display: none;
@@ -91,7 +91,8 @@ const Layout = ({ children }) => (
                     list-style: none;
                   }
                 `}>
-                <ul>
+                <Search />
+                {/* <ul>
                   {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
@@ -106,8 +107,8 @@ const Layout = ({ children }) => (
                       </Link>
                     </span>
                   ))}
-                </ul>
-              </div> */}
+                </ul> */}
+              </div>
               <Toggle>
                 {({ on, getTogglerProps }) => (
                   <div
@@ -125,9 +126,10 @@ const Layout = ({ children }) => (
 
                     <ul
                       css={css`
-                        list-style: none;
                         display: ${on ? 'block' : 'none'};
                       `}>
+                      <Search />
+                      /*{' '}
                       {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                         <span key={data.id}>
                           {data.frontmatter.chapterTitle && (
@@ -142,7 +144,8 @@ const Layout = ({ children }) => (
                             <li>{data.frontmatter.title}</li>
                           </Link>
                         </span>
-                      ))}
+                      ))}{' '}
+                      */
                       <Button
                         css={css`
                           ${bpMaxSM} {

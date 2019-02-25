@@ -39,7 +39,6 @@ const Result = styled('li')`
 
 const TitleLink = styled(Link)`
   .active {
-    background: red;
     h5 {
       background: #283644;
     }
@@ -56,9 +55,9 @@ const Heading = styled('h5')`
     transition: all 200ms ease;
     background: #283644;
   }
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 0 15px 0 15px;
-  padding: 15px 15px;
+  padding: 13px 15px;
 
   .active,
   .hover {
@@ -66,26 +65,11 @@ const Heading = styled('h5')`
   }
   a {
     text-decoration: none;
-    /* :active,
-    :focus,
-    :hover {
-      color: blue;
-    } */
   }
 `
 const ChapterTitle = styled('h4')`
   color: #a5b3ff;
 `
-
-// const Link = styled('a')`
-//   display: inline-block;
-//   font-size: 0.75rem;
-//   letter-spacing: 0.1em;
-//   margin-top: 0.5rem;
-//   text-decoration: none;
-//   text-transform: uppercase;
-//   color: black !important;
-// `
 
 const Hits = connectHits(({ hits }) => (
   <List>
@@ -143,7 +127,7 @@ const Icon = styled(FaSearch)`
 
 const Label = styled('label')`
   display: block;
-  margin: 0 25px;
+  margin: 0 15px;
 `
 
 const Input = styled('input')`
