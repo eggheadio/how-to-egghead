@@ -200,16 +200,19 @@ const MenuButton = styled.div`
 const SideBar = styled.aside`
   ${bpMinLG} {
     max-width: 25%;
+    width: 100%;
   }
   ${bpMaxMD} {
     max-width: 35%;
+    width: 100%;
   }
   ${bpMaxSM} {
     max-width: 100%;
+    width: 100%;
     position: static;
-    min-height: 100%;
+    height: auto;
   }
-  min-height: 100vh;
+  height: 100vh;
   position: sticky;
   top: 0;
   font-size: 18px;
