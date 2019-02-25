@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Link from './link'
+import { get } from 'lodash'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import reset from '../utils/reset'
@@ -10,7 +11,7 @@ import './layout-styles.css'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 import Toggle from 'react-toggled'
-import { get } from 'lodash'
+import Search from './search'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -80,7 +81,8 @@ const Layout = ({ children }) => (
                   <h1>How to egghead</h1>
                 </Link>
               </Logo>
-              <div
+              <Search />
+              {/* <div
                 css={css`
                   ${bpMaxSM} {
                     display: none;
@@ -105,7 +107,7 @@ const Layout = ({ children }) => (
                     </span>
                   ))}
                 </ul>
-              </div>
+              </div> */}
               <Toggle>
                 {({ on, getTogglerProps }) => (
                   <div
@@ -239,13 +241,13 @@ const SideBar = styled.aside`
       }
     }
     li {
-      :hover {
+      /* :hover {
         transition: all 200ms ease;
         background: #283644;
       }
       border-radius: 5px;
       margin: 3px 15px 3px 15px;
-      padding: 8px 15px;
+      padding: 8px 15px; */
     }
     a,
     h4 {
@@ -256,6 +258,9 @@ const SideBar = styled.aside`
     }
     .active {
       color: #e4e7eb;
+      h5 {
+        background: #283644;
+      }
     }
     h4 {
       :hover {

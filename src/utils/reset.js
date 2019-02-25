@@ -16,6 +16,9 @@ h3 {
   margin-top: 1.2em;
 }
 
+/* Algolia highlight color */
+mark {background: #3C55E4; color: white; }
+
 .twitter-tweet {
   padding: 10px 0 30px;
 }

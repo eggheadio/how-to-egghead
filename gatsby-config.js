@@ -1,5 +1,9 @@
 const path = require('path')
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Learn how to egghead like a pro.',
@@ -84,6 +88,74 @@ module.exports = {
         icon: 'src/images/egghead-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        //appId: 'NLOD4N9T1X',
+        //apiKey: 'd84c71f054a14caad8cef14f34d38673',
+        //indexName: 'guides',
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
+        //indexName: 'guides',
+        queries: [
+          {
+            query: `
+            {
+              allMdx(
+                sort: { order: ASC, fields: fields___slug }
+                filter: { frontmatter: { guide: { eq: "instructor" } } }) {
+                edges {
+                  node {
+                    id
+                    rawBody
+                    excerpt(pruneLength: 250)
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      slug
+                      guide
+                      chapterTitle 
+                    }
+                  }
+                }
+              }
+            }
+          `,
+            transformer: ({ data }) =>
+              data.allMdx.edges.reduce((records, { node }) => {
+                const { title, slug, chapterTitle } = node.frontmatter
+                // const { excerpt } = node.excerpt
+                // const { slug } = node.fields
+                const base = { slug, title, chapterTitle }
+                const chunks = node.rawBody.split('\n\n')
+
+                return [
+                  ...records,
+                  {
+                    ...base,
+                    objectID: `${slug}-${node.id}`,
+                    text: node.rawBody,
+                  },
+                  // ...chunks.map((text, index) => ({
+                  //   ...base,
+                  //   objectID: `${slug}-${node.id}`,
+                  //   text,
+                  // })),
+                  // ...chunks.map((text, index) => ({
+                  //   ...base,
+                  //   objectID: `${slug}-${index}`,
+                  //   text,
+                  // })),
+                ]
+              }, []),
+          },
+        ],
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
