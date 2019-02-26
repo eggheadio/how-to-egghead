@@ -4,6 +4,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+process.env.BUILD_ALGOLIA_INDEX && process.env.BRANCH === 'master'
+
 module.exports = {
   siteMetadata: {
     title: 'Learn how to egghead like a pro.',

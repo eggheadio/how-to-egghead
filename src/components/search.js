@@ -12,7 +12,6 @@ import {
   InstantSearch,
   Highlight,
 } from 'react-instantsearch-dom'
-import { FaSearch } from 'react-icons/fa'
 
 const client = algoliasearch('NLOD4N9T1X', '9ec0b0075d0a1d1faf3e3dbd129aaad0')
 
