@@ -233,52 +233,28 @@ const SideBar = styled.aside`
       );
     }
   }
+  .active {
+    color: #e4e7eb;
+    h5 {
+      background: #283644;
+    }
+  }
+
+  h4 {
+    :hover {
+      color: #ccd3ff;
+    }
+    color: #a5b3ff;
+    padding: 0 15px;
+    margin: 30px 15px 10px 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  transition: all 200ms ease;
   * {
-    transition: all 200ms ease;
-    ul,
-    li {
-    }
-    .active > li {
-      background: #2f3f4f;
-      :hover {
-        background: #2f3f4f;
-      }
-    }
-    li {
-      /* :hover {
-        transition: all 200ms ease;
-        background: #283644;
-      }
-      border-radius: 5px;
-      margin: 3px 15px 3px 15px;
-      padding: 8px 15px; */
-    }
-    a,
-    h4 {
-      color: #d3d7da;
-      :hover {
-        color: white;
-      }
-    }
-    .active {
-      color: #e4e7eb;
-      h5 {
-        background: #283644;
-      }
-    }
-    h4 {
-      :hover {
-        color: #ccd3ff;
-      }
-      color: #a5b3ff;
-      padding: 0 15px;
-      margin: 30px 15px 10px 15px;
-      font-size: 16px;
-      letter-spacing: 2px;
-      line-height: 1.4;
-      font-weight: normal;
-      text-transform: uppercase;
-    }
     ::-webkit-scrollbar {
       width: 0px;
     }
