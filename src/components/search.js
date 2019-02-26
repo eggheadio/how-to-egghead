@@ -4,6 +4,7 @@ import { css } from '@emotion/core'
 import algoliasearch from 'algoliasearch/lite'
 import Link from './link'
 import SearchIcon from './overlay/magnifier.svg'
+
 import {
   Configure,
   connectHits,
@@ -74,13 +75,13 @@ const ChapterTitle = styled('h4')`
 const Hits = connectHits(({ hits }) => (
   <List>
     {hits.map(hit => (
-      <div>
+      <div key={hit.objectID}>
         {hit.chapterTitle && (
           <Link to={`/${hit.slug}`}>
             <ChapterTitle>{hit.chapterTitle}</ChapterTitle>
           </Link>
         )}
-        <Result key={hit.objectID}>
+        <Result>
           <TitleLink to={`/${hit.slug}`} id={hit.slug} activeClassName='active'>
             <Heading>
               <Highlight attribute='title' hit={hit} tagName='mark' />
