@@ -4,7 +4,6 @@ import { css } from '@emotion/core'
 import algoliasearch from 'algoliasearch/lite'
 import Link from './link'
 import SearchIcon from '../images/icons/magnifier.svg'
-
 import {
   Configure,
   connectHits,
