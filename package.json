@@ -24,6 +24,7 @@
     "gatsby-transformer-remark": "^2.2.5",
     "gatsby-transformer-sharp": "^2.1.10",
     "lodash": "^4.17.11",
+    "mdx-table-of-contents": "^0.1.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
