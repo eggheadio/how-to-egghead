@@ -1,17 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
-import Link from './link'
-import { get } from 'lodash'
-import { Global, css } from '@emotion/core'
-import styled from '@emotion/styled'
-import reset from '../utils/reset'
-import SEO from './seo'
-import './layout-styles.css'
-import logo from '../images/egghead-logo.svg'
-import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
-import Toggle from 'react-toggled'
-import Search from './search'
+import React from "react"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+import Link from "./link"
+import { get } from "lodash"
+import { Global, css } from "@emotion/core"
+import styled from "@emotion/styled"
+import Responsive from "react-responsive"
+import reset from "../utils/reset"
+import SEO from "./seo"
+import "./layout-styles.css"
+import logo from "../images/egghead-logo.svg"
+import { bpMaxSM, bpMaxMD, bpMinLG } from "../utils/breakpoints"
+import Toggle from "react-toggled"
+import Search from "./search"
+
+const Desktop = props => <Responsive {...props} minWidth={992} />
+const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />
+const Mobile = props => <Responsive {...props} maxWidth={767} />
+const Default = props => <Responsive {...props} minWidth={768} />
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -50,14 +56,16 @@ const Layout = ({ children }) => (
             ${bpMaxSM} {
               flex-direction: column;
             }
-          `}>
-          <Link to='/review' aria-label='Go to reviewer guide'>
+          `}
+        >
+          <Link to="/review" aria-label="Go to reviewer guide">
             <Button
               css={css`
                 ${bpMaxSM} {
                   display: none;
                 }
-              `}>
+              `}
+            >
               Reviewer guide
             </Button>
           </Link>
@@ -66,18 +74,20 @@ const Layout = ({ children }) => (
               css={css`
                 overflow-y: auto;
                 height: 100%;
-              `}>
+              `}
+            >
               <Logo>
                 <Link
-                  to='/'
+                  to="/"
                   css={css`
                     display: flex;
                     align-items: center;
                     width: 100%;
                     color: inherit;
                   `}
-                  aria-label='Scroll to top'>
-                  <img src={logo} alt='How to egghead' />
+                  aria-label="Scroll to top"
+                >
+                  <img src={logo} alt="How to egghead" />
                   <h1>How to egghead</h1>
                 </Link>
               </Logo>
@@ -90,7 +100,8 @@ const Layout = ({ children }) => (
                   ul {
                     list-style: none;
                   }
-                `}>
+                `}
+              >
                 <Search />
                 {/* <ul>
                   {get(data, 'allMdx.edges', []).map(({ node: data }) => (
@@ -117,17 +128,20 @@ const Layout = ({ children }) => (
                         display: block;
                       }
                       display: none;
-                    `}>
+                    `}
+                  >
                     <MenuButton
-                      aria-label={`${on ? 'close menu' : 'open menu'}`}
-                      {...getTogglerProps()}>
+                      aria-label={`${on ? "close menu" : "open menu"}`}
+                      {...getTogglerProps()}
+                    >
                       Menu
                     </MenuButton>
 
                     <ul
                       css={css`
-                        display: ${on ? 'block' : 'none'};
-                      `}>
+                        display: ${on ? "block" : "none"};
+                      `}
+                    >
                       <Search />
                       {/* {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                         <span key={data.id}>
@@ -157,15 +171,16 @@ const Layout = ({ children }) => (
                               background: #323f4b;
                             }
                             ::after {
-                              content: '⟶';
+                              content: "⟶";
                               color: white;
                               margin-left: 15px;
                               position: absolute;
                             }
                           }
                           display: none;
-                        `}>
-                        <Link to='/review' aria-label='Go to reviewer guide'>
+                        `}
+                      >
+                        <Link to="/review" aria-label="Go to reviewer guide">
                           Reviewer guide
                         </Link>
                       </Button>
@@ -175,7 +190,15 @@ const Layout = ({ children }) => (
               </Toggle>
             </div>
           </SideBar>
-          <Main>{children}</Main>
+          <Main>
+            <div>
+              <Desktop>Desktop or laptop</Desktop>
+              <Tablet>Tablet</Tablet>
+              <Mobile>Mobile</Mobile>
+              <Default>Not mobile (desktop or laptop or tablet)</Default>
+            </div>
+            {children}
+          </Main>
         </div>
       </>
     )}
@@ -183,7 +206,7 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 const MenuButton = styled.div`
@@ -219,7 +242,7 @@ const SideBar = styled.aside`
   background: #1f2933;
   ${bpMinLG} {
     ::after {
-      content: '';
+      content: "";
       position: absolute;
       z-index: 999;
       bottom: 0;
