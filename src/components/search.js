@@ -142,7 +142,6 @@ const SearchContainer = styled("div")`
 
 export default () => {
   const [active, setActive] = useState(false)
-  console.log("window: ", window.matchMedia("(min-width: 400px)"))
 
   return (
     <InstantSearch

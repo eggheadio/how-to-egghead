@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "./link"
 import { css } from "@emotion/core"
+import MediaQuery from "react-responsive"
 import "./layout-styles.css"
 import logo from "../images/egghead-logo.svg"
 import { bpMaxSM, bpMaxMD, bpMinLG } from "../utils/breakpoints"
@@ -31,18 +32,10 @@ const Sidebar = () => (
         </Link>
       </div>
 
-      <div
-        css={css`
-          ${bpMaxSM} {
-            display: none;
-          }
-          ul {
-            list-style: none;
-          }
-        `}
-      >
-        <Search />
-        {/* <ul>
+      <MediaQuery minWidth={768}>
+        <>
+          <Search />
+          {/* <ul css={css`list-style: none;`}>
                   {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                     <span key={data.id}>
                       {data.frontmatter.chapterTitle && (
@@ -58,32 +51,24 @@ const Sidebar = () => (
                     </span>
                   ))}
                 </ul> */}
-      </div>
-      <Toggle>
-        {({ on, getTogglerProps }) => (
-          <div
-            css={css`
-              ${bpMaxSM} {
-                display: block;
-              }
-              display: none;
-            `}
-          >
-            <div
-              aria-label={`${on ? "close menu" : "open menu"}`}
-              css={menuButtonStyles}
-              {...getTogglerProps()}
-            >
-              Menu
-            </div>
+        </>
+      </MediaQuery>
 
-            <ul
-              css={css`
-                display: ${on ? "block" : "none"};
-              `}
-            >
-              <Search />
-              {/* {get(data, 'allMdx.edges', []).map(({ node: data }) => (
+      <MediaQuery maxWidth={767}>
+        <Toggle>
+          {({ on, getTogglerProps }) => (
+            <>
+              <div
+                aria-label={`${on ? "close menu" : "open menu"}`}
+                css={menuButtonStyles}
+                {...getTogglerProps()}
+              >
+                Menu
+              </div>
+              {on ? (
+                <div>
+                  <Search />
+                  {/* {get(data, 'allMdx.edges', []).map(({ node: data }) => (
                         <span key={data.id}>
                           {data.frontmatter.chapterTitle && (
                             <Link to={`/${data.frontmatter.slug}`}>
@@ -98,37 +83,44 @@ const Sidebar = () => (
                           </Link>
                         </span>
                       ))} */}
-              <div
+                  <MediaQuery maxWidth={767}>
+                    <div
+                      css={css`
+                        ${buttonStyles}
+                        margin-left: 30px;
+                        margin-bottom: 30px;
+                        display: block;
+                        position: relative;
+                        background: #1f2933;
+                        font-size: 18px;
+                        :hover {
+                          background: #323f4b;
+                        }
+                        ::after {
+                          content: "⟶";
+                          color: white;
+                          margin-left: 15px;
+                          position: absolute;
+                        }
+                      `}
+                    >
+                      <Link to="/review" aria-label="Go to reviewer guide">
+                        Reviewer guide
+                      </Link>
+                    </div>
+                  </MediaQuery>
+                </div>
+              ) : null}
+
+              <ul
                 css={css`
-                  ${buttonStyles}
-                  ${bpMaxSM} {
-                    margin-left: 30px;
-                    margin-bottom: 30px;
-                    display: block;
-                    position: relative;
-                    background: #1f2933;
-                    font-size: 18px;
-                    :hover {
-                      background: #323f4b;
-                    }
-                    ::after {
-                      content: "⟶";
-                      color: white;
-                      margin-left: 15px;
-                      position: absolute;
-                    }
-                  }
-                  display: none;
+                  display: ${on ? "block" : "none"};
                 `}
-              >
-                <Link to="/review" aria-label="Go to reviewer guide">
-                  Reviewer guide
-                </Link>
-              </div>
-            </ul>
-          </div>
-        )}
-      </Toggle>
+              />
+            </>
+          )}
+        </Toggle>
+      </MediaQuery>
     </div>
   </aside>
 )
