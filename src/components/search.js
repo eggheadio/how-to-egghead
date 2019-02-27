@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
-import styled from '@emotion/styled'
-import { css } from '@emotion/core'
-import algoliasearch from 'algoliasearch/lite'
-import Link from './link'
-import SearchIcon from '../images/icons/magnifier.svg'
+import React, { useState } from "react"
+import styled from "@emotion/styled"
+import { css } from "@emotion/core"
+import algoliasearch from "algoliasearch/lite"
+import Link from "./link"
+import SearchIcon from "../images/icons/magnifier.svg"
 import {
   Configure,
   connectHits,
   connectSearchBox,
   InstantSearch,
-  Highlight,
-} from 'react-instantsearch-dom'
+  Highlight
+} from "react-instantsearch-dom"
 
-const client = algoliasearch('NLOD4N9T1X', '9ec0b0075d0a1d1faf3e3dbd129aaad0')
+const client = algoliasearch("NLOD4N9T1X", "9ec0b0075d0a1d1faf3e3dbd129aaad0")
 
-const SearchArea = styled('div')`
+const SearchArea = styled("div")`
   margin-top: 0;
   width: 100%;
 `
 
-const List = styled('ul')`
+const List = styled("ul")`
   list-style: none;
   margin: 0 auto;
   max-width: 650px;
@@ -27,7 +27,7 @@ const List = styled('ul')`
   color: black;
 `
 
-const Result = styled('li')`
+const Result = styled("li")`
   color: #a5b3ff;
   margin: 2px 0;
 `
@@ -40,7 +40,7 @@ const TitleLink = styled(Link)`
   }
 `
 
-const Heading = styled('h5')`
+const Heading = styled("h5")`
   font-size: 18px;
   padding: 5px 0;
   font-weight: 400;
@@ -62,7 +62,7 @@ const Heading = styled('h5')`
     text-decoration: none;
   }
 `
-const ChapterTitle = styled('h4')`
+const ChapterTitle = styled("h4")`
   color: #a5b3ff;
 `
 
@@ -76,13 +76,13 @@ const Hits = connectHits(({ hits }) => (
           </Link>
         )}
         <Result>
-          <TitleLink to={`/${hit.slug}`} id={hit.slug} activeClassName='active'>
+          <TitleLink to={`/${hit.slug}`} id={hit.slug} activeClassName="active">
             <Heading>
-              <Highlight attribute='title' hit={hit} tagName='mark' />
+              <Highlight attribute="title" hit={hit} tagName="mark" />
             </Heading>
           </TitleLink>
           <p>
-            <Highlight attribute='description' hit={hit} tagName='mark' />
+            <Highlight attribute="description" hit={hit} tagName="mark" />
           </p>
         </Result>
       </div>
@@ -90,12 +90,12 @@ const Hits = connectHits(({ hits }) => (
   </List>
 ))
 
-const Label = styled('label')`
+const Label = styled("label")`
   display: block;
   margin: 0 15px;
 `
 
-const Input = styled('input')`
+const Input = styled("input")`
   border: none;
   font-weight: 300;
   border-radius: 3px;
@@ -114,15 +114,15 @@ const Input = styled('input')`
 `
 
 const Search = connectSearchBox(({ currentRefinement, refine, setActive }) => (
-  <form noValidate action='' role='search'>
-    <Label htmlFor='search'>
+  <form noValidate action="" role="search">
+    <Label htmlFor="search">
       <Input
-        placeholder='Search the guide'
-        type='search'
-        id='search'
+        placeholder="Search the guide"
+        type="search"
+        id="search"
         value={currentRefinement}
         onBlur={() => {
-          if (currentRefinement === '') {
+          if (currentRefinement === "") {
             setActive(false)
           }
         }}
@@ -135,19 +135,21 @@ const Search = connectSearchBox(({ currentRefinement, refine, setActive }) => (
   </form>
 ))
 
-const SearchContainer = styled('div')`
+const SearchContainer = styled("div")`
   margin-top: 0;
   color: black;
 `
 
 export default () => {
   const [active, setActive] = useState(false)
+  console.log("window: ", window.matchMedia("(min-width: 400px)"))
 
   return (
     <InstantSearch
       searchClient={client}
-      indexName='guides'
-      root={{ Root: SearchContainer }}>
+      indexName="guides"
+      root={{ Root: SearchContainer }}
+    >
       <Configure distinct={1} />
       <SearchArea>
         <Search setActive={setActive} />
