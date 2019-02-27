@@ -34,6 +34,7 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.4.0",
     "react-instantsearch-dom": "^5.4.0",
+    "react-responsive": "^6.1.1",
     "react-responsive-embed": "^2.1.0",
     "react-scrollable-anchor": "^0.6.1",
     "react-toggled": "^1.2.7",
