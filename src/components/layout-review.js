@@ -11,7 +11,7 @@ import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 import { get } from 'lodash'
 
-const LayoutReview = ({ children }) => (
+const ReviewLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQueryReview {
@@ -49,7 +49,7 @@ const LayoutReview = ({ children }) => (
               flex-direction: column;
             }
           `}>
-          <SideBar>
+          <SidebarReview>
             <div
               css={css`
                 overflow-y: auto;
@@ -57,15 +57,15 @@ const LayoutReview = ({ children }) => (
               `}>
               <Logo>
                 <Link
-                  to='/'
+                  to="/"
                   css={css`
                     display: flex;
                     align-items: center;
                     width: 100%;
                     color: inherit;
                   `}
-                  aria-label='Scroll to top'>
-                  <img src={logo} alt='How to egghead' />
+                  aria-label="Scroll to top">
+                  <img src={logo} alt="How to egghead" />
                   <h1>Reviewer Guide</h1>
                 </Link>
               </Logo>
@@ -96,7 +96,7 @@ const LayoutReview = ({ children }) => (
                       )}
                       <Link
                         to={`#${data.frontmatter.slug}`}
-                        activeClassName='active'>
+                        activeClassName="active">
                         <li>{data.frontmatter.title}</li>
                       </Link>
                     </span>
@@ -104,7 +104,7 @@ const LayoutReview = ({ children }) => (
                 </ul>
               </div>
             </div>
-          </SideBar>
+          </SidebarReview>
           <main
             style={{
               margin: '2.45rem auto',
@@ -121,11 +121,11 @@ const LayoutReview = ({ children }) => (
   />
 )
 
-LayoutReview.propTypes = {
+ReviewLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-const SideBar = styled.aside`
+const SidebarReview = styled.aside`
   ${bpMinLG} {
     max-width: 25%;
     width: 100%;
@@ -252,4 +252,4 @@ const Logo = styled.div`
   }
 `
 
-export default LayoutReview
+export default ReviewLayout
