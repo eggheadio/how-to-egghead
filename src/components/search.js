@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
+import { css, keyframes } from '@emotion/core'
 import algoliasearch from 'algoliasearch/lite'
 import Link from './link'
 import SearchIcon from '../images/icons/magnifier.svg'
@@ -11,6 +11,7 @@ import {
   connectSearchBox,
   InstantSearch,
   Highlight,
+  connectStateResults,
 } from 'react-instantsearch-dom'
 
 const client = algoliasearch('NLOD4N9T1X', '9ec0b0075d0a1d1faf3e3dbd129aaad0')
@@ -145,9 +146,71 @@ const SearchContainer = styled('div')`
   color: black;
 `
 
+const HeadingPlaceholder = css`
+  :hover {
+    background: none;
+  }
+`
+
+const animation = keyframes`
+from {
+  opacity: 0;
+}
+50% {
+  opacity: 0.25;
+}
+to {
+  opacity: 0;
+}
+`
+const LoadingPlaceholder = styled('div')`
+  width: 100%;
+  height: 35px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    90deg,
+    hsla(255, 100%, 100%, 0.5),
+    hsla(255, 100%, 100%, 0)
+  );
+  animation: ${animation} 2s ease-out infinite;
+`
+
+const LoadingContainer = () => (
+  <List>
+    <Result>
+      <ChapterTitle>Loading...</ChapterTitle>
+      <TitleLink>
+        <Heading css={HeadingPlaceholder}>
+          <LoadingPlaceholder />
+        </Heading>
+      </TitleLink>
+      <TitleLink>
+        <Heading css={HeadingPlaceholder}>
+          <LoadingPlaceholder />
+        </Heading>
+      </TitleLink>
+      <TitleLink>
+        <Heading css={HeadingPlaceholder}>
+          <LoadingPlaceholder />
+        </Heading>
+      </TitleLink>
+    </Result>
+  </List>
+)
+
 export default () => {
   const [active, setActive] = useState(false)
-
+  const Loading = connectStateResults(
+    ({ searching }) =>
+      searching && (
+        <div
+          css={{
+            color: 'white',
+          }}>
+          <LoadingContainer />
+        </div>
+      )
+  )
   return (
     <InstantSearch
       searchClient={client}
@@ -156,6 +219,7 @@ export default () => {
       <Configure distinct={1} hitsPerPage={30} />
       <SearchArea>
         <Search setActive={setActive} />
+        <Loading />
         <Hits />
       </SearchArea>
     </InstantSearch>
