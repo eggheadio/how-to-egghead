@@ -8,7 +8,7 @@ import reset from '../utils/reset'
 import SEO from './seo'
 import './layout-styles.css'
 import { bpMaxSM } from '../utils/breakpoints'
-import Sidebar from './sidebar'
+import Sidebar from './Sidebar'
 
 const Layout = ({ children }) => (
   <StaticQuery
