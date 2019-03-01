@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import Link from './link'
+import Link from './Link'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import reset from '../utils/reset'
@@ -57,15 +57,15 @@ const LayoutReview = ({ children }) => (
               `}>
               <Logo>
                 <Link
-                  to='/'
+                  to="/"
                   css={css`
                     display: flex;
                     align-items: center;
                     width: 100%;
                     color: inherit;
                   `}
-                  aria-label='Scroll to top'>
-                  <img src={logo} alt='How to egghead' />
+                  aria-label="Scroll to top">
+                  <img src={logo} alt="How to egghead" />
                   <h1>Reviewer Guide</h1>
                 </Link>
               </Logo>
@@ -96,7 +96,7 @@ const LayoutReview = ({ children }) => (
                       )}
                       <Link
                         to={`#${data.frontmatter.slug}`}
-                        activeClassName='active'>
+                        activeClassName="active">
                         <li>{data.frontmatter.title}</li>
                       </Link>
                     </span>

@@ -2,9 +2,13 @@ import { css } from '@emotion/core'
 import { bpMaxSM } from './breakpoints'
 
 const reset = css`
+.gatsby-resp-image-wrapper {
+  margin-left: 0 !important;
+}
 ${bpMaxSM} {
   h1 {
   font-size: 1.75rem;
+  line-height: 1.2;
 }
 h3 {
   font-size: 1.4rem;

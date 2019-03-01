@@ -1,16 +1,16 @@
 import React from 'react'
 
-import {useStaticQuery, graphql} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import {Global, css} from '@emotion/core'
+import { Global, css } from '@emotion/core'
 
 import reset from '../utils/reset'
-import SEO from './seo'
+import SEO from './Seo'
 import './layout-styles.css'
 
-import {bpMaxSM} from '../utils/breakpoints'
+import { bpMaxSM } from '../utils/breakpoints'
 
-const ArticleLayout = ({children}) => {
+const ArticleLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query ArticleTemplateQuery {
       site {
@@ -30,8 +30,7 @@ const ArticleLayout = ({children}) => {
           ${bpMaxSM} {
             flex-direction: column;
           }
-        `}
-      >
+        `}>
         <div
           css={{
             margin: '2rem auto',
@@ -42,8 +41,7 @@ const ArticleLayout = ({children}) => {
             width: '100%',
             padding: '0 1.0875rem 0 1.0875rem',
             paddingTop: 0,
-          }}
-        >
+          }}>
           {children}
         </div>
       </div>

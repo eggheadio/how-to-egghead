@@ -1,12 +1,12 @@
-import React from "react"
-import Link from "./link"
-import { css } from "@emotion/core"
-import MediaQuery from "react-responsive"
-import "./layout-styles.css"
-import logo from "../images/egghead-logo.svg"
-import { bpMaxSM, bpMaxMD, bpMinLG } from "../utils/breakpoints"
-import Toggle from "react-toggled"
-import Search from "./search"
+import React from 'react'
+import Link from './Link'
+import { css } from '@emotion/core'
+import MediaQuery from 'react-responsive'
+import './layout-styles.css'
+import logo from '../images/egghead-logo.svg'
+import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
+import Toggle from 'react-toggled'
+import Search from './Search'
 
 const Sidebar = () => (
   <aside css={sidebarStyles}>
@@ -14,19 +14,16 @@ const Sidebar = () => (
       css={css`
         overflow-y: auto;
         height: 100%;
-      `}
-    >
+      `}>
       <div css={logoStyles}>
         <Link
           to="/"
           css={css`
             display: flex;
             align-items: center;
-            width: 100%;
             color: inherit;
           `}
-          aria-label="Scroll to top"
-        >
+          aria-label="Scroll to top">
           <img src={logo} alt="How to egghead" />
           <h1>How to egghead</h1>
         </Link>
@@ -59,11 +56,10 @@ const Sidebar = () => (
           {({ on, getTogglerProps }) => (
             <>
               <div
-                aria-label={`${on ? "close menu" : "open menu"}`}
+                aria-label={`${on ? 'close menu' : 'open menu'}`}
                 css={menuButtonStyles}
-                {...getTogglerProps()}
-              >
-                Menu
+                {...getTogglerProps()}>
+                {on ? 'Close' : 'Menu'}
               </div>
               {on ? (
                 <div>
@@ -97,13 +93,12 @@ const Sidebar = () => (
                           background: #323f4b;
                         }
                         ::after {
-                          content: "⟶";
+                          content: '⟶';
                           color: white;
                           margin-left: 15px;
                           position: absolute;
                         }
-                      `}
-                    >
+                      `}>
                       <Link to="/review" aria-label="Go to reviewer guide">
                         Reviewer guide
                       </Link>
@@ -114,7 +109,7 @@ const Sidebar = () => (
 
               <ul
                 css={css`
-                  display: ${on ? "block" : "none"};
+                  display: ${on ? 'block' : 'none'};
                 `}
               />
             </>
@@ -147,7 +142,7 @@ const sidebarStyles = css`
   background: #1f2933;
   ${bpMinLG} {
     ::after {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 999;
       bottom: 0;
@@ -202,6 +197,9 @@ const logoStyles = css`
   display: flex;
   align-items: center;
   padding: 20px;
+  ${bpMaxSM} {
+    padding: 10px;
+  }
   max-width: inherit;
   width: 100%;
   img {
@@ -226,10 +224,11 @@ const logoStyles = css`
 
 const menuButtonStyles = css`
   position: absolute;
-  top: 27px;
+  top: 5px;
   line-height: 1;
   outline: none;
-  right: 20px;
+  padding: 10px;
+  right: 10px;
   cursor: pointer;
   color: white;
   border: none;

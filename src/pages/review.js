@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { css } from '@emotion/core'
-import LayoutReview from '../components/layout-review'
+import LayoutReview from '../components/LayoutReview'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 export default function Review({ data: { allMdx } }) {

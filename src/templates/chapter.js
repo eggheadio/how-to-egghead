@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import { css, keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import Layout from '../components/layout'
-import Link from '../components/link'
+import Layout from '../components/Layout'
+import Link from '../components/Link'
 import { bpMinLG } from '../utils/breakpoints'
 
 class ChapterTemplate extends React.Component {
@@ -35,7 +35,7 @@ class ChapterTemplate extends React.Component {
           )}
           */}
         {previous && (
-          <Link to={`/${previous.frontmatter.slug}`} rel='previous'>
+          <Link to={`/${previous.frontmatter.slug}`} rel="previous">
             <ReadNext>
               <h5>read next</h5>
               <h4>

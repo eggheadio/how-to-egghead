@@ -1,14 +1,14 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import Link from "./link"
-import { Global, css } from "@emotion/core"
-import styled from "@emotion/styled"
-import reset from "../utils/reset"
-import SEO from "./seo"
-import "./layout-styles.css"
-import { bpMaxSM } from "../utils/breakpoints"
-import Sidebar from "./Sidebar"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import Link from './Link'
+import { Global, css } from '@emotion/core'
+import styled from '@emotion/styled'
+import reset from '../utils/reset'
+import SEO from './Seo'
+import './layout-styles.css'
+import { bpMaxSM } from '../utils/breakpoints'
+import Sidebar from './Sidebar'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -47,16 +47,14 @@ const Layout = ({ children }) => (
             ${bpMaxSM} {
               flex-direction: column;
             }
-          `}
-        >
+          `}>
           <Link to="/review" aria-label="Go to reviewer guide">
             <Button
               css={css`
                 ${bpMaxSM} {
                   display: none;
                 }
-              `}
-            >
+              `}>
               Reviewer guide
             </Button>
           </Link>
@@ -69,7 +67,7 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 const Main = styled.main`
