@@ -2,12 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { css } from '@emotion/core'
-import LayoutReview from '../components/layoutReview'
+import ReviewLayout from '../components/layout-review'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 export default function Review({ data: { allMdx } }) {
   return (
-    <LayoutReview>
+    <ReviewLayout>
       {allMdx.edges.map(({ node: data }) => (
         <article id={data.frontmatter.slug} key={data.id}>
           {data.frontmatter.chapterTitle && (
@@ -34,7 +34,7 @@ export default function Review({ data: { allMdx } }) {
           </ScrollableAnchor>
         </article>
       ))}
-    </LayoutReview>
+    </ReviewLayout>
   )
 }
 

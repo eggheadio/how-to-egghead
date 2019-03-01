@@ -11,7 +11,7 @@ import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 import { get } from 'lodash'
 
-const LayoutReview = ({ children }) => (
+const ReviewLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQueryReview {
@@ -121,7 +121,7 @@ const LayoutReview = ({ children }) => (
   />
 )
 
-LayoutReview.propTypes = {
+ReviewLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
@@ -252,4 +252,4 @@ const Logo = styled.div`
   }
 `
 
-export default LayoutReview
+export default ReviewLayout
