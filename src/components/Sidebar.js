@@ -6,7 +6,7 @@ import './layout-styles.css'
 import logo from '../images/egghead-logo.svg'
 import { bpMaxSM, bpMaxMD, bpMinLG } from '../utils/breakpoints'
 import Toggle from 'react-toggled'
-import Search from './Search'
+import Search from './search'
 
 const Sidebar = () => (
   <aside css={sidebarStyles}>

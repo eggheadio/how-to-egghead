@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import Link from './Link'
+import Link from './link'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import reset from '../utils/reset'
-import SEO from './Seo'
+import SEO from './seo'
 import './layout-styles.css'
 import { bpMaxSM } from '../utils/breakpoints'
-import Sidebar from './Sidebar'
+import Sidebar from './sidebar'
 
 const Layout = ({ children }) => (
   <StaticQuery

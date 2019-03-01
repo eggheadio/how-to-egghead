@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 import algoliasearch from 'algoliasearch/lite'
-import Link from './Link'
+import Link from './link'
 import SearchIcon from '../images/icons/magnifier.svg'
 import SearchIconActive from '../images/icons/magnifier-blue.svg'
 import {

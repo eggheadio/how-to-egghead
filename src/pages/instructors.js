@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Link from '../components/Link'
+import Link from '../components/link'
 import styled from '@emotion/styled'
 
 export default function Instructors({ data: { allMdx } }) {

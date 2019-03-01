@@ -4,7 +4,7 @@ import { css, keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Layout from '../components/layout'
-import Link from '../components/Link'
+import Link from '../components/link'
 import { bpMinLG } from '../utils/breakpoints'
 
 class ChapterTemplate extends React.Component {

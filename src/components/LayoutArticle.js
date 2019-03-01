@@ -1,11 +1,8 @@
 import React from 'react'
-
 import { useStaticQuery, graphql } from 'gatsby'
-
 import { Global, css } from '@emotion/core'
-
 import reset from '../utils/reset'
-import SEO from './Seo'
+import SEO from './seo'
 import './layout-styles.css'
 
 import { bpMaxSM } from '../utils/breakpoints'
