@@ -49,7 +49,7 @@ const ReviewLayout = ({ children }) => (
               flex-direction: column;
             }
           `}>
-          <SideBar>
+          <SidebarReview>
             <div
               css={css`
                 overflow-y: auto;
@@ -104,7 +104,7 @@ const ReviewLayout = ({ children }) => (
                 </ul>
               </div>
             </div>
-          </SideBar>
+          </SidebarReview>
           <main
             style={{
               margin: '2.45rem auto',
@@ -125,7 +125,7 @@ ReviewLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-const SideBar = styled.aside`
+const SidebarReview = styled.aside`
   ${bpMinLG} {
     max-width: 25%;
     width: 100%;
