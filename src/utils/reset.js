@@ -2,9 +2,13 @@ import { css } from '@emotion/core'
 import { bpMaxSM } from './breakpoints'
 
 const reset = css`
+.gatsby-resp-image-wrapper {
+  margin-left: 0 !important;
+}
 ${bpMaxSM} {
   h1 {
   font-size: 1.75rem;
+  line-height: 1.2;
 }
 h3 {
   font-size: 1.4rem;
@@ -15,6 +19,9 @@ h3 {
   margin-bottom: 0.5em;
   margin-top: 1.2em;
 }
+
+/* Algolia highlight color */
+mark {background: #3C55E4; color: white; }
 
 .twitter-tweet {
   padding: 10px 0 30px;
