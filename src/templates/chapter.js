@@ -35,7 +35,7 @@ class ChapterTemplate extends React.Component {
           )}
           */}
         {previous && (
-          <Link to={`/${previous.frontmatter.slug}`} rel='previous'>
+          <Link to={`/${previous.frontmatter.slug}`} rel="previous">
             <ReadNext>
               <h5>read next</h5>
               <h4>

@@ -1,0 +1,24 @@
+---
+date: 2019-01-01
+title: 'Setup your Mac terminal for screencasting'
+description: 'The terminal is a natural habitat for web developers. For screencasting, we want it to display good information and be distraction free.'
+categories: ['instructor']
+published: false
+---
+
+If you will be showing your command line, we suggest using a minimal prompt to reduce distractions. This example prompt works well for screencasting:
+
+![](https://lh3.googleusercontent.com/TouVkaQl8WDHTdHxr-u8PiALhO8MVjuOm1m05dtK6k8s2BPbcNDJe6pPH7Q0YXpVBUE0gH5ykLFbYq5VXGghJ---2FrdBhnRi5iGUQSA3Cdfxa2ohb-GfOXIGrTq0S1FKOVsD1wd)
+
+You can use this one by updating your `~/.bashrc` or `~/.zshrc` with the following:
+
+```bash
+export PS1="\n\[\e[32m\]\W\n\[\e[m\]\[\e[34m\]\\$\[\e[m\]"
+```
+
+Note: If you’re on Mac and using Bash, you also need to add a `~/.bash_profile` with this:
+
+`source $HOME/.bashrc`
+
+This tells Mac to load your `~/.bashrc` when loading a terminal emulator.
+
