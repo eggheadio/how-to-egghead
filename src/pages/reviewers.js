@@ -43,7 +43,7 @@ export const pageQuery = graphql`
   query Reviewers {
     allMdx(
       sort: { order: ASC, fields: fields___slug }
-      filter: { frontmatter: { guide: { eq: "reviewer" } } }
+      filter: { frontmatter: { guide: { eq: "reviewer" }, published: { ne: false } } }
     ) {
       edges {
         node {
