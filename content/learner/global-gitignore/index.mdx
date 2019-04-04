@@ -1,0 +1,60 @@
+---
+date: 2019-04-04
+title: 'Ignore Files on your Machine in git, per project and globally'
+description: 'Some files are never meant to be pushed to git. Learn how to ignore them.'
+categories: ['learner']
+published: false
+---
+
+Any file that is machine specific is not to be tracked by git which generally means that if a file is generated locally on your computer, you shouldn't push it up to GitHub. 
+
+Some examples of this are: Mac-specific `.DS_Store` files, `node_modules/`, and some project specific files/folders like `.cache` or `.next`.
+
+## Ignore Files per Project
+
+Git gives us the `.gitignore` file that allows us to tell git precisely what we don't ever want to commit. 
+
+This file sits at the root of a project, and any file or folder names added into this file are ignored. 
+
+Specifically, each line in the file is pattern matched to folders and files in the same path. Pattern matching allows you to ignore all files of a specific type. For example, some projects produce `.log` files. You can have git ignore all of them by adding a line with `*.log`.
+
+The pattern format can be found [here](https://git-scm.com/docs/gitignore#_pattern_format).
+
+## Ignore Files globally
+
+As mentioned above, there are some cases that you will want to _always_ ignore a file type. You can configure a global `.gitignore` file to do just that
+
+To do so takes a few steps:
+
+Open a terminal and navigate to root. 
+
+Create the global gitignore file running: `touch .gitignore_global`. 
+
+The file name can be anything you want but specifying that this globally effects your machine is recommended.
+
+Now run: `git config --global core.excludesfile ~/.gitignore_global`
+
+This command configures git to check this file for patterns (files) to ignore before committing from anywhere on your machine. It's worth noting that any project-specific patterns will take precedence over the patterns specified in a global config.
+
+You're all set to ignore files!
+
+## Recommended Files to Ignore
+
+It's good practice not to ignore files until you know you need to. 
+
+There are tools out there like [gitignore.io](https://www.gitignore.io/) that provide you a fully configured `.gitignore` file to add to a project. These templates cover almost all files you could think of ignoring but can add confusion to what is _actually_ ignored.
+
+If you prefer clarity, try incrementally building out a `.gitignore` file before importing a fully configured one. You'll likely find you don't need much.
+
+With that being said, if you develop on a Mac, some pesky files get generated like the `.DS_Store` that have nothing to do with development. The `.DS_Store` file carries metadata for Finder about things like icon position and view settings. **Not Relevant**
+
+`node_modules/` are another example of files that we can ignore everywhere on our machine. These dependencies are downloaded by everyone else working on your project locally (and likely at a different version!) so no need to push them.
+
+Add the following lines to your `~/.gitignore_global` file:
+```
+# Created by Finder
+.DS_Store
+
+# Generated when installing dependencies in JavaScript projects
+node_modules/
+```
