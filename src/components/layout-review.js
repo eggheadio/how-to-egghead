@@ -22,7 +22,7 @@ const ReviewLayout = ({ children }) => (
         }
         allMdx(
           sort: { order: ASC, fields: fields___slug }
-          filter: { frontmatter: { guide: { eq: "reviewer" } } }
+          filter: { frontmatter: { guide: { eq: "reviewer" }, published: { ne: false } } }
         ) {
           edges {
             node {
