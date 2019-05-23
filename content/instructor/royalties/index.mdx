@@ -1,0 +1,24 @@
+---
+date: 2019-04-24
+title: 'How royalties work'
+description: "egghead instructors earn royalties from a pool every month."
+categories: ['instructor']
+guide: 'instructor'
+published: true
+---
+
+### How royalties work
+
+Royalties are paid at the beginning of the month, and reflect how many 30-second segments viewers watched in the previous month. We use PayPal or direct deposit to distribute royalties.
+
+The amount you’re paid depends on the overall gross subscription revenue, and how many 30-second segments were watched in total. We use this basic algorithm in Ruby:
+
+```ruby
+egghead_monthly_revenue  * ( your_segments / total_segments ) * royalty_percent
+```
+
+![royalty_crown](./images/ch1_s2_royaltycrown.png)
+
+Royalties are pooled, so the more egghead members that watch your lessons, the more your monthly royalty check will be. This means that having a catalog of many useful lessons is the best way to increase your roaylty checks!
+
+We only send a check if your monhtly royalties are above $100, otherwise we will keep track and send you a check when they reach $100.
