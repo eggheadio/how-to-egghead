@@ -6,7 +6,33 @@ guide: 'reviewer'
 ---
 # Review Process Steps
 
-![Spoiler alert: it’s all on GitHub](../../../images/screenshots/review-05-review-process-gitflow.png)
+Video training content goes stale. egghead.io should be as up to date as possible when it comes to content. Because of the nature of video we need to monitor each lesson on multiple levels.
+
+This document will detail what you need to know to get started with a review as well as context for what to do to when you find stale content.
+
+<br />
+
+## Lesson Video
+
+An excellent coding screencast will focus on core concepts and have the ability to remain “evergreen” through minor revisions of the library that it is demonstrating. We need to continue to monitor this to make sure that it is the case.
+
+When differences exist we can take several courses of action:
+
+- Update the code sample and use comments in the code to notify the user that it has changed from the video
+- Annotate the lesson’s page to tell the student what is wrong with the lesson
+- Replace the lesson video/code with an updated version
+- Mark the lesson as obsolete/deprecated
+- Record a new version (vs replacement)
+
+<br />
+
+## Update Lesson Code Sample
+
+This is the most common action taken by the reviewer. The lesson code sample should reflect the current version(s) for the libraries it is demonstrating (libraries are updated often!). The sample code can correct for minor differences in the code demonstrated in the lesson video, noting with comments when this has been done.
+
+As most of the actions you will take relate to code, the following steps detail the processes that egghead reviewers (you!) take to handle discrepencies with dependency versions and subsequent breaking changes within code.
+
+![Branch flow going from work to Pull Request to merged](../../../images/screenshots/review-05-review-process-gitflow.png)
 
 # Glossary
 - **Repo** - source code on Github called a *repository*.
@@ -17,10 +43,19 @@ guide: 'reviewer'
 
 # Steps
 ## Anyone (e.g. end users or Greenkeeper)
+
+We want everyone to report issues, not just admin! Issues are reported from users in serveral different channels which include: Twitter, HelpScout (our customer support software), Slack (flagged in #egghead-support and #content-team), and eggheadio lesson comments.
+
+This can be tough to all keep track of. If you notice a user having an issue with a code behavior, open an issue in the repo and link it in #content-team.
+
 1. Create an *issue* in a *repo*.
-2. GitHub automatically adds the issue to the **To do** column on the *project board*.
+2. Add to the **Review Team Projects** *project board*
+3. GitHub automatically adds the issue to the **To do** column on the *project board*.
 
 ## Reviewer
+
+All courses that need review will be added to the **Review Team Projects** *project board* in the **To do** column. The following steps detail what you need to do to claim and finish a review:
+
 1. Pick an issue from the **To do** column on the project board.
 2. Manually move the issue to the **In progress** column on the project board.
 3. Assign yourself to the issue.
@@ -40,6 +75,9 @@ guide: 'reviewer'
 4. Check tests for errors.
 
 ## Admin
+
+These actions are taken by Review Team leads when you are finished with a review. When you PR code, this is where the team will discuss questions and issues that are surfaced through your review that need more conversation.
+
 1. Request changes in the code review.
 2. [Check out](https://www.atlassian.com/git/tutorials/using-branches/git-checkout) the PR in [official VS Code extension](https://vscode.rocks/github-pr-extension/).
 3. Commit updated lock file [to the PR’s branch](https://help.github.com/en/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork) if it was updated in CodeSandbox.
@@ -60,7 +98,11 @@ Run `yarn latest`, `A`, `Return` in the workspace root. Currently, it aliases `y
 
 # Changelog Format
 
+egghead uses the Changelog to document reviews in a consistent, machine-parseable format that details the version changes between reviews. When discrepencies between versions happen (they will), what is added, removed, changed, deprecated,and fixed is logged to provide information about the current state of the project.
+
 Install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=dzgmelody.vscode-changelog-snippets).
+
+This template should be added to a repository if one does not already exist:
 
 ## Template
     # Changelog
@@ -90,3 +132,28 @@ Install the [VS Code extension](https://marketplace.visualstudio.com/items?itemN
 
     - This file.
 
+# Other Actions
+
+When simply updating the code is not enough, there are a few more options available to us to inform users of breaking changes that might have occured.
+
+These are some common actions that are suggested by a reviewer during the Pull Request process for larger issues that need more attention.
+
+## Annotate the lesson page
+
+When there is some significant breaking difference in the lesson video and code sample, we can create a notification to be displayed prominently on the lesson page. This notification comes in the form of an `errata` which is shown below:
+
+![Errata Example](../../../images/illustrations/reviewers/01-Review/00-errata-example.png)
+
+## Replace the lesson video/code
+
+If the lesson still has significant value conceptually, we can re-record the lesson and produce an updated code sample. We want to do this for popular lessons and maintain our SEO.
+
+Make a note of why you think the lesson needs to be re-recorded in the Changelog.
+
+## Mark as obsolete
+
+Like Annotation above, but **more deadly**! :skull:
+
+## Record a new lesson
+
+Sometimes we will want to record a new lesson that presents the underlying concept with the updated version instead of replacing it in-place.
