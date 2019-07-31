@@ -1,0 +1,32 @@
+---
+date: 2019-05-08
+title: 'Git Terminology and Learning Resources'
+description: 'This article will help get you aquanted with some of the common git terms as well as point you towards a couple of excellent learning resources'
+categories: ['learner', 'getting-started']
+published: false
+---
+
+# Git Semantics
+
+Learning when and why to use git is equally as important as learning how to use it. In this article, you will learn how to properly apply your git skills so your work will be as transparent as possible. 
+
+## When to commit?
+
+Git is only useful if you are conveying meaning or purpose, **never** make a change that does not serve a purpose. The changes you make in a commit should all be purposeful and move you closer to your goal. Commit only when you reach your goal. 
+
+If it seems like you are making an excessive amount of changes before you make the commit ask yourself if your goal could get broken down even further. For example, say your goal in a review is to update the course examples to work with a new major version of a framework, if you made only a single large commit then you wouldn't be able to have a history in case there were issues with a single lesson that you didn't catch.
+
+Instead of committing when you finish updating the course, try to break the task down into sub-goals. Compare the following "commit histories."
+
+**Committed entire course**
+- Update course
+
+**Committed individual goals**
+- Refactor project to use yarn workspaces
+- Add prettier#1.17.1 to project
+- Update lesson 1 packages
+- Refactor lesson 1 to use .pipe syntax
+- Update lesson 2 packages...
+
+The history in the second example is a lot more useful than the first's. You are at a glance, capable of seeing what happened and in what order.
+
