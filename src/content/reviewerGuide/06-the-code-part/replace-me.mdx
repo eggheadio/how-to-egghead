@@ -7,10 +7,57 @@ published: false
 
 # The Code Part
 
-1. What to ask
-2. Debugging 
-    1. know when to stop and ask for help
-3. Updating
-4. Migration
-    1.  Services (codesandbox, local server, plunkr,  etc.)
-    2.  Changing a project's structure
+### What to ask
+
+When it comes to what to ask, there are two kinds of questions, job questions such as how egghead likes to have certain things, and code questions such as how fix a certain bug. 
+
+With the job questions, you are encouraged to always ask. You’ll ask the review team admin. 
+  
+When it comes to code questions, you are encouraged to do some of your own research first to see if you can figure out how to fix the bug or whatever issue you are having first before asking for help. The purpose for this is to help you learn things on your own and learning how to do your own research which you will be doing plenty of during your time with egghead. But keep in mind not to spend too much time researching, roughly 30 minutes, when you are having trouble and end up wasting time. 
+
+### Debugging
+
+The process for debugging really is just a lot of googleing. Google will be your best friend when trying to debug. Copy the error that you have in the console and paste that in google. One very popular place that you should keep in mind when researching a bug/error is [stackoverflow](https://stackoverflow.com/). You don’t need to post any questions there for work, but it’s a great place to find quick answers for yourself. 
+
+
+If you are unable to figure out the bug on your own, DON’T WORRY! After spending a little bit of time on it, go onto the next lesson. A lot of the times when you run into a bug during a course, it will repeat itself on more than just one lesson. After figuring out what lessons are effected by the bug/error, then asking for help is a good idea. A fellow reviewer or team admin will be able to help you out and you’ll be able to continue with your work.
+
+### Steps to take:
+
+When you find a bug, here are some steps to take to fix/report it:  
+- Short and precise title
+- Concise but complete description: Steps to reproduce, consequences of the bug
+- Good attachments
+- Correct Severity & Priority
+
+### Updating
+
+When updating code, you’ll want to clone the repo to do all of your work in. This way, you can do any of your debugging and not worry about messing up any of the code in the upstream repo (the repo you cloned from). When you’re done, you’ll make a PR and post it into the slack `content-team` channel to let one of the admin’s know that it is ready for review/merge/implementation. 
+
+### Migration (Services such as codesandbox, local server, plunkr, etc.)
+  
+These services are essential to how egghead provides its course examples to the users. This is how we display our working code so that the users can either copy it or mess around with it on our website. It provides the user with a great visual of how the code is supposed to work outside of the video and a way for them to interact with it. We are trying to move away from services such as plunker and start using codesandbox as much as possible. Codesandbox is the current service we are using to deliver our code examples to the user. It works with more languages and is closer to how someone would want to run the server locally whereas a service such as plunker is a bit more out of date. 
+
+    - Choose the course you are gong to be reviewing on our [projects board](https://github.com/orgs/eggheadio-projects/projects/1). 
+    - Drag the course over into the *Working On* column. 
+    - Find the repository that the course is in.
+    - Fork that into your own repository. 
+    - Clone your forked repository onto your computer.
+    - Open codesandbox and open the [github wizard](https://codesandbox.io/s/github). 
+    - Paste in the link to the lesson from github that you are working on. 
+    - Make all of your changes/debugging on codesandbox until it’s updated/working.
+    - Paste that code back into your cloned repository. 
+    - Commit those changes. 
+    - Once you have finished with all of these, make a pull request for your fork into the main fork. 
+    - Make sure to remember to drag your course from the *Working On* column to the *Needs Review* column in the [projects board](https://github.com/orgs/eggheadio-projects/projects/1). 
+    - Post your pull request into the `content-team` so one of the admins can review it. 
+    
+### Changing a project's structure
+    
+Changing multiple branches into just a master branch. Making sure its egghead structure.
+
+
+All of the lessons should be in one master branch. The old way of doing it was having each lesson in a separate branch. Now we want everything on the master branch, but with each lesson in its own folder. Example
+
+
+The easy/manual way of changing the structure is starting out with forking the repository. Then you’ll `git checkout` through each branch, and for each one, to copy everything into a file on your desktop labeled `lesson-01`, `lesson-02`, etc. Once you have all of the lessons copied and on your desktop, `git checkout` into the master branch and paste those files into the master branch. Once this is done, delete all of the other branches, make a pull request, and post that pull request into the `content-team` channel. 
