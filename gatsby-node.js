@@ -5,6 +5,24 @@ exports.onCreateNode = ({node, actions, getNode}) => {
   const {createNodeField} = actions
 
   if (node.internal.type === 'Mdx') {
+    const parent = getNode(node.parent)
+    if (parent.sourceInstanceName === 'articles') {
+      const [guideBase] = parent.relativeDirectory.split('/')
+      if (guideBase) {
+        createNodeField({
+          name: 'guide',
+          node,
+          value: `${guideBase}-guide`,
+        })
+      } else {
+        createNodeField({
+          name: 'guide',
+          node,
+          value: `index`,
+        })
+      }
+    }
+
     const value = createFilePath({node, getNode})
     createNodeField({
       name: 'slug',
@@ -28,6 +46,8 @@ exports.createPages = ({graphql, actions}) => {
                   id
                   parent {
                     ... on File {
+                      extension
+                      relativeDirectory
                       name
                       sourceInstanceName
                     }
@@ -35,6 +55,7 @@ exports.createPages = ({graphql, actions}) => {
                   excerpt(pruneLength: 250)
                   fields {
                     slug
+                    guide
                   }
                   frontmatter {
                     title
@@ -59,7 +80,9 @@ exports.createPages = ({graphql, actions}) => {
           return e.node.parent.sourceInstanceName === 'articles'
         })
 
-        articles.forEach(({node}) => {
+        articles.forEach(edge => {
+          const {node} = edge
+
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/templates/article.js`),

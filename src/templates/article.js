@@ -1,44 +1,43 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
-import { css } from '@emotion/core'
+import {graphql, Link} from 'gatsby'
+import {css} from '@emotion/core'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import ArticleLayout from '../components/layout-article'
-import { bpMinLG } from '../utils/breakpoints'
+import {bpMinLG} from '../utils/breakpoints'
 import without from 'lodash/without'
 import dropRight from 'lodash/dropRight'
 
 class ArticleTemplate extends React.Component {
   render() {
     const article = this.props.data.mdx
-    const { slug } = article.fields
-    const breadCrumbs = dropRight(
-      without(article.fields.slug.split('/'), ''),
-      1
-    ).reduce((breadcrumbArray, path, idx) => {
-      const root = breadcrumbArray[0]
-      const second =
-        breadcrumbArray[idx - 1] && idx - 1 > 0
-          ? breadcrumbArray[idx - 1].path + '/'
-          : ''
-      return [
-        ...breadcrumbArray,
-        {
-          name: path,
-          to: root ? root.to + second + path + '/' : '/' + path + '/',
-        },
-      ]
-    }, [])
+    const {slug} = article.fields
+    const breadCrumbs = dropRight(without(article.fields.slug.split('/'), ''), 1).reduce(
+      (breadcrumbArray, path, idx) => {
+        const root = breadcrumbArray[0]
+        const second = breadcrumbArray[idx - 1] && idx - 1 > 0 ? breadcrumbArray[idx - 1].path + '/' : ''
+        return [
+          ...breadcrumbArray,
+          {
+            name: path,
+            to: root ? root.to + second + path + '/' : '/' + path + '/',
+          },
+        ]
+      },
+      [],
+    )
+    let image
+    switch (article.fields.guide) {
+      case 'instructor-guide':
+        image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(article.frontmatter.title)}`
+    }
     return (
-      <ArticleLayout>
+      <ArticleLayout title={article.frontmatter.title} image={image}>
         <ul>
           {breadCrumbs.map((path, index) => {
             if (path.to === slug) return null
             return (
-              <li
-                css={{ display: 'inline-block', paddingRight: '5px' }}
-                key={path.name}>
-                <Link to={path.to}>{path.name}</Link>{' '}
-                {index < breadCrumbs.length - 1 && '<'}
+              <li css={{display: 'inline-block', paddingRight: '5px'}} key={path.name}>
+                <Link to={path.to}>{path.name}</Link> {index < breadCrumbs.length - 1 && '<'}
               </li>
             )
           })}
@@ -53,7 +52,8 @@ class ArticleTemplate extends React.Component {
               ${article.frontmatter.title && 'margin-top: -10px;'}
             }
             margin-top: 20px;
-          `}>
+          `}
+        >
           {article.frontmatter.title && article.frontmatter.title}
         </h1>
 
@@ -65,10 +65,11 @@ class ArticleTemplate extends React.Component {
 
 export const pageQuery = graphql`
   query ArticleQuery($id: String) {
-    mdx(id: { eq: $id }) {
+    mdx(id: {eq: $id}) {
       id
       fields {
         slug
+        guide
       }
       frontmatter {
         title
