@@ -26,7 +26,7 @@ class ArticleTemplate extends React.Component {
       [],
     )
     let image, description
-    console.log(article.excerpt)
+
     switch (article.fields.guide) {
       case 'instructor-guide':
         image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(article.frontmatter.title)}`
