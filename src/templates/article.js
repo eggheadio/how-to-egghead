@@ -11,20 +11,19 @@ class ArticleTemplate extends React.Component {
   render() {
     const article = this.props.data.mdx
     const {slug} = article.fields
-    const breadCrumbs = dropRight(without(article.fields.slug.split('/'), ''), 1).reduce(
-      (breadcrumbArray, path, idx) => {
-        const root = breadcrumbArray[0]
-        const second = breadcrumbArray[idx - 1] && idx - 1 > 0 ? breadcrumbArray[idx - 1].path + '/' : ''
+
+    const breadCrumbs = dropRight(
+      article.fields.slug.split('/').reduce((breadcrumbArray, path, idx) => {
         return [
           ...breadcrumbArray,
           {
-            name: path,
-            to: root ? root.to + second + path + '/' : '/' + path + '/',
+            name: path || 'home',
+            to: breadcrumbArray[idx - 1] ? `${breadcrumbArray[idx - 1].to}/${path}`.replace('//', '/') : path || '/',
           },
         ]
-      },
-      [],
+      }, []),
     )
+
     let image, description
 
     switch (article.fields.guide) {
