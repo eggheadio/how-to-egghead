@@ -7,7 +7,7 @@ import './layout-styles.css'
 
 import {bpMaxSM} from '../utils/breakpoints'
 
-const ArticleLayout = ({children, title, image}) => {
+const ArticleLayout = ({children, title, image, description}) => {
   const data = useStaticQuery(graphql`
     query ArticleTemplateQuery {
       site {
@@ -20,7 +20,7 @@ const ArticleLayout = ({children, title, image}) => {
   return (
     <>
       <Global styles={reset} />
-      <SEO title={title || data.site.siteMetadata.title} image={image} />
+      <SEO title={title || data.site.siteMetadata.title} image={image} description={description} />
       <div
         css={css`
           display: flex;

@@ -25,13 +25,15 @@ class ArticleTemplate extends React.Component {
       },
       [],
     )
-    let image
+    let image, description
+
     switch (article.fields.guide) {
       case 'instructor-guide':
         image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(article.frontmatter.title)}`
+        description = article.excerpt
     }
     return (
-      <ArticleLayout title={article.frontmatter.title} image={image}>
+      <ArticleLayout title={article.frontmatter.title} image={image} description={description}>
         <ul>
           {breadCrumbs.map((path, index) => {
             if (path.to === slug) return null

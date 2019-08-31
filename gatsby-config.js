@@ -9,7 +9,7 @@ process.env.BUILD_ALGOLIA_INDEX && process.env.BRANCH === 'master'
 module.exports = {
   siteMetadata: {
     title: 'Learn how to egghead like a pro.',
-    description: 'Instructor 101 Guide.',
+    description: 'A series of guides for badass eggheads.',
     author: '@eggheadio',
   },
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
           default: path.resolve('./src/components/layout.js'),
         },
         gatsbyRemarkPlugins: [
-          { resolve: `gatsby-remark-autolink-headers` },
+          {resolve: `gatsby-remark-autolink-headers`},
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -123,13 +123,13 @@ module.exports = {
               }
             }
           `,
-            transformer: ({ data }) =>
-              data.allMdx.edges.reduce((records, { node }) => {
-                const { title, slug, chapterTitle } = node.frontmatter
+            transformer: ({data}) =>
+              data.allMdx.edges.reduce((records, {node}) => {
+                const {title, slug, chapterTitle} = node.frontmatter
                 const path = node.fields.slug
                 // const { excerpt } = node.excerpt
                 // const { slug } = node.fields
-                const base = { slug, title, chapterTitle, path }
+                const base = {slug, title, chapterTitle, path}
                 const chunks = node.rawBody.split('\n\n')
 
                 return [
