@@ -83,7 +83,7 @@ var theme = {
     return (
       (_ref2 = {
         a: {
-          color: '#f92300',
+          color: '#FF2D55',
           textDecoration: 'none',
         },
         'a:hover,a:active': {

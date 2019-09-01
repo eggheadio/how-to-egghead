@@ -148,7 +148,7 @@ const SearchContainer = styled('div')`
 `
 
 // Show search results after user starts typing
-const Results = connectStateResults(({searchState}) =>
+const Results = connectStateResults(({searchState, searchResults}) =>
   searchState && searchState.query ? <Hits /> : null
 )
 
