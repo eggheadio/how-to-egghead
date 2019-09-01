@@ -48,7 +48,7 @@ class ArticleTemplate extends React.Component {
                 css={{display: 'inline-block', paddingRight: '5px'}}
                 key={path.name}>
                 <Link to={path.to}>{path.name}</Link>{' '}
-                {index < breadCrumbs.length - 1 && '<'}
+                {index < breadCrumbs.length - 1 && '→'}
               </li>
             )
           })}
