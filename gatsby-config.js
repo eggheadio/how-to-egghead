@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         globalScope: `
           import ResponsiveEmbed from "react-responsive-embed";
@@ -26,7 +26,12 @@ module.exports = {
           default: path.resolve('./src/components/layout.js'),
         },
         gatsbyRemarkPlugins: [
-          {resolve: `gatsby-remark-autolink-headers`},
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: 'autolink-header',
+            },
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -100,10 +105,7 @@ module.exports = {
           {
             query: `
             {
-              allMdx(
-                filter: { frontmatter: { guide: { eq: "instructor" } } }
-                sort: { order: ASC, fields: fields___slug }
-                ) {
+              allMdx(filter: {frontmatter:{published: {ne: false}}}) {
                 edges {
                   node {
                     id
@@ -111,6 +113,7 @@ module.exports = {
                       title
                       slug
                       guide
+                      description
                       chapterTitle 
                     }
                     fields {
@@ -125,19 +128,23 @@ module.exports = {
           `,
             transformer: ({data}) =>
               data.allMdx.edges.reduce((records, {node}) => {
-                const {title, slug, chapterTitle} = node.frontmatter
+                const {title} = node.frontmatter
                 const path = node.fields.slug
+                // for old guides, we take slug from frontmatter, while for the new one from fields
+                const slug = node.frontmatter.slug
+                  ? `/${node.frontmatter.slug}`
+                  : node.fields.slug
+                const base = {slug, title, path}
+                //const chunks = node.rawBody.split('\n\n')
                 // const { excerpt } = node.excerpt
-                // const { slug } = node.fields
-                const base = {slug, title, chapterTitle, path}
-                const chunks = node.rawBody.split('\n\n')
 
                 return [
                   ...records,
                   {
                     ...base,
-                    objectID: `${path.substring(17)}-${node.id}`,
-                    text: node.rawBody,
+                    objectID: `${path}-${node.id}`,
+                    text: node.frontmatter.description,
+                    guide: node.frontmatter.guide,
                   },
                 ]
               }, []),

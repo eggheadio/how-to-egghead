@@ -2,8 +2,9 @@ import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import {css} from '@emotion/core'
 import SEO from './seo'
+import Header from './header'
 
-import {bpMaxSM} from '../utils/breakpoints'
+import {bpMaxSM, bpMaxMD} from '../utils/breakpoints'
 
 const Layout = ({children, title, image, description}) => {
   const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const Layout = ({children, title, image, description}) => {
         image={image}
         description={description}
       />
+      <Header />
       <div
         css={css`
           display: flex;
@@ -39,6 +41,23 @@ const Layout = ({children, title, image, description}) => {
             width: '100%',
             padding: '0 1.0875rem 0 1.0875rem',
             paddingTop: 0,
+            'h1, h2, h3, h4': {
+              '.autolink-header': {
+                opacity: 0,
+                marginLeft: -25,
+                padding: 5,
+                [bpMaxMD]: {
+                  opacity: 1,
+                  margin: 0,
+                  padding: 0,
+                },
+              },
+              ':hover': {
+                '.autolink-header': {
+                  opacity: 1,
+                },
+              },
+            },
           }}>
           {children}
         </div>
