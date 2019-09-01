@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql, Link} from 'gatsby'
 import {css} from '@emotion/core'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import ArticleLayout from '../components/layout-article'
+import Layout from '../components/layout'
 import {bpMinLG} from '../utils/breakpoints'
 import without from 'lodash/without'
 import dropRight from 'lodash/dropRight'
@@ -11,35 +11,44 @@ class ArticleTemplate extends React.Component {
   render() {
     const article = this.props.data.mdx
     const {slug} = article.fields
-    const breadCrumbs = dropRight(without(article.fields.slug.split('/'), ''), 1).reduce(
-      (breadcrumbArray, path, idx) => {
-        const root = breadcrumbArray[0]
-        const second = breadcrumbArray[idx - 1] && idx - 1 > 0 ? breadcrumbArray[idx - 1].path + '/' : ''
+
+    const breadCrumbs = dropRight(
+      article.fields.slug.split('/').reduce((breadcrumbArray, path, idx) => {
         return [
           ...breadcrumbArray,
           {
-            name: path,
-            to: root ? root.to + second + path + '/' : '/' + path + '/',
+            name: path || 'home',
+            to: breadcrumbArray[idx - 1]
+              ? `${breadcrumbArray[idx - 1].to}/${path}`.replace('//', '/')
+              : path || '/',
           },
         ]
-      },
-      [],
+      }, [])
     )
+
     let image, description
-    console.log(article.excerpt)
+
     switch (article.fields.guide) {
       case 'instructor-guide':
-        image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(article.frontmatter.title)}`
+        image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(
+          article.frontmatter.title
+        )}`
         description = article.excerpt
     }
     return (
-      <ArticleLayout title={article.frontmatter.title} image={image} description={description}>
+      <Layout
+        title={article.frontmatter.title}
+        image={image}
+        description={description}>
         <ul>
           {breadCrumbs.map((path, index) => {
             if (path.to === slug) return null
             return (
-              <li css={{display: 'inline-block', paddingRight: '5px'}} key={path.name}>
-                <Link to={path.to}>{path.name}</Link> {index < breadCrumbs.length - 1 && '<'}
+              <li
+                css={{display: 'inline-block', paddingRight: '5px'}}
+                key={path.name}>
+                <Link to={path.to}>{path.name}</Link>{' '}
+                {index < breadCrumbs.length - 1 && '<'}
               </li>
             )
           })}
@@ -54,13 +63,12 @@ class ArticleTemplate extends React.Component {
               ${article.frontmatter.title && 'margin-top: -10px;'}
             }
             margin-top: 20px;
-          `}
-        >
+          `}>
           {article.frontmatter.title && article.frontmatter.title}
         </h1>
 
         <MDXRenderer>{article.code.body}</MDXRenderer>
-      </ArticleLayout>
+      </Layout>
     )
   }
 }

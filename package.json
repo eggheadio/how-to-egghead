@@ -41,8 +41,10 @@
     "react-transition-group": "^2.5.3",
     "react-twitter-embed": "^2.0.4",
     "react-typography": "^0.16.18",
+    "tyjs": "^0.0.2",
     "typography": "^0.16.18",
-    "typography-theme-bootstrap": "^0.16.18"
+    "typography-theme-bootstrap": "^0.16.18",
+    "typography-theme-sutro": "^0.16.19"
   },
   "keywords": [
     "gatsby"
