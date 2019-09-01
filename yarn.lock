@@ -10488,14 +10488,6 @@ typography-normalize@^0.14.0:
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.14.0.tgz#1d77c1fe2aaf4a51b3673c4c85c85a65a2d4b573"
   integrity sha1-HXfB/iqvSlGzZzxMhchaZaLUtXM=
 
-typography-theme-sutro@^0.16.19:
-  version "0.16.19"
-  resolved "https://registry.yarnpkg.com/typography-theme-sutro/-/typography-theme-sutro-0.16.19.tgz#9fb9ca6d4cf4fc101f33ceb3a7b77ae68b443247"
-  integrity sha512-oTOv97G0YGwG6HnzeuA3bXLCiLHY5122qmgqeOSIMSsQOEWHYzbx9gARQWTeTjANiOveIhZAftUezx8ZjEKXSQ==
-  dependencies:
-    gray-percentage "^2.0.0"
-    typography-breakpoint-constants "^0.16.19"
-
 ua-parser-js@^0.7.18:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
