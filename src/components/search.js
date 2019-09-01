@@ -15,7 +15,10 @@ import {
   connectStateResults,
 } from 'react-instantsearch-dom'
 
-const client = algoliasearch('NLOD4N9T1X', '9ec0b0075d0a1d1faf3e3dbd129aaad0')
+const client = algoliasearch(
+  `${process.env.ALGOLIA_APP_ID}`,
+  `${process.env.ALGOLIA_API_KEY}`
+)
 
 const Hits = connectHits(({hits}) => (
   <div
