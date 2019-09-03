@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import styled from '@emotion/styled'
-import { css, keyframes } from '@emotion/core'
+import {css, keyframes} from '@emotion/core'
 import algoliasearch from 'algoliasearch/lite'
 import Link from './link'
 import SearchIcon from '../images/icons/magnifier.svg'
@@ -68,16 +68,16 @@ const ChapterTitle = styled('h4')`
   color: #a5b3ff;
 `
 
-const Hits = connectHits(({ hits }) => (
+const Hits = connectHits(({hits}) => (
   <List>
     {hits.map(hit => (
       <Result key={hit.objectID}>
         {hit.chapterTitle && (
-          <Link to={`/${hit.slug}`}>
+          <Link to={hit.slug}>
             <ChapterTitle>{hit.chapterTitle}</ChapterTitle>
           </Link>
         )}
-        <TitleLink to={`/${hit.slug}`} id={hit.slug} activeClassName="active">
+        <TitleLink to={hit.slug} id={hit.slug} activeClassName="active">
           <Heading>
             <Highlight attribute="title" hit={hit} tagName="mark" />
           </Heading>
@@ -119,7 +119,7 @@ const Input = styled('input')`
   margin: 0.5em 0 1em 0;
 `
 
-const Search = connectSearchBox(({ currentRefinement, refine, setActive }) => (
+const Search = connectSearchBox(({currentRefinement, refine, setActive}) => (
   <form noValidate action="" role="search">
     <Label htmlFor="search">
       <Input
@@ -201,7 +201,7 @@ const LoadingContainer = () => (
 export default () => {
   const [active, setActive] = useState(false)
   const Loading = connectStateResults(
-    ({ searching }) =>
+    ({searching}) =>
       searching && (
         <div
           css={{
@@ -215,7 +215,7 @@ export default () => {
     <InstantSearch
       searchClient={client}
       indexName="guides"
-      root={{ Root: SearchContainer }}>
+      root={{Root: SearchContainer}}>
       <Configure distinct={1} hitsPerPage={30} />
       <SearchArea>
         <Search setActive={setActive} />
