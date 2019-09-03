@@ -5,7 +5,7 @@ import Link from './link'
 import SearchIcon from '../images/icons/magnifier.svg'
 import SearchIconActive from '../images/icons/magnifier-active.svg'
 import algoliasearch from 'algoliasearch/lite'
-import {bpMaxSM, bpMinSM} from '../utils/breakpoints'
+import {bpMaxSM} from '../utils/breakpoints'
 import {
   InstantSearch,
   Configure,
