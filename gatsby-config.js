@@ -16,12 +16,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        globalScope: `
-          import ResponsiveEmbed from "react-responsive-embed";
-          import { TwitterTweetEmbed } from "react-twitter-embed";
-
-          export default { ResponsiveEmbed, TwitterTweetEmbed };
-        `,
         defaultLayouts: {
           default: path.resolve('./src/components/layout.js'),
         },
@@ -132,9 +126,7 @@ module.exports = {
                 const {title} = node.frontmatter
                 const path = node.fields.slug
                 // for old guides, we take slug from frontmatter, while for the new one from fields
-                const slug = node.frontmatter.slug
-                  ? `/${node.frontmatter.slug}`
-                  : node.fields.slug
+                const slug = node.frontmatter.slug ? `/${node.frontmatter.slug}` : node.fields.slug
                 const base = {slug, title, path}
                 //const chunks = node.rawBody.split('\n\n')
                 // const { excerpt } = node.excerpt

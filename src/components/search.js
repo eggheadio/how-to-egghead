@@ -15,10 +15,7 @@ import {
   connectStateResults,
 } from 'react-instantsearch-dom'
 
-const client = algoliasearch(
-  `${process.env.ALGOLIA_APP_ID}`,
-  `${process.env.ALGOLIA_API_KEY}`
-)
+const client = algoliasearch(`${process.env.ALGOLIA_APP_ID}`, `${process.env.ALGOLIA_API_KEY}`)
 
 const Hits = connectHits(({hits}) => (
   <div
@@ -28,7 +25,8 @@ const Hits = connectHits(({hits}) => (
       height: '500',
       margin: '0 auto',
       zIndex: 999,
-    })}>
+    })}
+  >
     <ul
       css={css({
         position: 'absolute',
@@ -39,7 +37,8 @@ const Hits = connectHits(({hits}) => (
         [bpMaxSM]: {
           padding: 10,
         },
-      })}>
+      })}
+    >
       {hits.map(hit => (
         <li
           key={hit.objectID}
@@ -49,18 +48,16 @@ const Hits = connectHits(({hits}) => (
             padding: 10,
             margin: 0,
             borderBottom: '1px solid #f1f1f1',
-          })}>
+          })}
+        >
           <div
             css={css({
               width: '100%',
               flexBasis: '80%',
               [bpMaxSM]: {flexBasis: '70%'},
-            })}>
-            <Link
-              to={hit.slug}
-              id={hit.slug}
-              css={css({width: '100%', height: '100%'})}
-              activeClassName="active">
+            })}
+          >
+            <Link to={hit.slug} id={hit.slug} css={css({width: '100%', height: '100%'})} activeClassName="active">
               <Highlight attribute="title" hit={hit} tagName="mark" />
               <Highlight
                 css={css({display: 'block', fontSize: 14, opacity: 0.8})}
@@ -82,10 +79,10 @@ const Hits = connectHits(({hits}) => (
                 fontSize: 12,
                 flexBasis: '30%',
               },
-            })}>
+            })}
+          >
             <div css={css({alignItems: 'flex-end'})}>
-              <Highlight attribute="guide" hit={hit} tagName="mark" />{' '}
-              <span>{hit.guide && 'Guide'}</span>
+              <Highlight attribute="guide" hit={hit} tagName="mark" /> <span>{hit.guide && 'Guide'}</span>
             </div>
           </div>
         </li>
@@ -152,16 +149,14 @@ const SearchContainer = styled('div')`
 
 // Show search results after user starts typing
 const Results = connectStateResults(({searchState, searchResults}) =>
-  searchState && searchState.query ? <Hits /> : null
+  searchState && searchState.query ? <Hits /> : null,
 )
 
 export default () => {
+  console.log(process.env)
   const [isActive, setIsActive] = useState(false)
   return (
-    <InstantSearch
-      searchClient={client}
-      indexName={process.env.ALGOLIA_INDEX_NAME}
-      root={{Root: SearchContainer}}>
+    <InstantSearch searchClient={client} indexName={process.env.ALGOLIA_INDEX_NAME} root={{Root: SearchContainer}}>
       <Configure distinct={1} hitsPerPage={30} />
       <div>
         <Search setIsActive={setIsActive} />

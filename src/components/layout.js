@@ -3,6 +3,9 @@ import {useStaticQuery, graphql} from 'gatsby'
 import {css} from '@emotion/core'
 import SEO from './seo'
 import Header from './header'
+import {MDXProvider} from '@mdx-js/react'
+import ResponsiveEmbed from 'react-responsive-embed'
+import {TwitterTweetEmbed} from 'react-twitter-embed'
 
 import {bpMaxSM, bpMaxMD} from '../utils/breakpoints'
 
@@ -18,11 +21,7 @@ const Layout = ({children, title, image, description}) => {
   `)
   return (
     <>
-      <SEO
-        title={title || data.site.siteMetadata.title}
-        image={image}
-        description={description}
-      />
+      <SEO title={title || data.site.siteMetadata.title} image={image} description={description} />
       <Header />
       <div
         css={css`
@@ -30,7 +29,8 @@ const Layout = ({children, title, image, description}) => {
           ${bpMaxSM} {
             flex-direction: column;
           }
-        `}>
+        `}
+      >
         <div
           css={{
             margin: '2rem auto',
@@ -58,8 +58,9 @@ const Layout = ({children, title, image, description}) => {
                 },
               },
             },
-          }}>
-          {children}
+          }}
+        >
+          <MDXProvider components={{TwitterTweetEmbed, ResponsiveEmbed}}>{children}</MDXProvider>
         </div>
       </div>
     </>

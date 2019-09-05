@@ -40,7 +40,7 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-toggled": "^1.2.7",
     "react-transition-group": "^4.2.2",
-    "react-twitter-embed": "^2.0.8",
+    "react-twitter-embed": "2.0.4",
     "react-typography": "^0.16.19",
     "tyjs": "^0.0.2",
     "typography-breakpoint-constants": "^0.16.19"
