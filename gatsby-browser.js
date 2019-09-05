@@ -7,6 +7,6 @@ const scrollTo = id => () => {
 
 export const onRouteUpdate = ({location: {hash}}) => {
   if (hash) {
-    window.setTimeout(scrollTo(hash), 10)
+    window.setTimeout(scrollTo(hash), 250)
   }
 }
