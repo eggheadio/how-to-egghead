@@ -123,22 +123,21 @@ module.exports = {
           `,
             transformer: ({data}) =>
               data.allMdx.edges.reduce((records, {node}) => {
-                const {title} = node.frontmatter
+                const {title, description} = node.frontmatter
                 const path = node.fields.slug
                 // for old guides, we take slug from frontmatter, while for the new one from fields
                 const slug = node.frontmatter.slug ? `/${node.frontmatter.slug}` : node.fields.slug
-                const base = {slug, title, path}
-                //const chunks = node.rawBody.split('\n\n')
-                // const { excerpt } = node.excerpt
+                const {excerpt} = node.excerpt
+                const base = {slug, title, path, excerpt, description}
+                const chunks = node.rawBody.split('\n\n')
 
                 return [
                   ...records,
-                  {
+                  ...chunks.map((text, index) => ({
                     ...base,
-                    objectID: `${path}-${node.id}`,
-                    text: node.frontmatter.description,
-                    guide: node.frontmatter.guide,
-                  },
+                    objectID: `${slug}-${index}`,
+                    text,
+                  })),
                 ]
               }, []),
           },
