@@ -65,7 +65,7 @@ exports.createPages = ({graphql, actions}) => {
               }
             }
           }
-        `,
+        `
       ).then(result => {
         if (result.errors) {
           console.error(result.errors)
@@ -91,15 +91,13 @@ exports.createPages = ({graphql, actions}) => {
         })
 
         guides.forEach(({node}, index) => {
-          const previous = index === guides.length - 1 ? null : guides[index + 1].node
-          const next = index === 0 ? null : guides[index - 1].node
           createPage({
             path: node.frontmatter.slug,
-            component: path.resolve(`./src/templates/chapter.js`),
-            context: {id: node.id, previous, next},
+            component: path.resolve(`./src/templates/article.js`),
+            context: {id: node.id},
           })
         })
-      }),
+      })
     )
   })
 }

@@ -1,93 +1,97 @@
 import React, {useState} from 'react'
+import {css} from '@emotion/core'
 import styled from '@emotion/styled'
-import {css, keyframes} from '@emotion/core'
-import algoliasearch from 'algoliasearch/lite'
 import Link from './link'
 import SearchIcon from '../images/icons/magnifier.svg'
-import SearchIconActive from '../images/icons/magnifier-blue.svg'
+import SearchIconActive from '../images/icons/magnifier-active.svg'
+import algoliasearch from 'algoliasearch/lite'
+import {bpMaxSM} from '../utils/breakpoints'
 import {
+  InstantSearch,
   Configure,
+  Highlight,
   connectHits,
   connectSearchBox,
-  InstantSearch,
-  Highlight,
   connectStateResults,
 } from 'react-instantsearch-dom'
 
-const client = algoliasearch('NLOD4N9T1X', '9ec0b0075d0a1d1faf3e3dbd129aaad0')
-
-const SearchArea = styled('div')`
-  margin-top: 0;
-  width: 100%;
-`
-
-const List = styled('ul')`
-  list-style: none;
-  margin: 0 auto;
-  max-width: 650px;
-  padding-bottom: 30px;
-  color: black;
-`
-
-const Result = styled('li')`
-  color: #a5b3ff;
-  margin: 2px 0;
-`
-
-const TitleLink = styled(Link)`
-  .active {
-    h5 {
-      background: #283644;
-    }
-  }
-`
-
-const Heading = styled('h5')`
-  font-size: 18px;
-  padding: 5px 0;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #d3d7da;
-  :hover {
-    transition: all 200ms ease;
-    background: #283644;
-  }
-  border-radius: 3px;
-  margin: 0 15px 0 15px;
-  padding: 13px 15px;
-
-  .active,
-  .hover {
-    color: #f5f7fa;
-  }
-  a {
-    text-decoration: none;
-  }
-`
-const ChapterTitle = styled('h4')`
-  color: #a5b3ff;
-`
+const client = algoliasearch(
+  `${process.env.ALGOLIA_APP_ID}`,
+  `${process.env.ALGOLIA_API_KEY}`
+)
 
 const Hits = connectHits(({hits}) => (
-  <List>
-    {hits.map(hit => (
-      <Result key={hit.objectID}>
-        {hit.chapterTitle && (
-          <Link to={hit.slug}>
-            <ChapterTitle>{hit.chapterTitle}</ChapterTitle>
-          </Link>
-        )}
-        <TitleLink to={hit.slug} id={hit.slug} activeClassName="active">
-          <Heading>
-            <Highlight attribute="title" hit={hit} tagName="mark" />
-          </Heading>
-        </TitleLink>
-        <p>
-          <Highlight attribute="description" hit={hit} tagName="mark" />
-        </p>
-      </Result>
-    ))}
-  </List>
+  <div
+    css={css({
+      position: 'relative',
+      maxWidth: 960,
+      height: '500',
+      margin: '0 auto',
+      zIndex: 999,
+    })}>
+    <ul
+      css={css({
+        position: 'absolute',
+        width: '100%',
+        backgroundColor: 'white',
+        overflow: 'auto',
+        padding: 20,
+        [bpMaxSM]: {
+          padding: 10,
+        },
+      })}>
+      {hits.map(hit => (
+        <li
+          key={hit.objectID}
+          css={css({
+            display: 'flex',
+            width: '100%',
+            padding: 10,
+            margin: 0,
+            borderBottom: '1px solid #f1f1f1',
+          })}>
+          <div
+            css={css({
+              width: '100%',
+              flexBasis: '80%',
+              [bpMaxSM]: {flexBasis: '70%'},
+            })}>
+            <Link
+              to={hit.slug}
+              id={hit.slug}
+              css={css({width: '100%', height: '100%'})}
+              activeClassName="active">
+              <Highlight attribute="title" hit={hit} tagName="mark" />
+              <Highlight
+                css={css({display: 'block', fontSize: 14, opacity: 0.8})}
+                attribute="text"
+                hit={hit}
+                tagName="mark"
+              />
+            </Link>
+          </div>
+          <div
+            css={css({
+              display: 'flex',
+              alignItems: 'center',
+              flexBasis: '20%',
+              fontFamily: 'system-ui, sans-serif',
+              textTransform: 'capitalize',
+              fontSize: 16,
+              [bpMaxSM]: {
+                fontSize: 12,
+                flexBasis: '30%',
+              },
+            })}>
+            <div css={css({alignItems: 'flex-end'})}>
+              <Highlight attribute="guide" hit={hit} tagName="mark" />{' '}
+              <span>{hit.guide && 'Guide'}</span>
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
 ))
 
 const Label = styled('label')`
@@ -95,32 +99,32 @@ const Label = styled('label')`
   margin: 0 15px;
 `
 
-const Input = styled('input')`
-  border: none;
-  font-weight: 300;
-  border-radius: 3px;
-  color: #e8ecf3;
-  background: url(${SearchIcon}) no-repeat;
-  background-size: 20px;
-  background-position-x: 12px;
-  background-position-y: 13px;
-  :focus {
-    background: url(${SearchIconActive}) no-repeat;
-    background-size: 20px;
-    background-position-x: 12px;
-    background-position-y: 13px;
-  }
-  background-color: #17212b;
-  display: block;
-  font-size: 18px;
-  margin-top: 0;
-  padding: 0.5rem 0.75rem 0.5rem 2rem;
-  width: 100%;
-  margin: 0.5em 0 1em 0;
-`
+const Input = styled('input')({
+  fontFamily: 'system-ui, sans-serif',
+  fontWeight: 'normal',
+  borderRadius: '5px',
+  background: `url(${SearchIcon}) no-repeat`,
+  backgroundSize: '16px',
+  backgroundPositionX: '12px',
+  backgroundPositionY: '50%',
+  ':focus': {
+    background: `url(${SearchIconActive}) no-repeat`,
+    backgroundSize: '16px',
+    backgroundPositionX: '12px',
+    backgroundPositionY: '50%',
+  },
+  backgroundColor: '#fafafa',
+  border: '1px solid #f1f1f1',
+  display: 'block',
+  fontSize: '16px',
+  padding: '0.5rem 0.75rem 0.5rem 35px',
+  width: '100%',
+  marginTop: '1rem',
+  boxShadow: 'none',
+})
 
-const Search = connectSearchBox(({currentRefinement, refine, setActive}) => (
-  <form noValidate action="" role="search">
+const Search = connectSearchBox(({currentRefinement, refine, setIsActive}) => (
+  <form noValidate action="" role="search" css={css({margin: 0})}>
     <Label htmlFor="search">
       <Input
         placeholder="Search the guide"
@@ -129,11 +133,11 @@ const Search = connectSearchBox(({currentRefinement, refine, setActive}) => (
         value={currentRefinement}
         onBlur={() => {
           if (currentRefinement === '') {
-            setActive(false)
+            setIsActive(false)
           }
         }}
         onChange={event => {
-          setActive(true)
+          setIsActive(true)
           refine(event.currentTarget.value)
         }}
       />
@@ -146,82 +150,23 @@ const SearchContainer = styled('div')`
   color: black;
 `
 
-const HeadingPlaceholder = css`
-  :hover {
-    background: none;
-  }
-`
-
-const animation = keyframes`
-from {
-  opacity: 0;
-}
-50% {
-  opacity: 0.25;
-}
-to {
-  opacity: 0;
-}
-`
-const LoadingPlaceholder = styled('div')`
-  width: 100%;
-  height: 35px;
-  background-size: 200% 100%;
-  background-image: linear-gradient(
-    90deg,
-    hsla(255, 100%, 100%, 0.5),
-    hsla(255, 100%, 100%, 0)
-  );
-  animation: ${animation} 2s ease-out infinite;
-`
-
-const LoadingContainer = () => (
-  <List>
-    <Result>
-      <ChapterTitle>Loading...</ChapterTitle>
-      <TitleLink>
-        <Heading css={HeadingPlaceholder}>
-          <LoadingPlaceholder />
-        </Heading>
-      </TitleLink>
-      <TitleLink>
-        <Heading css={HeadingPlaceholder}>
-          <LoadingPlaceholder />
-        </Heading>
-      </TitleLink>
-      <TitleLink>
-        <Heading css={HeadingPlaceholder}>
-          <LoadingPlaceholder />
-        </Heading>
-      </TitleLink>
-    </Result>
-  </List>
+// Show search results after user starts typing
+const Results = connectStateResults(({searchState, searchResults}) =>
+  searchState && searchState.query ? <Hits /> : null
 )
 
 export default () => {
-  const [active, setActive] = useState(false)
-  const Loading = connectStateResults(
-    ({searching}) =>
-      searching && (
-        <div
-          css={{
-            color: 'white',
-          }}>
-          <LoadingContainer />
-        </div>
-      )
-  )
+  const [isActive, setIsActive] = useState(false)
   return (
     <InstantSearch
       searchClient={client}
-      indexName="guides"
+      indexName={process.env.ALGOLIA_INDEX_NAME}
       root={{Root: SearchContainer}}>
       <Configure distinct={1} hitsPerPage={30} />
-      <SearchArea>
-        <Search setActive={setActive} />
-        <Loading />
-        <Hits />
-      </SearchArea>
+      <div>
+        <Search setIsActive={setIsActive} />
+        <Results />
+      </div>
     </InstantSearch>
   )
 }
