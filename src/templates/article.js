@@ -18,35 +18,44 @@ const ArticleTemplate = ({data}) => {
           ...breadcrumbArray,
           {
             name: path || 'home',
-            to: breadcrumbArray[idx - 1] ? `${breadcrumbArray[idx - 1].to}/${path}`.replace('//', '/') : path || '/',
+            to: breadcrumbArray[idx - 1]
+              ? `${breadcrumbArray[idx - 1].to}/${path}`.replace('//', '/')
+              : path || '/',
           },
         ]
-      }, []),
-    ),
+      }, [])
+    )
   )
 
   let image, description
 
   switch (guide) {
     case 'instructor-guide':
-      image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(article.frontmatter.title)}`
+      image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(
+        article.frontmatter.title
+      )}?background=${encodeURI(article.frontmatter.shareImage)}`
       description = article.excerpt
   }
   return (
-    <Layout title={article.frontmatter.title} image={image} description={description}>
+    <Layout
+      title={article.frontmatter.title}
+      image={image}
+      description={description}>
       {guide && (
         <ul>
           {breadCrumbs.map((path, index) => {
             if (path.to === slug) return null
             return (
-              <li css={{display: 'inline-block', paddingRight: '5px'}} key={path.name}>
-                <Link to={path.to}>{path.name}</Link> {index < breadCrumbs.length - 1 && '→'}
+              <li
+                css={{display: 'inline-block', paddingRight: '5px'}}
+                key={path.name}>
+                <Link to={path.to}>{path.name}</Link>{' '}
+                {index < breadCrumbs.length - 1 && '→'}
               </li>
             )
           })}
         </ul>
       )}
-
       <h1
         css={css`
           font-size: 24px;
@@ -57,8 +66,7 @@ const ArticleTemplate = ({data}) => {
             ${article.frontmatter.title && 'margin-top: -10px;'}
           }
           margin-top: 20px;
-        `}
-      >
+        `}>
         {article.frontmatter.title && article.frontmatter.title}
       </h1>
       <MDXRenderer>{article.body}</MDXRenderer>
@@ -80,6 +88,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        shareImage
       }
     }
   }
