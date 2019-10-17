@@ -45,7 +45,7 @@ const ArticleTemplate = ({data}) => {
       timeToRead={article.timeToRead}
       categories={article.frontmatter.categories}>
       {guide && (
-        <ul>
+        <ul css={{margin: 0}}>
           {breadCrumbs.map((path, index) => {
             if (path.to === slug) return null
             return (
