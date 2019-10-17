@@ -41,7 +41,9 @@ const ArticleTemplate = ({data}) => {
     <Layout
       title={article.frontmatter.title}
       image={image}
-      description={description}>
+      description={description}
+      timeToRead={article.timeToRead}
+      categories={article.frontmatter.categories}>
       {guide && (
         <ul>
           {breadCrumbs.map((path, index) => {
@@ -83,6 +85,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 250)
       body
+      timeToRead
       fields {
         slug
         guide
@@ -90,6 +93,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         shareImage
+        categories
       }
     }
   }

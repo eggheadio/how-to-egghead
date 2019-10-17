@@ -9,7 +9,14 @@ import {TwitterTweetEmbed} from 'react-twitter-embed'
 
 import {bpMaxSM, bpMaxMD} from '../utils/breakpoints'
 
-const Layout = ({children, title, image, description}) => {
+const Layout = ({
+  children,
+  title,
+  image,
+  description,
+  timeToRead,
+  categories,
+}) => {
   const data = useStaticQuery(graphql`
     query ArticleTemplateQuery {
       site {
@@ -21,7 +28,13 @@ const Layout = ({children, title, image, description}) => {
   `)
   return (
     <>
-      <SEO title={title || data.site.siteMetadata.title} image={image} description={description} />
+      <SEO
+        title={title || data.site.siteMetadata.title}
+        image={image}
+        description={description}
+        timeToRead={timeToRead}
+        categories={categories}
+      />
       <Header />
       <div
         css={css`
@@ -29,8 +42,7 @@ const Layout = ({children, title, image, description}) => {
           ${bpMaxSM} {
             flex-direction: column;
           }
-        `}
-      >
+        `}>
         <div
           css={{
             margin: '2rem auto',
@@ -58,9 +70,10 @@ const Layout = ({children, title, image, description}) => {
                 },
               },
             },
-          }}
-        >
-          <MDXProvider components={{TwitterTweetEmbed, ResponsiveEmbed}}>{children}</MDXProvider>
+          }}>
+          <MDXProvider components={{TwitterTweetEmbed, ResponsiveEmbed}}>
+            {children}
+          </MDXProvider>
         </div>
       </div>
     </>
