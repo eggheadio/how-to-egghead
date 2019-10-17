@@ -20,48 +20,42 @@ const client = algoliasearch('NLOD4N9T1X', '27ac39ffd2f1ec6477d7772f42ec3bb0')
 const Hits = connectHits(({hits}) => (
   <div
     css={css({
-      position: 'relative',
-      maxWidth: 960,
-      height: '500',
-      margin: '0 auto',
+      width: '100%',
+      position: 'absolute',
       zIndex: 999,
-    })}
-  >
-    <ul
-      css={css({
-        position: 'absolute',
-        width: '100%',
-        backgroundColor: 'white',
-        overflow: 'auto',
-        padding: 20,
-        [bpMaxSM]: {
-          padding: 10,
-        },
-      })}
-    >
+      backgroundColor: 'white',
+      overflow: 'auto',
+      borderRadius: 3,
+      marginTop: 6,
+      border: '1px solid rgba(0,0,0,0.08)',
+      boxShadow:
+        '0 3px 6px 0 rgba(0,0,0,0.12), 0 7px 24px 0 rgba(62,61,68,0.12)',
+    })}>
+    <ul>
       {hits.map(hit => (
         <li
           key={hit.objectID}
           css={css({
             display: 'flex',
             width: '100%',
-            padding: 10,
+            padding: '2px 16px',
             margin: 0,
-            borderBottom: '1px solid #f1f1f1',
-          })}
-        >
+          })}>
           <div
             css={css({
               width: '100%',
               flexBasis: '80%',
               [bpMaxSM]: {flexBasis: '70%'},
-            })}
-          >
-            <Link to={hit.slug} id={hit.slug} css={css({width: '100%', height: '100%'})} activeClassName="active">
+            })}>
+            <Link
+              to={hit.slug}
+              id={hit.slug}
+              css={css({width: '100%', height: '100%', fontSize: 18})}
+              activeClassName="active">
               <Highlight attribute="title" hit={hit} tagName="mark" />
               <Highlight
                 css={css({display: 'block', fontSize: 14, opacity: 0.8})}
-                attribute="text"
+                attribute="excerpt"
                 hit={hit}
                 tagName="mark"
               />
@@ -79,10 +73,10 @@ const Hits = connectHits(({hits}) => (
                 fontSize: 12,
                 flexBasis: '30%',
               },
-            })}
-          >
+            })}>
             <div css={css({alignItems: 'flex-end'})}>
-              <Highlight attribute="guide" hit={hit} tagName="mark" /> <span>{hit.guide && 'Guide'}</span>
+              <Highlight attribute="guide" hit={hit} tagName="mark" />{' '}
+              <span>{hit.guide && 'Guide'}</span>
             </div>
           </div>
         </li>
@@ -93,7 +87,6 @@ const Hits = connectHits(({hits}) => (
 
 const Label = styled('label')`
   display: block;
-  margin: 0 15px;
 `
 
 const Input = styled('input')({
@@ -109,6 +102,7 @@ const Input = styled('input')({
     backgroundSize: '16px',
     backgroundPositionX: '12px',
     backgroundPositionY: '50%',
+    outlineColor: '#FF90A4',
   },
   backgroundColor: '#fafafa',
   border: '1px solid #f1f1f1',
@@ -116,7 +110,6 @@ const Input = styled('input')({
   fontSize: '16px',
   padding: '0.5rem 0.75rem 0.5rem 35px',
   width: '100%',
-  marginTop: '1rem',
   boxShadow: 'none',
 })
 
@@ -143,20 +136,24 @@ const Search = connectSearchBox(({currentRefinement, refine, setIsActive}) => (
 ))
 
 const SearchContainer = styled('div')`
-  margin-top: 0;
-  color: black;
+  width: 100%;
 `
 
 // Show search results after user starts typing
 const Results = connectStateResults(({searchState, searchResults}) =>
-  searchState && searchState.query ? <Hits /> : null,
+  searchState && searchState.query ? (
+    <div css={{position: 'relative'}}>
+      <Hits />
+    </div>
+  ) : null
 )
-
 export default () => {
-  console.log(process.env)
   const [isActive, setIsActive] = useState(false)
   return (
-    <InstantSearch searchClient={client} indexName={process.env.ALGOLIA_INDEX_NAME} root={{Root: SearchContainer}}>
+    <InstantSearch
+      searchClient={client}
+      indexName={process.env.ALGOLIA_INDEX_NAME}
+      root={{Root: SearchContainer}}>
       <Configure distinct={1} hitsPerPage={30} />
       <div>
         <Search setIsActive={setIsActive} />
