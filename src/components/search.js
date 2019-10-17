@@ -52,16 +52,17 @@ const Hits = connectHits(({hits}) => (
               css={css({
                 width: '100%',
                 height: '100%',
-                fontSize: 18,
-                [bpMaxSM]: {fontSize: 16},
-                lineHeight: 1.2,
               })}
               activeClassName="active">
               <Highlight
                 attribute="title"
                 hit={hit}
-                css={{lineHeight: 1.2}}
                 tagName="mark"
+                css={{
+                  fontSize: 18,
+                  [bpMaxSM]: {fontSize: 16, lineHeight: '16px'},
+                  lineHeight: '18px',
+                }}
               />
               <Highlight
                 css={css({display: 'block', fontSize: 14, opacity: 0.8})}
