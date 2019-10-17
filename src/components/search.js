@@ -27,11 +27,12 @@ const Hits = connectHits(({hits}) => (
       overflow: 'auto',
       borderRadius: 3,
       marginTop: 6,
+      maxHeight: 500,
       border: '1px solid rgba(0,0,0,0.08)',
       boxShadow:
         '0 3px 6px 0 rgba(0,0,0,0.12), 0 7px 24px 0 rgba(62,61,68,0.12)',
     })}>
-    <ul>
+    <ul css={{margin: 0, padding: '10px 0'}}>
       {hits.map(hit => (
         <li
           key={hit.objectID}
@@ -39,29 +40,38 @@ const Hits = connectHits(({hits}) => (
             display: 'flex',
             width: '100%',
             padding: '2px 16px',
-            margin: 0,
+            marginBottom: 5,
           })}>
           <div
             css={css({
               width: '100%',
-              flexBasis: '80%',
-              [bpMaxSM]: {flexBasis: '70%'},
             })}>
             <Link
               to={hit.slug}
               id={hit.slug}
-              css={css({width: '100%', height: '100%', fontSize: 18})}
+              css={css({
+                width: '100%',
+                height: '100%',
+                fontSize: 18,
+                [bpMaxSM]: {fontSize: 16},
+                lineHeight: 1.2,
+              })}
               activeClassName="active">
-              <Highlight attribute="title" hit={hit} tagName="mark" />
+              <Highlight
+                attribute="title"
+                hit={hit}
+                css={{lineHeight: 1.2}}
+                tagName="mark"
+              />
               <Highlight
                 css={css({display: 'block', fontSize: 14, opacity: 0.8})}
-                attribute="excerpt"
+                attribute="text"
                 hit={hit}
                 tagName="mark"
               />
             </Link>
           </div>
-          <div
+          {/* <div
             css={css({
               display: 'flex',
               alignItems: 'center',
@@ -78,7 +88,7 @@ const Hits = connectHits(({hits}) => (
               <Highlight attribute="guide" hit={hit} tagName="mark" />{' '}
               <span>{hit.guide && 'Guide'}</span>
             </div>
-          </div>
+          </div> */}
         </li>
       ))}
     </ul>
