@@ -81,7 +81,7 @@ function SEO({
                 content: `${
                   timeToRead
                     ? `${timeToRead} ${timeToRead === 1 ? 'minute' : 'minutes'}`
-                    : 'Instant'
+                    : '< 1 minute'
                 }`,
               },
               {
