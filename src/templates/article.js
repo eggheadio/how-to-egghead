@@ -33,7 +33,8 @@ const ArticleTemplate = ({data}) => {
     case 'instructor-guide':
       image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(
         article.frontmatter.title
-      )}?background=${encodeURI(article.frontmatter.shareImage)}`
+      )}${article.frontmatter.shareImage &&
+        `?bgImage=${encodeURI(article.frontmatter.shareImage)}`}`
       description = article.excerpt
   }
   return (
