@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
 import metaImage from '../images/social-card.jpg'
+import {capitalize} from 'lodash'
 
 function SEO({
   description,
@@ -86,15 +87,24 @@ function SEO({
               },
               {
                 name: 'twitter:label2',
-                content: 'Category',
+                content: `${
+                  categories && categories.length > 1
+                    ? 'Categories'
+                    : 'Category'
+                }`,
               },
               {
                 name: 'twitter:data2',
-                content: `${categories &&
-                  categories.map(
-                    (category, i) =>
-                      `${i !== 0 ? ' ' : ''}${category.replace('-', ' ')}`
-                  )}`,
+                content: `${
+                  categories
+                    ? categories.map(
+                        (category, i) =>
+                          `${i !== 0 ? ' ' : ''}${capitalize(
+                            category.replace('-', ' ')
+                          )}`
+                      )
+                    : 'egghead.io'
+                }`,
               },
             ]
               .concat(
