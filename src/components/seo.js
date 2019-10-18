@@ -3,13 +3,24 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
 import metaImage from '../images/social-card.jpg'
+import {capitalize} from 'lodash'
 
-function SEO({description, lang, meta, keywords, title, image}) {
+function SEO({
+  description,
+  lang,
+  meta,
+  keywords,
+  title,
+  image,
+  timeToRead,
+  categories,
+}) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
-        const metaDescription = description || data.site.siteMetadata.description
+        const metaDescription =
+          description || data.site.siteMetadata.description
         return (
           <Helmet
             htmlAttributes={{
@@ -62,6 +73,39 @@ function SEO({description, lang, meta, keywords, title, image}) {
                 name: 'og:image',
                 content: image || metaImage,
               },
+              {
+                name: 'twitter:label1',
+                content: 'Time to read',
+              },
+              {
+                name: 'twitter:data1',
+                content: `${
+                  timeToRead
+                    ? `${timeToRead} ${timeToRead === 1 ? 'minute' : 'minutes'}`
+                    : '< 1 minute'
+                }`,
+              },
+              {
+                name: 'twitter:label2',
+                content: `${
+                  categories && categories.length > 1
+                    ? 'Categories'
+                    : 'Category'
+                }`,
+              },
+              {
+                name: 'twitter:data2',
+                content: `${
+                  categories
+                    ? categories.map(
+                        (category, i) =>
+                          `${i !== 0 ? ' ' : ''}${capitalize(
+                            category.replace('-', ' ')
+                          )}`
+                      )
+                    : 'egghead.io'
+                }`,
+              },
             ]
               .concat(
                 keywords.length > 0
@@ -69,7 +113,7 @@ function SEO({description, lang, meta, keywords, title, image}) {
                       name: 'keywords',
                       content: keywords.join(', '),
                     }
-                  : [],
+                  : []
               )
               .concat(meta)}
           />
