@@ -63,15 +63,15 @@ function SEO({
               },
               {
                 name: 'twitter:image',
-                content: image || metaImage,
+                content: image || `https://howtoegghead.com${metaImage}`,
               },
               {
                 name: 'image',
-                content: image || metaImage,
+                content: image || `https://howtoegghead.com${metaImage}`,
               },
               {
                 name: 'og:image',
-                content: image || metaImage,
+                content: image || `https://howtoegghead.com${metaImage}`,
               },
               {
                 name: 'twitter:label1',
