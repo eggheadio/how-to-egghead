@@ -1,7 +1,7 @@
 const path = require('path')
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.${process.env.NODE_ENV}`
 })
 
 process.env.BUILD_ALGOLIA_INDEX && process.env.BRANCH === 'master'
@@ -10,32 +10,32 @@ module.exports = {
   siteMetadata: {
     title: 'Learn how to egghead like a pro.',
     description: 'A series of guides for badass eggheads.',
-    author: '@eggheadio',
+    author: '@eggheadio'
   },
   plugins: [
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: path.resolve('./src/components/layout.js'),
+          default: path.resolve('./src/components/layout.js')
         },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              className: 'autolink-header',
-            },
+              className: 'autolink-header'
+            }
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 700,
+              maxWidth: 920,
               linkImagesToOriginal: false,
-              tracedSVG: true,
-            },
-          },
-        ],
-      },
+              tracedSVG: true
+            }
+          }
+        ]
+      }
     },
     'gatsby-remark-images',
     'gatsby-transformer-remark',
@@ -45,37 +45,37 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
-      },
+        ignore: [`**/\.*`] // ignore files starting with a dot
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/content/`,
         name: 'guides',
-        ignore: [`**/\.*`], // ignore files starting with a dot
-      },
+        ignore: [`**/\.*`] // ignore files starting with a dot
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
         name: 'articles',
-        ignore: [`**/\.*`], // ignore files starting with a dot,
-      },
+        ignore: [`**/\.*`] // ignore files starting with a dot,
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
+        pathToConfigModule: `src/utils/typography`
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -88,8 +88,8 @@ module.exports = {
         background_color: '#3852E4',
         theme_color: '#3852E4',
         display: 'minimal-ui',
-        icon: 'src/images/egghead-icon.png', // This path is relative to the root of the site.
-      },
+        icon: 'src/images/egghead-icon.png' // This path is relative to the root of the site.
+      }
     },
     {
       resolve: `gatsby-plugin-algolia`,
@@ -139,17 +139,17 @@ module.exports = {
                   ...chunks.map((text, index) => ({
                     ...base,
                     objectID: `${slug}-${index}`,
-                    text,
-                  })),
+                    text
+                  }))
                 ]
-              }, []),
-          },
-        ],
-      },
-    },
+              }, [])
+          }
+        ]
+      }
+    }
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
+  ]
 }
