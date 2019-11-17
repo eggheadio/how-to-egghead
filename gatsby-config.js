@@ -1,29 +1,29 @@
-const path = require('path')
+const path = require("path");
 
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
-})
+});
 
-process.env.BUILD_ALGOLIA_INDEX && process.env.BRANCH === 'master'
+process.env.BUILD_ALGOLIA_INDEX && process.env.BRANCH === "master";
 
 module.exports = {
   siteMetadata: {
-    title: 'Learn how to egghead like a pro.',
-    description: 'A series of guides for badass eggheads.',
-    author: '@eggheadio'
+    title: "Learn how to egghead like a pro.",
+    description: "A series of guides for badass eggheads.",
+    author: "@eggheadio"
   },
   plugins: [
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: path.resolve('./src/components/layout.js')
+          default: path.resolve("./src/components/layout.js")
         },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              className: 'autolink-header'
+              className: "autolink-header"
             }
           },
           {
@@ -37,9 +37,9 @@ module.exports = {
         ]
       }
     },
-    'gatsby-remark-images',
-    'gatsby-transformer-remark',
-    'gatsby-plugin-react-helmet',
+    "gatsby-remark-images",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -52,15 +52,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/content/`,
-        name: 'guides',
+        name: "guides",
         ignore: [`**/\.*`] // ignore files starting with a dot
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content`,
-        name: 'articles',
+        name: "articles",
         ignore: [`**/\.*`] // ignore files starting with a dot,
       }
     },
@@ -77,18 +77,18 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-emotion',
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-emotion",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'how-to-egghead',
-        short_name: 'egghead',
-        background_color: '#3852E4',
-        theme_color: '#3852E4',
-        display: 'minimal-ui',
-        icon: 'src/images/egghead-icon.png' // This path is relative to the root of the site.
+        name: "how-to-egghead",
+        short_name: "egghead",
+        background_color: "#3852E4",
+        theme_color: "#3852E4",
+        display: "minimal-ui",
+        icon: "src/images/egghead-icon.png" // This path is relative to the root of the site.
       }
     },
     {
@@ -122,17 +122,17 @@ module.exports = {
               }
             }
           `,
-            transformer: ({data}) =>
-              data.allMdx.edges.reduce((records, {node}) => {
-                const {title, description} = node.frontmatter
-                const path = node.fields.slug
+            transformer: ({ data }) =>
+              data.allMdx.edges.reduce((records, { node }) => {
+                const { title, description } = node.frontmatter;
+                const path = node.fields.slug;
                 // for old guides, we take slug from frontmatter, while for the new one from fields
                 const slug = node.frontmatter.slug
                   ? `/${node.frontmatter.slug}`
-                  : node.fields.slug
-                const {excerpt} = node.excerpt
-                const base = {slug, title, path, excerpt, description}
-                const chunks = node.rawBody.split('\n\n')
+                  : node.fields.slug;
+                const { excerpt } = node.excerpt;
+                const base = { slug, title, path, excerpt, description };
+                const chunks = node.rawBody.split("\n\n");
 
                 return [
                   ...records,
@@ -141,10 +141,16 @@ module.exports = {
                     objectID: `${slug}-${index}`,
                     text
                   }))
-                ]
+                ];
               }, [])
           }
         ]
+      }
+    },
+    {
+      resolve: "gatsby-plugin-fathom",
+      options: {
+        siteId: process.env.FATHOM_SITE_ID
       }
     }
 
@@ -152,4 +158,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ]
-}
+};
