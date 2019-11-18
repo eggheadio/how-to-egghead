@@ -101,8 +101,7 @@ module.exports = {
           {
             query: `
             {
-              allMdx(filter: { frontmatter: { hidden: { ne: true } } }
-                ) {
+              allMdx() {
                 edges {
                   node {
                     id
