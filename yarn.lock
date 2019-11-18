@@ -10445,6 +10445,11 @@ remark@^10.0.1:
     remark-stringify "^6.0.0"
     unified "^7.0.0"
 
+remove-markdown-and-html@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/remove-markdown-and-html/-/remove-markdown-and-html-0.1.0.tgz#2877a831bc69a19d05a6b38023410fde7913254f"
+  integrity sha1-KHeoMbxpoZ0FprOAI0EP3nkTJU8=
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"

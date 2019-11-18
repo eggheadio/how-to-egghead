@@ -1,5 +1,5 @@
 const path = require("path");
-const strip = require("strip-markdown");
+const strip = require("remove-markdown-and-html");
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
