@@ -145,8 +145,6 @@ module.exports = {
                   const base = { slug, title, path, excerpt, description };
                   const chunks = node.rawBody.split("\n\n");
 
-                  console.log({ base, chunks, excerpt });
-
                   return [
                     ...records,
                     ...chunks.map((text, index) => ({
