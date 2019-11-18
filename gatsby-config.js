@@ -101,7 +101,8 @@ module.exports = {
           {
             query: `
             {
-              allMdx(filter: {frontmatter:{published: {ne: false}}}) {
+              allMdx(filter: { frontmatter: { hidden: { ne: true } } }
+                ) {
                 edges {
                   node {
                     id
@@ -139,7 +140,7 @@ module.exports = {
                   const { title, description } = node.frontmatter;
                   const path = node.fields.slug;
                   // for old guides, we take slug from frontmatter, while for the new one from fields
-                  const {slug} = node.fields;
+                  const { slug } = node.fields;
 
                   const { excerpt } = node.excerpt;
                   const base = { slug, title, path, excerpt, description };
