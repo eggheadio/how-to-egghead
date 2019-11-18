@@ -112,6 +112,14 @@ module.exports = {
                       description
                       chapterTitle 
                     }
+                    parent {
+                      ... on File {
+                        extension
+                        relativeDirectory
+                        name
+                        sourceInstanceName
+                      }
+                    }
                     fields {
                       slug
                     }
