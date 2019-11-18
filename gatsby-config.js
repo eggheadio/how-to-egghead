@@ -1,5 +1,5 @@
 const path = require("path");
-
+const strip = require("strip-markdown");
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
@@ -101,7 +101,7 @@ module.exports = {
           {
             query: `
             {
-              allMdx {
+              allMdx({ frontmatter: { published: { ne: false } }) {
                 edges {
                   node {
                     id
@@ -143,7 +143,7 @@ module.exports = {
 
                   const { excerpt } = node.excerpt;
                   const base = { slug, title, path, excerpt, description };
-                  const chunks = node.rawBody.split("\n\n");
+                  const chunks = strip(node.rawBody).split("\n\n");
 
                   return [
                     ...records,
