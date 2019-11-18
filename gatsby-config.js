@@ -101,7 +101,7 @@ module.exports = {
           {
             query: `
             {
-              allMdx() {
+              allMdx {
                 edges {
                   node {
                     id
