@@ -135,7 +135,7 @@ const Search = connectSearchBox(
         <Input
           placeholder="Search the guide"
           type="search"
-          autocomplete="off"
+          autoComplete="off"
           id="search"
           value={currentRefinement}
           onBlur={() => {
