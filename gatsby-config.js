@@ -101,7 +101,7 @@ module.exports = {
           {
             query: `
             {
-              allMdx(filter: { frontmatter: { published: { ne: false } }) {
+              allMdx(filter: { frontmatter: { published: { ne: false } }}) {
                 edges {
                   node {
                     id
