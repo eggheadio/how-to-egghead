@@ -123,26 +123,30 @@ module.exports = {
             }
           `,
             transformer: ({ data }) =>
-              data.allMdx.edges.reduce((records, { node }) => {
-                const { title, description } = node.frontmatter;
-                const path = node.fields.slug;
-                // for old guides, we take slug from frontmatter, while for the new one from fields
-                const slug = node.frontmatter.slug
-                  ? `/${node.frontmatter.slug}`
-                  : node.fields.slug;
-                const { excerpt } = node.excerpt;
-                const base = { slug, title, path, excerpt, description };
-                const chunks = node.rawBody.split("\n\n");
+              data.allMdx.edges
+                .filter(e => {
+                  return e.node.parent.sourceInstanceName === "articles";
+                })
+                .reduce((records, { node }) => {
+                  const { title, description } = node.frontmatter;
+                  const path = node.fields.slug;
+                  // for old guides, we take slug from frontmatter, while for the new one from fields
+                  const slug = node.frontmatter.slug
+                    ? `/${node.frontmatter.slug}`
+                    : node.fields.slug;
+                  const { excerpt } = node.excerpt;
+                  const base = { slug, title, path, excerpt, description };
+                  const chunks = node.rawBody.split("\n\n");
 
-                return [
-                  ...records,
-                  ...chunks.map((text, index) => ({
-                    ...base,
-                    objectID: `${slug}-${index}`,
-                    text
-                  }))
-                ];
-              }, [])
+                  return [
+                    ...records,
+                    ...chunks.map((text, index) => ({
+                      ...base,
+                      objectID: `${slug}-${index}`,
+                      text
+                    }))
+                  ];
+                }, [])
           }
         ]
       }
