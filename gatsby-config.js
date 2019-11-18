@@ -142,6 +142,7 @@ module.exports = {
                   const slug = node.frontmatter.slug
                     ? `/${node.frontmatter.slug}`
                     : node.fields.slug;
+
                   const { excerpt } = node.excerpt;
                   const base = { slug, title, path, excerpt, description };
                   const chunks = node.rawBody.split("\n\n");
