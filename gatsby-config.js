@@ -163,7 +163,14 @@ module.exports = {
       options: {
         siteId: process.env.FATHOM_SITE_ID
       }
-    }
+    },
+    {
+      resolve: "gatsby-redirect-from",
+      options: {
+        query: "allMdx"
+      }
+    },
+    `gatsby-plugin-meta-redirect`
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
