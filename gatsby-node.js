@@ -35,6 +35,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value: _.get(node, "internal.frontmatter.slug", value)
     });
+
+    function extractFirstText(str) {
+      const matches = str.match(/"(.*?)"/);
+      return matches ? matches[1] : str;
+    }
+
+    const rootFilePath = extractFirstText(parent.internal.description);
+
+    createNodeField({
+      name: "github",
+      node,
+      value: `${process.env.REPO_ROOT}/${rootFilePath}`
+    });
   }
 };
 const path = require("path");

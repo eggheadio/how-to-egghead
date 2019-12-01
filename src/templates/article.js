@@ -9,7 +9,7 @@ import { bpMinLG } from "../utils/breakpoints";
 
 const ArticleTemplate = ({ data }) => {
   const article = data.mdx;
-  const { slug, guide } = article.fields;
+  const { slug, guide, github } = article.fields;
 
   const breadCrumbs = dropRight(
     dropRight(
@@ -73,6 +73,17 @@ const ArticleTemplate = ({ data }) => {
         {article.frontmatter.title && article.frontmatter.title}
       </h1>
       <MDXRenderer>{article.body}</MDXRenderer>
+      <div
+        css={css`
+          text-align: center;
+        `}
+      >
+        <a href={github} rel="nofollow">
+          <strong>
+            <em>edit this article on github</em>
+          </strong>
+        </a>
+      </div>
     </Layout>
   );
 };
@@ -89,6 +100,7 @@ export const pageQuery = graphql`
       fields {
         slug
         guide
+        github
       }
       frontmatter {
         title
