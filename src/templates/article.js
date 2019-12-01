@@ -80,7 +80,7 @@ const ArticleTemplate = ({ data }) => {
       >
         <a href={github} rel="nofollow">
           <strong>
-            <em>edit this article on github</em>
+            📝 <em>edit this page on github</em>
           </strong>
         </a>
       </div>
