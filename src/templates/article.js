@@ -30,7 +30,7 @@ const ArticleTemplate = ({ data }) => {
   const image = `https://og-image-react-egghead.now.sh/instructor-guide/${encodeURI(
     article.frontmatter.title
   )}${article.frontmatter.shareImage ? 
-    `?bgImage=${encodeURI(article.frontmatter.shareImage)}` : ''}`;
+    `?bgImage=${encodeURI(article.frontmatter.shareImage)}&y=20191212` : '?y=20191212'}`;
 
   const description = article.frontmatter.description || article.excerpt;
 
