@@ -17,7 +17,8 @@ const Header = () => (
       margin: '0 auto',
       maxWidth: '960px',
       padding: '1rem',
-    }}>
+    }}
+  >
     <Link
       to="/"
       css={{
@@ -26,8 +27,9 @@ const Header = () => (
         width: '100%',
 
         paddingRight: 10,
-      }}>
-      How to egghead
+      }}
+    >
+      how to egghead
     </Link>
     <Search />
   </div>
