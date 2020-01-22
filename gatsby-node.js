@@ -1,65 +1,65 @@
-const { createFilePath } = require("gatsby-source-filesystem");
-const _ = require("lodash");
+const {createFilePath} = require('gatsby-source-filesystem')
+const _ = require('lodash')
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField, createRedirect } = actions;
+exports.onCreateNode = ({node, actions, getNode}) => {
+  const {createNodeField, createRedirect} = actions
 
   createRedirect({
-    fromPath: "/old-url",
-    toPath: "/new-url",
-    isPermanent: true
-  });
+    fromPath: '/old-url',
+    toPath: '/new-url',
+    isPermanent: true,
+  })
 
-  if (node.internal.type === "Mdx") {
-    const parent = getNode(node.parent);
-    if (parent.sourceInstanceName === "articles") {
-      const [guideBase] = parent.relativeDirectory.split("/");
+  if (node.internal.type === 'Mdx') {
+    const parent = getNode(node.parent)
+    if (parent.sourceInstanceName === 'articles') {
+      const [guideBase] = parent.relativeDirectory.split('/')
       if (guideBase) {
         createNodeField({
-          name: "guide",
+          name: 'guide',
           node,
-          value: `${guideBase}-guide`
-        });
+          value: `${guideBase}-guide`,
+        })
       } else {
         createNodeField({
-          name: "guide",
+          name: 'guide',
           node,
-          value: `index`
-        });
+          value: `index`,
+        })
       }
     }
 
-    const value = createFilePath({ node, getNode });
+    const value = createFilePath({node, getNode})
     createNodeField({
-      name: "slug",
+      name: 'slug',
       node,
-      value: _.get(node, "internal.frontmatter.slug", value)
-    });
+      value: _.get(node, 'internal.frontmatter.slug', value),
+    })
 
     function extractFirstText(str) {
-      const matches = str.match(/"(.*?)"/);
-      return matches ? matches[1] : str;
+      const matches = str.match(/"(.*?)"/)
+      return matches ? matches[1] : str
     }
 
-    const rootFilePath = extractFirstText(parent.internal.description);
+    const rootFilePath = extractFirstText(parent.internal.description)
 
     createNodeField({
-      name: "github",
+      name: 'github',
       node,
-      value: `${process.env.REPO_ROOT}/${rootFilePath}`
-    });
+      value: `${process.env.REPO_ROOT}/${rootFilePath}`,
+    })
   }
-};
-const path = require("path");
+}
+const path = require('path')
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+exports.createPages = ({graphql, actions}) => {
+  const {createPage} = actions
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
           {
-            allMdx(sort: { order: ASC, fields: fields___slug }) {
+            allMdx(sort: {order: ASC, fields: fields___slug}) {
               edges {
                 node {
                   id
@@ -87,36 +87,36 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          console.error(result.errors);
-          reject(result.errors);
+          console.error(result.errors)
+          reject(result.errors)
         }
 
         const guides = result.data.allMdx.edges.filter(e => {
-          return e.node.parent.sourceInstanceName !== "articles";
-        });
+          return e.node.parent.sourceInstanceName !== 'articles'
+        })
 
         const articles = result.data.allMdx.edges.filter(e => {
-          return e.node.parent.sourceInstanceName === "articles";
-        });
+          return e.node.parent.sourceInstanceName === 'articles'
+        })
 
         articles.forEach(edge => {
-          const { node } = edge;
+          const {node} = edge
 
           createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/templates/article.js`),
-            context: { id: node.id }
-          });
-        });
+            context: {id: node.id},
+          })
+        })
 
-        guides.forEach(({ node }, index) => {
+        guides.forEach(({node}, index) => {
           createPage({
             path: node.frontmatter.slug,
             component: path.resolve(`./src/templates/article.js`),
-            context: { id: node.id }
-          });
-        });
+            context: {id: node.id},
+          })
+        })
       })
-    );
-  });
-};
+    )
+  })
+}
