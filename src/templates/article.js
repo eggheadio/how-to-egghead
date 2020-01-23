@@ -47,9 +47,9 @@ const ArticleTemplate = ({data}) => {
       timeToRead={article.timeToRead}
       categories={article.frontmatter.categories}
     >
-      <nav sx={{mt: 4}}>
-        {guide &&
-          breadCrumbs.map((path, index) => {
+      {breadCrumbs.length > 1 && (
+        <nav sx={{mt: [3, 4]}}>
+          {breadCrumbs.map((path, index) => {
             if (path.to === slug) return null
             return (
               <span
@@ -68,18 +68,24 @@ const ArticleTemplate = ({data}) => {
               </span>
             )
           })}
-      </nav>
-      <h1
-        sx={{
-          fontSize: [4, 5, 6],
-          lineHeight: 'normal',
-          letterSpacing: 'normal',
-          mt: 2,
-        }}
-      >
-        {article.frontmatter.title && article.frontmatter.title}
-      </h1>
-      <MDXRenderer>{article.body}</MDXRenderer>
+        </nav>
+      )}
+
+      {article.frontmatter.title && (
+        <h1
+          sx={{
+            fontSize: [4, 5, 6],
+            lineHeight: 'normal',
+            letterSpacing: 'normal',
+            mt: breadCrumbs.length > 1 ? 1 : [4, 5],
+          }}
+        >
+          {article.frontmatter.title}
+        </h1>
+      )}
+      <div sx={{'h1:first-of-type': {mt: [3, 5]}}}>
+        <MDXRenderer>{article.body}</MDXRenderer>
+      </div>
     </Layout>
   )
 }
