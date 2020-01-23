@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react'
 import {jsx, Header} from 'theme-ui'
-import {Container, IconButton} from '@theme-ui/components'
+import {IconButton} from '@theme-ui/components'
 import Search from './search'
 import Link from './link'
 import {motion} from 'framer-motion'
