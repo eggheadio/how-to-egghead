@@ -48,16 +48,16 @@ var theme = {
   baseLineHeight: 1.78,
   googleFonts: [
     {
-      name: 'Bitter',
-      styles: ['400, 400i, 700'],
+      name: 'Open Sans',
+      styles: ['300', '300i', '400', '400i', '600', '600i', '700', '700i'],
     },
     {
-      name: 'Fira Sans',
-      styles: ['300', '300i', '400', '400i', '500', '500i', '700', '700i'],
+      name: 'Merriweather',
+      styles: ['300', '300i', '400', '400i', '700', '700i'],
     },
   ],
-  headerFontFamily: ['Bitter', 'serif'],
-  bodyFontFamily: ['Fira Sans', 'Georgia', 'sans-serif'],
+  headerFontFamily: ['Open Sans', 'sans-serif'],
+  bodyFontFamily: ['Merriweather', 'Georgia', 'serif'],
   bodyColor: 'hsla(0,0%,0%,0.9)',
   headerWeight: 700,
   bodyWeight: 400,
