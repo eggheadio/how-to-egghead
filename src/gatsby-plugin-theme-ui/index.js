@@ -1,6 +1,6 @@
 export default {
   colors: {
-    primary: '#048465',
+    primary: '#0000EE',
     blue: '#11609E',
     violet: '#58119E',
     text: '#111',
@@ -43,7 +43,7 @@ export default {
         fontSize: 3,
       },
       h1: {
-        mt: 0,
+        mt: '0 !important',
         mb: 3,
         mr: 3,
         textAlign: 'center',
@@ -73,16 +73,7 @@ export default {
         color: 'primary',
       },
       ul: {
-        position: 'relative',
-        listStyle: 'none',
         marginLeft: '0',
-        paddingLeft: '1.2em',
-      },
-      'ul li:before': {
-        content: '"-"', // ➽➼➩ ➮
-        position: 'absolute',
-        left: '0',
-        color: 'primary',
       },
       hr: {
         mt: [3, 5],
