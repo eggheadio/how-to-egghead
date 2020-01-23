@@ -1,6 +1,6 @@
 export default {
   colors: {
-    primary: '#FF2D55',
+    primary: '#119E7B',
     text: '#111',
     background: '#fff',
     'gray-50': '#fafafa',
@@ -10,12 +10,10 @@ export default {
   layout: {
     container: {
       backgroundColor: 'background',
-      maxWidth: '80ch',
+      maxWidth: '70ch',
       mx: 'auto',
-      p: [3, 4],
-      pt: [0, 0],
-      borderTop: '4px solid',
-      borderColor: 'primary',
+      p: [3, 5],
+      pt: [1, 1],
       boxShadow:
         '0 12.5px 10px rgba(0, 0, 0, 0.035), 0 100px 80px rgba(0, 0, 0, 0.07)',
     },
@@ -23,6 +21,9 @@ export default {
   styles: {
     root: {
       backgroundColor: 'gray-50',
+      a: {
+        color: 'primary',
+      },
       ul: {
         position: 'relative',
         listStyle: 'none',
@@ -30,17 +31,18 @@ export default {
         paddingLeft: '1.2em',
       },
       'ul li:before': {
-        content: '"○"', // ➽➼➩ ➮
+        content: '"-"', // ➽➼➩ ➮
         position: 'absolute',
         left: '0',
         color: 'primary',
       },
     },
     Header: {
-      maxWidth: '80ch',
+      maxHeight: [78, 119],
+      maxWidth: '70ch',
       mx: 'auto',
-      px: [3, 3, 0],
-      mb: [2, 4, 4],
+      px: [3, 3, 4, 0],
+      py: [3, 3, 4],
       ul: {
         listStyle: 'inherit',
         marginLeft: '0',

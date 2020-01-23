@@ -20,7 +20,7 @@ const client = algoliasearch('NLOD4N9T1X', '27ac39ffd2f1ec6477d7772f42ec3bb0')
 const Hits = connectHits(({hits}) => (
   <div
     sx={{
-      width: '100%',
+      width: ['90vw', '100%', '100%'],
       position: 'absolute',
       zIndex: 999,
       backgroundColor: 'white',
@@ -33,7 +33,7 @@ const Hits = connectHits(({hits}) => (
         '0 3px 6px 0 rgba(0,0,0,0.12), 0 7px 24px 0 rgba(62,61,68,0.12)',
     }}
   >
-    <ul sx={{margin: 0, padding: '10px 0'}}>
+    <ul sx={{margin: 0, padding: '10px 0', width: '100%'}}>
       {hits.map(hit => (
         <li
           key={hit.objectID}
@@ -74,25 +74,6 @@ const Hits = connectHits(({hits}) => (
               tagName="mark"
             />
           </Link>
-
-          {/* <div
-            css={css({
-              display: 'flex',
-              alignItems: 'center',
-              flexBasis: '20%',
-              fontFamily: 'system-ui, sans-serif',
-              textTransform: 'capitalize',
-              fontSize: 16,
-              [bpMaxSM]: {
-                fontSize: 12,
-                flexBasis: '30%',
-              },
-            })}>
-            <div css={css({alignItems: 'flex-end'})}>
-              <Highlight attribute="guide" hit={hit} tagName="mark" />{' '}
-              <span>{hit.guide && 'Guide'}</span>
-            </div>
-          </div> */}
         </li>
       ))}
     </ul>
@@ -103,76 +84,60 @@ const Label = styled('label')`
   display: block;
 `
 
-const Input = styled('input')({
-  fontFamily: 'system-ui, sans-serif',
-  fontWeight: 'normal',
-  background: `url(${SearchIcon}) no-repeat`,
-  backgroundSize: '16px',
-  backgroundPositionX: '12px',
-  backgroundPositionY: '50%',
-  ':focus': {
-    background: `url(${SearchIconActive}) no-repeat`,
-    backgroundSize: '16px',
-    backgroundPositionX: '12px',
-    backgroundPositionY: '50%',
-    outline: 'none',
-  },
-  backgroundColor: 'transparent',
-  border: 'none',
-  borderBottom: '1px solid rgba(0,0,0,0.2)',
-  display: 'block',
-  fontSize: '18px',
-  padding: '0.5rem 0.75rem 0.5rem 35px',
-  width: '100%',
-  boxShadow: 'none',
-})
-
 const Search = connectSearchBox(
-  ({currentRefinement, refine, setIsActive, ...props}) => (
-    <form noValidate action="" role="search" sx={{mb: 0}} {...props}>
-      <Label htmlFor="search">
-        <input
-          sx={{
-            fontFamily: 'system-ui, sans-serif',
-            fontWeight: 'normal',
-            background: `url(${SearchIcon}) no-repeat`,
-            backgroundSize: '16px',
-            backgroundPositionX: '12px',
-            backgroundPositionY: '50%',
-            ':focus': {
-              background: `url(${SearchIconActive}) no-repeat`,
+  ({currentRefinement, refine, setIsActive, ...props}) => {
+    const {isToggled} = props
+    const inputRef = React.useRef(null)
+    React.useEffect(() => {
+      isToggled && inputRef.current.focus()
+    }, [isToggled])
+    return (
+      <form noValidate action="" role="search" sx={{mb: 0}} {...props}>
+        <Label htmlFor="search">
+          <input
+            ref={inputRef}
+            sx={{
+              fontFamily: 'system-ui, sans-serif',
+              fontWeight: 'normal',
+              background: `url(${SearchIcon}) no-repeat`,
               backgroundSize: '16px',
               backgroundPositionX: '12px',
               backgroundPositionY: '50%',
-              outline: 'none',
-            },
-            backgroundColor: 'transparent',
-            border: 'none',
-            borderBottom: ['none', 'none', '1px solid rgba(0,0,0,0.2)'],
-            display: 'block',
-            fontSize: '18px',
-            padding: '0.5rem 0.75rem 0.5rem 35px',
-            width: '100%',
-            boxShadow: 'none',
-          }}
-          placeholder="Search the guide"
-          type="search"
-          autoComplete="off"
-          id="search"
-          value={currentRefinement}
-          onBlur={() => {
-            if (currentRefinement === '') {
-              setIsActive(false)
-            }
-          }}
-          onChange={event => {
-            setIsActive(true)
-            refine(event.currentTarget.value)
-          }}
-        />
-      </Label>
-    </form>
-  )
+              ':focus': {
+                background: `url(${SearchIconActive}) no-repeat`,
+                backgroundSize: '16px',
+                backgroundPositionX: '12px',
+                backgroundPositionY: '50%',
+                outline: 'none',
+              },
+              backgroundColor: 'transparent',
+              border: 'none',
+              borderBottom: ['none', 'none', '1px solid rgba(0,0,0,0.2)'],
+              display: 'block',
+              fontSize: '18px',
+              padding: '0.5rem 0.75rem 0.5rem 35px',
+              width: '100%',
+              boxShadow: 'none',
+            }}
+            placeholder="Search the guide"
+            type="search"
+            autoComplete="off"
+            id="search"
+            value={currentRefinement}
+            onBlur={() => {
+              if (currentRefinement === '') {
+                setIsActive(false)
+              }
+            }}
+            onChange={event => {
+              setIsActive(true)
+              refine(event.currentTarget.value)
+            }}
+          />
+        </Label>
+      </form>
+    )
+  }
 )
 
 const SearchContainer = styled('div')`
@@ -187,6 +152,7 @@ const Results = connectStateResults(({searchState, searchResults}) =>
     </div>
   ) : null
 )
+
 export default props => {
   const [isActive, setIsActive] = useState(false)
 
