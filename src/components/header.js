@@ -4,18 +4,7 @@ import {jsx, Header} from 'theme-ui'
 import {Container, IconButton} from '@theme-ui/components'
 import Search from './search'
 import Link from './link'
-import {useMediaQuery} from 'react-responsive'
-import {motion, AnimatePresence} from 'framer-motion'
-
-const Mobile = ({children}) => {
-  const isMobile = useMediaQuery({maxWidth: 767})
-  return isMobile ? children : null
-}
-
-const Default = ({children}) => {
-  const isNotMobile = useMediaQuery({minWidth: 768})
-  return isNotMobile ? children : null
-}
+import {motion} from 'framer-motion'
 
 export default () => {
   const [isToggled, setToggled] = React.useState(false)
@@ -122,7 +111,14 @@ export default () => {
           </Link>
         </motion.div>
       )}
-      <Mobile>
+      <div
+        sx={{
+          visibility: ['visible', 'hidden'],
+          display: ['flex', 'none'],
+          alignItems: 'center',
+          justifyContent: isToggled ? 'space-between' : 'flex-end',
+        }}
+      >
         {isToggled ? (
           <motion.div
             initial={{opacity: 0}}
@@ -132,6 +128,7 @@ export default () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
+              width: '100%',
             }}
           >
             <Search isToggled={isToggled} />
@@ -208,10 +205,10 @@ export default () => {
             </IconButton>
           </div>
         )}
-      </Mobile>
-      <Default>
+      </div>
+      <div sx={{visibility: ['hidden', 'visible'], display: ['none', 'block']}}>
         <Search isToggled={isToggled} />
-      </Default>
+      </div>
     </Header>
   )
 }
