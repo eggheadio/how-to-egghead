@@ -47,14 +47,7 @@ const ArticleTemplate = ({data}) => {
       timeToRead={article.timeToRead}
       categories={article.frontmatter.categories}
     >
-      <h1
-        sx={{
-          fontSize: [4, 5, 6],
-          lineHeight: 'normal',
-          letterSpacing: 'normal',
-          mt: [4, 4, 5],
-        }}
-      >
+      <nav sx={{mt: 4}}>
         {guide &&
           breadCrumbs.map((path, index) => {
             if (path.to === slug) return null
@@ -69,11 +62,21 @@ const ArticleTemplate = ({data}) => {
                   path.name
                 )}
                 {/* {index < breadCrumbs.length  && '→'} */}
-                {path.name && index !== breadCrumbs.length && ' / '}
+                <span sx={{opacity: 0.3}}>
+                  {path.name && index !== breadCrumbs.length && ' / '}
+                </span>
               </span>
             )
           })}
-
+      </nav>
+      <h1
+        sx={{
+          fontSize: [4, 5, 6],
+          lineHeight: 'normal',
+          letterSpacing: 'normal',
+          mt: 2,
+        }}
+      >
         {article.frontmatter.title && article.frontmatter.title}
       </h1>
       <MDXRenderer>{article.body}</MDXRenderer>
