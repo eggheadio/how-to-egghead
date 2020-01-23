@@ -206,12 +206,9 @@ export default () => {
           </div>
         )}
       </div>
-      {/* <Default> */}
       <div sx={{visibility: ['hidden', 'visible'], display: ['none', 'block']}}>
         <Search isToggled={isToggled} />
       </div>
-
-      {/* </Default> */}
     </Header>
   )
 }
