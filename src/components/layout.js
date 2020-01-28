@@ -1,8 +1,11 @@
 /** @jsx jsx */
 import React from 'react'
-import {jsx, Styled, Main, Footer, Layout} from 'theme-ui'
+import {jsx, Styled, Layout} from 'theme-ui'
+import {Grid} from '@theme-ui/components'
+import Card from './card'
 import {Container} from '@theme-ui/components'
 import {useStaticQuery, graphql} from 'gatsby'
+import Link from './link'
 import SEO from './seo'
 import Header from './header'
 import {MDXProvider} from '@mdx-js/react'
@@ -29,7 +32,7 @@ export default ({
   `)
   return (
     <Styled.root>
-      <Layout>
+      <div sx={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
         <SEO
           title={title || data.site.siteMetadata.title}
           image={image}
@@ -38,21 +41,30 @@ export default ({
           categories={categories}
         />
         <Header />
-        <Main>
+        <main sx={{minWidth: 0, flex: '1 1 auto'}}>
           <Container>
-            <MDXProvider components={{TwitterTweetEmbed, ResponsiveEmbed}}>
+            <MDXProvider
+              components={{
+                TwitterTweetEmbed,
+                ResponsiveEmbed,
+                Card,
+                Grid,
+                Link,
+                jsx,
+              }}
+            >
               {children}
             </MDXProvider>
           </Container>
-        </Main>
-        <Footer>
+        </main>
+        <footer sx={{maxWidth: '80ch', mx: 'auto', py: [4, 5]}}>
           <a href={github} rel="nofollow">
             <strong>
               📝 <em>edit this page on github</em>
             </strong>
           </a>
-        </Footer>
-      </Layout>
+        </footer>
+      </div>
     </Styled.root>
   )
 }

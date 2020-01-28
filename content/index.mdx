@@ -4,16 +4,52 @@ description: 'This is the source'
 published: true
 shareImage: 'https://res.cloudinary.com/dg3gyk0gu/image/upload/v1571260698/og-image-assets/share_image_getting_started.png'
 ---
+import CaseStudies from './instructor/case-studies'
 
 # Welcome 👋
 
 This site explains [egghead.io](https://egghead.io) for folks that use it. 
 
-The [👩‍🏫 instructor guide](/instructor) is for somebody that is (or will be) teaching on egghead.
+<Grid columns={1}  gap={0} mb="5">
+<Card href="/instructor" variant="link" >
 
-The [👩‍🔧 learner advocate guide](/advocate) is for egghead Learner Advocates.
+# 👩‍🏫
 
-The [👩‍🎓 learner guide](/learner) is for you if you are attending egghead workshops, courses, or screencast lessons.
+<div>
+
+## Instructor Guide
+
+For somebody that is (or will be) teaching on egghead.
+
+</div>
+</Card>
+
+<Card href="/advocate" variant="link">
+
+# 👩‍🔧
+
+<div>
+
+## Learner Advocate Guide
+
+For egghead Learner Advocates.
+
+</div>
+</Card>
+
+<Card href="/learner" variant="link">
+
+# 👩‍🎓
+
+<div>
+
+## Learner Guide
+
+This guide is for you if you are attending egghead workshops, courses, or screencast lessons.
+
+</div>
+</Card>
+</Grid>
 
 Please read our [Community Code of Conduct](/code-of-conduct/).
 
@@ -43,16 +79,9 @@ Every egghead lesson consists of a single screencast that’s 1–10 minutes lon
 
 egghead instructors are working professionals that Learn in Public and share what they know so others can learn with them
 
-Here are some case studies:
+Here are some [case studies](/instructor/case-studies):
 
-* [John Lindquist: The Original egghead 🥚](/instructor/case-studies/john-lindquist)
-* [Kent C. Dodds, egghead instructor](/instructor/case-studies/kent-c-dodds)
-* [Laurie Barth, egghead instructor](/instructor/case-studies/laurie-barth)
-* [Eve Porcello, egghead instructor](/instructor/case-studies/eve-porcello)
-* [Nick DeJesus, egghead instructor](/instructor/case-studies/nick-dejesus)
-
-
-[See the full list here!](/instructor/case-studies)
+<CaseStudies columns={[1, 2]} />
 
 ### What makes egghead different?
 

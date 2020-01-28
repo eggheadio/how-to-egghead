@@ -5,11 +5,69 @@ description: 'These are stories about egghead instructors and their exprience te
 categories: ['instructor', 'case study']
 published: true
 ---
+import John from './john-lindquist/john.jpg'
+import Kent from './kent-c-dodds/kent.png'
+import Laurie from './laurie-barth/laurie.png'
+import Eve from './eve-porcello/eve.png'
+import Nick from './nick-dejesus/nick.png'
 
-As we add additional egghead instructor case studies they will be listed here:
+export default ({ children, ...props }) => <div {...props}>{children}</div>
 
-* [John Lindquist, OG egghead 🥚](/instructor/case-studies/john-lindquist)
-* [Kent C. Dodds](/instructor/case-studies/kent-c-dodds)
-* [Laurie Barth](/instructor/case-studies/laurie-barth)
-* [Eve Porcello](/instructor/case-studies/eve-porcello)
-* [Nick DeJesus](/instructor/case-studies/nick-dejesus)
+<Grid gap={0} columns={props.columns || 1}>
+
+<Card variant="link" href="/instructor/case-studies/john-lindquist">
+<img src={John} />
+<div>
+
+## John Lindquist
+
+The Original egghead 🥚
+
+</div>
+</Card>
+
+<Card variant="link" href="/instructor/case-studies/kent-c-dodds">
+<img src={Kent} />
+<div>
+
+## Kent C. Dodds
+
+egghead instructor
+
+</div>
+</Card>
+
+<Card variant="link" href="/instructor/case-studies/laurie-barth">
+<img src={Laurie} />
+<div>
+
+## Laurie Barth
+
+egghead instructor
+
+</div>
+</Card>
+
+<Card variant="link" href="/instructor/case-studies/eve-porcello">
+<img src={Eve} />
+<div>
+
+## Eve Porcello
+
+egghead instructor
+
+</div>
+</Card>
+
+<Card variant="link" href="/instructor/case-studies/nick-dejesus">
+<img src={Nick} />
+<div>
+
+## Nick DeJesus
+
+egghead instructor
+
+</div>
+</Card>
+
+</Grid>

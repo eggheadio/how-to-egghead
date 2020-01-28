@@ -1,8 +1,8 @@
+import {lighten} from '@theme-ui/color'
+
 export default {
   colors: {
     primary: '#1b6ac9',
-    blue: '#11609E',
-    violet: '#58119E',
     text: '#111',
     background: '#fff',
     'gray-50': '#fafafa',
@@ -13,61 +13,74 @@ export default {
     body: "'Merriweather', serif",
     heading: "'Open Sans', sans-serif",
   },
+  shadows: {
+    large:
+      '0 12.5px 10px rgba(0, 0, 0, 0.035), 0 100px 80px rgba(0, 0, 0, 0.07)',
+    medium: '0 5px 10px rgba(0, 0, 0, 0.035), 0 5px 60px rgba(0, 0, 0, 0.05)',
+    small: '0 3px 6px 0 rgba(0,0,0,0.025), 0 7px 32px 0 rgba(62,61,68,0.025)',
+  },
   layout: {
     container: {
       backgroundColor: 'background',
       maxWidth: '70ch',
+      borderRadius: 8,
       mx: 'auto',
       p: [3, 5],
       pt: [1, 1],
-      boxShadow:
-        '0 12.5px 10px rgba(0, 0, 0, 0.035), 0 100px 80px rgba(0, 0, 0, 0.07)',
+      boxShadow: 'large',
     },
   },
 
   cards: {
     primary: {
-      padding: [3, 4],
-      color: 'background',
+      px: [2, 3, 3],
+      py: [3, 3, 4],
+      color: 'text',
       display: 'grid',
-      gridTemplateColumns: '2fr 14fr',
+      gridGap: '1rem',
+      gridTemplateColumns: ['50px 6fr', '80px 6fr'],
       alignItems: 'center',
-
-      borderRadius: 5,
       fontFamily: 'heading',
       lineHeight: 1.2,
+      borderBottom: '1px solid',
+      borderBottomColor: 'gray-100',
       p: {
         mb: 0,
         mt: 2,
         opacity: 0.75,
-        fontSize: 3,
+        fontSize: [2, 3],
       },
       h1: {
-        mt: '0 !important',
-        mb: 3,
-        mr: 3,
+        my: '0 !important',
         textAlign: 'center',
       },
       h2: {
-        fontSize: 5,
+        fontSize: [3, 4],
         m: 0,
       },
     },
-    instructor: {
-      variant: 'cards.primary',
-      bg: 'primary',
-    },
-    advocate: {
-      variant: 'cards.primary',
-      bg: 'blue',
-    },
-    learner: {
-      variant: 'cards.primary',
-      bg: 'violet',
+    link: {
+      a: {
+        variant: 'cards.primary',
+        textDecoration: 'none',
+        ':hover': {
+          boxShadow: 'medium',
+        },
+        ':hover': {
+          borderRadius: 8,
+          boxShadow: 'medium',
+          borderBottomColor: 'transparent',
+        },
+      },
+      img: {
+        mb: 0,
+        borderRadius: 5,
+      },
     },
   },
   styles: {
     root: {
+      mark: {backgroundColor: lighten('primary', 0.5), color: 'primary'},
       backgroundColor: 'gray-50',
       a: {
         color: 'primary',
@@ -83,28 +96,6 @@ export default {
         borderTopColor: 'gray-100',
         mx: [-3, -5],
       },
-    },
-    Header: {
-      maxHeight: [78, 119],
-      maxWidth: '70ch',
-      mx: 'auto',
-      px: [3, 3, 4, 0],
-      py: [3, 3, 4],
-      ul: {
-        listStyle: 'inherit',
-        marginLeft: '0',
-      },
-      li: {
-        pl: 0,
-      },
-      'ul li:before': {
-        content: '""',
-      },
-    },
-    Footer: {
-      maxWidth: '80ch',
-      mx: 'auto',
-      py: 6,
     },
   },
 }
