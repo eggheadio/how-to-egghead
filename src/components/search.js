@@ -25,12 +25,11 @@ const Hits = connectHits(({hits}) => (
       zIndex: 999,
       backgroundColor: 'white',
       overflow: 'auto',
-      borderRadius: 3,
-      marginTop: '-2px',
+      borderRadius: 8,
+      marginTop: '5px',
       maxHeight: 500,
       border: '1px solid rgba(0,0,0,0.08)',
-      boxShadow:
-        '0 3px 6px 0 rgba(0,0,0,0.12), 0 7px 24px 0 rgba(62,61,68,0.12)',
+      boxShadow: 'small',
     }}
   >
     <ul sx={{margin: 0, padding: '10px 0', width: '100%'}}>
@@ -55,6 +54,10 @@ const Hits = connectHits(({hits}) => (
               height: '100%',
               lineHeight: 1.2,
               color: 'text',
+              px: 3,
+              pb: 2,
+              textDecoration: 'none !important',
+              minHeight: 80,
             }}
             activeClassName="active"
           >
@@ -68,11 +71,19 @@ const Hits = connectHits(({hits}) => (
               }}
             />
             <Highlight
-              sx={{display: 'block', fontSize: 14, opacity: 0.8}}
+              sx={{
+                display: 'block',
+                color: 'text',
+                fontSize: 14,
+                opacity: 0.8,
+                mt: 2,
+                lineHeight: 1.6,
+              }}
               attribute="text"
               hit={hit}
               tagName="mark"
             />
+            {hit.chapterTitle}
           </Link>
         </li>
       ))}
@@ -100,24 +111,27 @@ const Search = connectSearchBox(
               fontFamily: 'system-ui, sans-serif',
               fontWeight: 'normal',
               background: `url(${SearchIcon}) no-repeat`,
-              backgroundSize: '16px',
+              backgroundSize: '18px',
               backgroundPositionX: '12px',
               backgroundPositionY: '50%',
               ':focus': {
                 background: `url(${SearchIconActive}) no-repeat`,
-                backgroundSize: '16px',
+                backgroundSize: '18px',
+                backgroundColor: 'background',
                 backgroundPositionX: '12px',
                 backgroundPositionY: '50%',
                 outline: 'none',
+                '::placeholder': {opacity: 0.15},
               },
-              backgroundColor: 'transparent',
+              '::placeholder': {opacity: 0.3, color: 'text'},
+              backgroundColor: 'background',
               border: 'none',
-              borderBottom: ['none', 'none', '1px solid rgba(0,0,0,0.2)'],
+              borderRadius: 8,
               display: 'block',
               fontSize: '18px',
-              padding: '0.5rem 0.75rem 0.5rem 35px',
+              padding: '0.5rem 0.75rem 0.5rem 38px',
               width: '100%',
-              boxShadow: 'none',
+              boxShadow: 'small',
             }}
             placeholder="Search the guide"
             type="search"
@@ -163,7 +177,7 @@ export default props => {
       root={{Root: SearchContainer}}
     >
       <Configure distinct={1} hitsPerPage={30} />
-      <div>
+      <div sx={{width: ['90%', '100%']}}>
         <Search {...props} setIsActive={setIsActive} />
         <Results />
       </div>

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import {jsx, Header} from 'theme-ui'
+import {jsx} from 'theme-ui'
 import {IconButton} from '@theme-ui/components'
 import Search from './search'
 import Link from './link'
@@ -10,11 +10,26 @@ export default () => {
   const [isToggled, setToggled] = React.useState(false)
 
   return (
-    <Header
+    <header
       sx={{
-        width: '100%',
         display: 'grid',
         gridTemplateColumns: isToggled ? '1fr' : '3fr 5fr',
+        maxHeight: [78, 119],
+        maxWidth: '70ch',
+        width: '100%',
+        mx: 'auto',
+        px: [3, 3, 4, 0],
+        py: [3, 3, 4],
+        ul: {
+          listStyle: 'inherit',
+          marginLeft: '0',
+        },
+        li: {
+          pl: 0,
+        },
+        'ul li:before': {
+          content: '""',
+        },
       }}
     >
       {!isToggled && (
@@ -34,7 +49,6 @@ export default () => {
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
               <title>How to egghead</title>
-
               <g
                 id="Page-1"
                 stroke="none"
@@ -209,6 +223,6 @@ export default () => {
       <div sx={{visibility: ['hidden', 'visible'], display: ['none', 'block']}}>
         <Search isToggled={isToggled} />
       </div>
-    </Header>
+    </header>
   )
 }

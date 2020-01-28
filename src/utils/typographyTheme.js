@@ -71,7 +71,7 @@ var theme = {
     '@media screen and (max-width:499px)': {
       // any valid media query.
       //scaleRatio: 2.5, // Override the default scale
-      baseFontSize: '16px',
+      baseFontSize: '17px',
     },
     /*     '@media screen and (min-width:800px)': {
       // any valid media query.
