@@ -41,7 +41,11 @@ const ArticleTemplate = ({data}) => {
   return (
     <Layout
       title={article.frontmatter.title}
-      image={article.frontmatter.title ? image : defaultShareCard}
+      image={
+        article.frontmatter.title
+          ? image
+          : `https://howtoegghead.com${defaultShareCard}`
+      }
       description={description}
       github={github}
       timeToRead={article.timeToRead}
