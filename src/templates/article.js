@@ -6,7 +6,7 @@ import Link from '../components/link'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import dropRight from 'lodash/dropRight'
-import defaultShareCard from '../images/social-card.jpg'
+import defaultShareCard from '../images/social-card.png'
 
 const ArticleTemplate = ({data}) => {
   const article = data.mdx
