@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
-import metaImage from '../images/social-card.jpg'
+import metaImage from '../images/social-card.png'
 import {capitalize} from 'lodash'
 
 function SEO({

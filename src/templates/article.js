@@ -6,7 +6,7 @@ import Link from '../components/link'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import dropRight from 'lodash/dropRight'
-import defaultShareCard from '../images/social-card.jpg'
+import defaultShareCard from '../images/social-card.png'
 
 const ArticleTemplate = ({data}) => {
   const article = data.mdx
@@ -41,7 +41,11 @@ const ArticleTemplate = ({data}) => {
   return (
     <Layout
       title={article.frontmatter.title}
-      image={article.frontmatter.title ? image : defaultShareCard}
+      image={
+        article.frontmatter.title
+          ? image
+          : `https://howtoegghead.com${defaultShareCard}`
+      }
       description={description}
       github={github}
       timeToRead={article.timeToRead}
