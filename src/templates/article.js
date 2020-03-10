@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
+import {Flex} from '@theme-ui/components'
 import React from 'react'
 import {graphql} from 'gatsby'
 import Link from '../components/link'
@@ -7,10 +8,14 @@ import {MDXRenderer} from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import dropRight from 'lodash/dropRight'
 import defaultShareCard from '../images/social-card.png'
+import TableOfContents, {TocToggle} from '../components/toc'
+import {motion, AnimatePresence} from 'framer-motion'
 
 const ArticleTemplate = ({data}) => {
   const article = data.mdx
   const {slug, guide, github} = article.fields
+  const showToc = article.frontmatter.showToc
+  const [isVisibleToc, setIsVisibleToc] = React.useState(false)
 
   const breadCrumbs = dropRight(
     dropRight(
@@ -50,6 +55,10 @@ const ArticleTemplate = ({data}) => {
       github={github}
       timeToRead={article.timeToRead}
       categories={article.frontmatter.categories}
+      headings={article.headings}
+      slug={article.fields.slug}
+      showToc={showToc}
+      tocData={article.tableOfContents}
     >
       {breadCrumbs.length > 1 && (
         <nav sx={{mt: [3, 4]}}>
@@ -74,21 +83,72 @@ const ArticleTemplate = ({data}) => {
           })}
         </nav>
       )}
-
-      {article.frontmatter.title && (
-        <h1
-          sx={{
-            fontSize: [4, 5, 6],
-            lineHeight: 'normal',
-            letterSpacing: 'normal',
-            mt: breadCrumbs.length > 1 ? 1 : [4, 5],
-          }}
-        >
-          {article.frontmatter.title}
-        </h1>
-      )}
+      <Flex sx={{justifyContent: 'space-between', mb: 4}}>
+        {article.frontmatter.title && (
+          <h1
+            sx={{
+              fontSize: [5, 5, 6],
+              lineHeight: 'normal',
+              letterSpacing: 'normal',
+              mt: breadCrumbs.length > 1 ? 1 : [4, 5],
+              mb: 0,
+            }}
+          >
+            {article.frontmatter.title}
+          </h1>
+        )}
+        {showToc && (
+          <TocToggle
+            isVisibleToc={isVisibleToc}
+            setIsVisibleToc={setIsVisibleToc}
+          />
+        )}
+      </Flex>
       <div sx={{'h1:first-of-type': {mt: [3, 5]}}}>
-        <MDXRenderer>{article.body}</MDXRenderer>
+        <AnimatePresence>
+          {showToc && isVisibleToc && (
+            <motion.div
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              exit={{opacity: 0}}
+              sx={{
+                position: 'fixed',
+                overflowY: 'auto',
+                width: '100%',
+                height: '100%',
+                top: [60, 80],
+                left: 0,
+                background: 'white',
+                p: 3,
+                pb: 5,
+                display: ['block', 'block', 'none'],
+              }}
+            >
+              <motion.div
+                initial={{top: 25}}
+                animate={{top: 0}}
+                exit={{top: 25}}
+                sx={{
+                  width: '100%',
+                  position: 'relative',
+                }}
+              >
+                <TableOfContents
+                  data={article.tableOfContents}
+                  hideTitle
+                  pageTitle={article.frontmatter.title}
+                  headings={article.headings}
+                  slug={article.fields.slug}
+                  sx={{top: 4, p: 0, opacity: 1, fontSize: '17px'}}
+                  setState={setIsVisibleToc}
+                />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <MDXRenderer headings={article.headings} slug={article.fields.slug}>
+          {article.body}
+        </MDXRenderer>
       </div>
     </Layout>
   )
@@ -103,6 +163,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 250)
       body
       timeToRead
+      tableOfContents
       fields {
         slug
         guide
@@ -112,6 +173,11 @@ export const pageQuery = graphql`
         title
         shareImage
         categories
+        showToc
+      }
+      headings {
+        value
+        depth
       }
     }
   }

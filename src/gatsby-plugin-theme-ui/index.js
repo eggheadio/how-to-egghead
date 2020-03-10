@@ -15,15 +15,15 @@ export default {
   },
   shadows: {
     large:
-      '0 12.5px 10px rgba(0, 0, 0, 0.035), 0 100px 80px rgba(0, 0, 0, 0.07)',
+      '0 1.1px 2.2px rgba(0, 0, 0, 0.006), 0 2.5px 5.3px rgba(0, 0, 0, 0.008), 0 4.8px 10px rgba(0, 0, 0, 0.01), 0 8.5px 17.9px rgba(0, 0, 0, 0.012), 0 15.9px 33.4px rgba(0, 0, 0, 0.014), 0 38px 80px rgba(0, 0, 0, 0.02)',
     medium: '0 5px 10px rgba(0, 0, 0, 0.035), 0 5px 60px rgba(0, 0, 0, 0.05)',
     small: '0 3px 6px 0 rgba(0,0,0,0.025), 0 7px 32px 0 rgba(62,61,68,0.025)',
   },
   layout: {
     container: {
       backgroundColor: 'background',
-      maxWidth: '70ch',
-      borderRadius: 8,
+      width: '100%',
+      borderRadius: [0, 5, 8],
       mx: 'auto',
       p: [3, 5],
       pt: [1, 1],
