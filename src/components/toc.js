@@ -104,7 +104,10 @@ export default ({data, slug, ...props}) => {
                   sx={{m: 0, pb: 2}}
                 >
                   {item.items.map(item2 => (
-                    <li sx={{listStyleType: 'none', pl: 3, my: 2}}>
+                    <li
+                      key={item2.title}
+                      sx={{listStyleType: 'none', pl: 3, my: 2}}
+                    >
                       <Link
                         as="a"
                         to={slugify(item2.title)}
