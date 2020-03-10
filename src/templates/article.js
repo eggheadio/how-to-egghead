@@ -55,7 +55,6 @@ const ArticleTemplate = ({data}) => {
       github={github}
       timeToRead={article.timeToRead}
       categories={article.frontmatter.categories}
-      headings={article.headings}
       slug={article.fields.slug}
       showToc={showToc}
       tocData={article.tableOfContents}
@@ -137,7 +136,6 @@ const ArticleTemplate = ({data}) => {
                   data={article.tableOfContents}
                   hideTitle
                   pageTitle={article.frontmatter.title}
-                  headings={article.headings}
                   slug={article.fields.slug}
                   sx={{top: 4, p: 0, opacity: 1, fontSize: '17px'}}
                   setState={setIsVisibleToc}
@@ -146,9 +144,7 @@ const ArticleTemplate = ({data}) => {
             </motion.div>
           )}
         </AnimatePresence>
-        <MDXRenderer headings={article.headings} slug={article.fields.slug}>
-          {article.body}
-        </MDXRenderer>
+        <MDXRenderer>{article.body}</MDXRenderer>
       </div>
     </Layout>
   )
@@ -174,10 +170,6 @@ export const pageQuery = graphql`
         shareImage
         categories
         showToc
-      }
-      headings {
-        value
-        depth
       }
     }
   }

@@ -27,7 +27,6 @@ export default ({
   timeToRead,
   categories,
   github,
-  headings,
   slug,
   showToc,
   tocData,
@@ -96,7 +95,6 @@ export default ({
             >
               <TableOfContents
                 data={tocData}
-                headings={headings}
                 slug={slug}
                 sx={{position: 'sticky', pt: '20vh', top: 0}}
               />

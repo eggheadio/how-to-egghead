@@ -8,7 +8,7 @@ import Scrollspy from 'react-scrollspy'
 import {transparentize} from '@theme-ui/color'
 import {FiMenu, FiX} from 'react-icons/fi'
 
-export default ({headings, slug, data, ...props}) => {
+export default ({data, slug, ...props}) => {
   return (
     <nav
       sx={{pl: 4, opacity: 1, ':hover': {opacity: 1}, fontSize: 2}}
