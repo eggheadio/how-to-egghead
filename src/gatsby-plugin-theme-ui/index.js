@@ -64,9 +64,6 @@ export default {
         variant: 'cards.primary',
         textDecoration: 'none',
         ':hover': {
-          boxShadow: 'medium',
-        },
-        ':hover': {
           borderRadius: 8,
           boxShadow: 'medium',
           borderBottomColor: 'transparent',

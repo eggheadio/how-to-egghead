@@ -3,10 +3,10 @@ import {jsx} from 'theme-ui'
 import React from 'react'
 import {Button} from '@theme-ui/components'
 import slugify from '@sindresorhus/slugify'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
 import {transparentize} from '@theme-ui/color'
 import {FiMenu, FiX} from 'react-icons/fi'
+import {Link} from 'react-scroll'
 
 export default ({data, slug, ...props}) => {
   return (
@@ -79,9 +79,11 @@ export default ({data, slug, ...props}) => {
                 my: 2,
               }}
             >
-              <AnchorLink
-                href={`#${slugify(item.title)}`}
-                offset="70"
+              <Link
+                to={slugify(item.title)}
+                smooth={'easeInOutQuint'}
+                offset={-70}
+                duration={250}
                 onClick={() => props.setState && props.setState(false)}
                 sx={{
                   ':hover': {
@@ -90,10 +92,11 @@ export default ({data, slug, ...props}) => {
                   },
                   width: '100%',
                   fontWeight: 600,
+                  cursor: 'pointer',
                 }}
               >
                 {item.title}
-              </AnchorLink>
+              </Link>
               {item.items && (
                 <Scrollspy
                   items={item.items.map(item2 => slugify(item2.title))}
@@ -102,14 +105,24 @@ export default ({data, slug, ...props}) => {
                 >
                   {item.items.map(item2 => (
                     <li sx={{listStyleType: 'none', pl: 3, my: 2}}>
-                      <AnchorLink
-                        href={`#${slugify(item2.title)}`}
-                        offset="70"
+                      <Link
+                        as="a"
+                        to={slugify(item2.title)}
+                        smooth={'easeInOutQuint'}
+                        offset={-70}
+                        duration={250}
                         onClick={() => props.setState && props.setState(false)}
-                        sx={{fontSize: '15px'}}
+                        sx={{
+                          fontSize: '15px',
+                          cursor: 'pointer',
+                          ':hover': {
+                            color: 'text',
+                            textDecoration: 'none',
+                          },
+                        }}
                       >
                         {item2.title}{' '}
-                      </AnchorLink>
+                      </Link>
                     </li>
                   ))}
                 </Scrollspy>

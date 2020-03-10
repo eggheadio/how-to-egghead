@@ -13,7 +13,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 
 const ArticleTemplate = ({data}) => {
   const article = data.mdx
-  const {slug, guide, github} = article.fields
+  const {slug, github} = article.fields
   const showToc = article.frontmatter.showToc
   const [isVisibleToc, setIsVisibleToc] = React.useState(false)
 
