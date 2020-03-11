@@ -36,6 +36,7 @@ module.exports = {
             },
           },
         ],
+        remarkPlugins: [require('remark-slug'), require('remark-toc')],
       },
     },
     'gatsby-remark-images',

@@ -6,29 +6,30 @@ import Search from './search'
 import Link from './link'
 import {motion} from 'framer-motion'
 
-export default () => {
+export default props => {
   const [isToggled, setToggled] = React.useState(false)
 
   return (
     <header
       sx={{
+        zIndex: 100,
+        position: ['fixed', 'static'],
+        background: ['white', 'none'],
+        boxShadow: ['small', 'none'],
         display: 'grid',
         gridTemplateColumns: isToggled ? '1fr' : '3fr 5fr',
-        maxHeight: [78, 119],
-        maxWidth: '70ch',
+        maxHeight: [60, 60, 119],
+        maxWidth: props.showToc ? 1200 : '70ch',
         width: '100%',
         mx: 'auto',
-        px: [3, 3, 4, 0],
-        py: [3, 3, 4],
+        px: [2, 3, 3, 1],
+        py: [isToggled ? 1 : 2, 3, 4],
         ul: {
           listStyle: 'inherit',
           marginLeft: '0',
         },
         li: {
           pl: 0,
-        },
-        'ul li:before': {
-          content: '""',
         },
       }}
     >
@@ -39,7 +40,14 @@ export default () => {
           animate={{opacity: 1}}
           exit={{opacity: 0}}
         >
-          <Link to="/" sx={{display: 'flex', alignItems: 'center'}}>
+          <Link
+            to="/"
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              svg: {maxWidth: [180, 180, 208]},
+            }}
+          >
             <svg
               width="208px"
               height="46px"
