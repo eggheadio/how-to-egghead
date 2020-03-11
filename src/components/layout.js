@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import {jsx, Styled, Layout} from 'theme-ui'
+import {jsx, Styled} from 'theme-ui'
 import {Grid} from '@theme-ui/components'
 import Card from './card'
 import {
@@ -110,7 +110,10 @@ export default ({
         >
           <a href={github} rel="nofollow">
             <strong>
-              📝 <em>edit this page on github</em>
+              <span role="img" aria-label="edit page">
+                📝
+              </span>{' '}
+              <em>edit this page on github</em>
             </strong>
           </a>
         </footer>
