@@ -3,7 +3,7 @@ import {lighten} from '@theme-ui/color'
 export default {
   colors: {
     primary: '#1b6ac9',
-    text: '#111',
+    text: '#111', 'code-text': '#444',
     background: '#fff',
     'gray-50': '#fafafa',
     'gray-100': '#f5f5f5',
@@ -92,6 +92,15 @@ export default {
         borderTop: '2px solid',
         borderTopColor: 'gray-100',
         mx: [-3, -5],
+      },
+      code: {
+        backgroundColor: 'gray-100',
+        color: 'code-text',
+      },
+      pre: {
+        backgroundColor: 'gray-100',
+        padding: '10px',
+        borderRadius: '6px',
       },
     },
   },
