@@ -5,6 +5,7 @@ const EggheadEmbed = ({ lessonLink, lessonTitle }) => (
     style={{
       position: 'relative',
       paddingBottom: '56.2%',
+      marginBottom: '40px',
     }}
   >
     <iframe

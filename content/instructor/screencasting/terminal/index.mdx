@@ -7,7 +7,7 @@ published: true
 shareImage: 'https://res.cloudinary.com/dg3gyk0gu/image/upload/v1571260698/og-image-assets/share_image_screencasting.png'
 ---
 
-import EggheadEmbed from '../../../../src/components/eggheadEmbed';
+import EggheadEmbed from '../../../../src/components/eggheadEmbed'
 
 If you will be showing your command line, we suggest using a minimal prompt to reduce distractions. This example prompt works well for screencasting:
 
@@ -25,7 +25,36 @@ Note: If you’re on Mac and using Bash, you also need to add a `~/.bash_profile
 
 This tells Mac to load your `~/.bashrc` when loading a terminal emulator.
 
+## Customize the Command Prompt in VS Code
+
 <EggheadEmbed
   lessonTitle="Customize the PS1 Bash/Zsh Command Prompt in VS Code with Environment Variables"
   lessonLink="https://egghead.io/lessons/git-add-more-files-and-changes-to-a-commit-before-pushing/embed"
 />
+
+Use custom `ENV` variables if you prefer to only customize the PS1 Bash/Zsh command prompt in the VS Code terminal without affecting your other custom terminal themes in other applications, such as iTerm2.
+
+In VS Code, add a new property, `terminal.integrated.env.osx`, and a new variable that will run a value.
+
+```json
+// settings.json
+{
+  "terminal.integrated.env.osx": {
+    "VSC": "yes lol!"
+  }
+}
+```
+
+Open zsh resource file, `~/.zshrc` and add a simple check at the end of the file to handle the case when the terminal is open in VS Code. Save and reload everything.
+
+```shell
+# .zshrc
+if [ "$VSC" = "yes lol!"], then
+  PS1='\$ '
+fi
+
+```
+
+This works in Bash with `~/.bashrc` as well.
+
+Now, the command prompt is now a `$` sign in VS Code's terminal while keeping other custom terminal themes intact.
