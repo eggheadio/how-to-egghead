@@ -37,7 +37,6 @@ Use custom `ENV` variables if you prefer to only customize the PS1 Bash/Zsh comm
 In VS Code, add a new property, `terminal.integrated.env.osx`, and a new variable that will run a value.
 
 ```json
-// settings.json
 {
   "terminal.integrated.env.osx": {
     "VSC": "yes lol!"
@@ -48,11 +47,9 @@ In VS Code, add a new property, `terminal.integrated.env.osx`, and a new variabl
 Open zsh resource file, `~/.zshrc` and add a simple check at the end of the file to handle the case when the terminal is open in VS Code. Save and reload everything.
 
 ```shell
-# .zshrc
 if [ "$VSC" = "yes lol!"], then
   PS1='\$ '
 fi
-
 ```
 
 This works in Bash with `~/.bashrc` as well.

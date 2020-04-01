@@ -96,6 +96,8 @@ export default {
       code: {
         backgroundColor: 'gray-100',
         color: 'code-text',
+        padding: '5px 6px',
+        borderRadius: '3px',
       },
       pre: {
         backgroundColor: 'gray-100',
