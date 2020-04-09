@@ -2,7 +2,7 @@
 import {jsx} from 'theme-ui'
 import React from 'react'
 import {Button} from '@theme-ui/components'
-import slugify from '@sindresorhus/slugify'
+import Slugger from 'github-slugger'
 import Scrollspy from 'react-scrollspy'
 import {transparentize} from '@theme-ui/color'
 import {FiMenu, FiX} from 'react-icons/fi'
@@ -42,7 +42,7 @@ export default ({data, slug, ...props}) => {
         </div>
       )}
       <Scrollspy
-        items={data.items.map(item => slugify(item.title))}
+        items={data.items.map((item) => Slugger.slug(item.title))}
         currentClassName="is-current"
         sx={{
           listStyleType: 'none',
@@ -80,7 +80,7 @@ export default ({data, slug, ...props}) => {
               }}
             >
               <Link
-                to={slugify(item.title)}
+                to={Slugger.slug(item.title)}
                 smooth={'easeInOutQuint'}
                 offset={-70}
                 duration={250}
@@ -99,18 +99,18 @@ export default ({data, slug, ...props}) => {
               </Link>
               {item.items && (
                 <Scrollspy
-                  items={item.items.map(item2 => slugify(item2.title))}
+                  items={item.items.map((item2) => Slugger.slug(item2.title))}
                   currentClassName="is-current-depth"
                   sx={{m: 0, pb: 2}}
                 >
-                  {item.items.map(item2 => (
+                  {item.items.map((item2) => (
                     <li
                       key={item2.title}
                       sx={{listStyleType: 'none', pl: 3, my: 2}}
                     >
                       <Link
                         as="a"
-                        to={slugify(item2.title)}
+                        to={Slugger.slug(item2.title)}
                         smooth={'easeInOutQuint'}
                         offset={-70}
                         duration={250}
