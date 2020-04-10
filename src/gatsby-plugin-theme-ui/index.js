@@ -75,6 +75,13 @@ export default {
         borderRadius: 5,
       },
     },
+    planningSessionHeader: {
+      mb: [3, 4],
+      img: {m: 0, mr: [3, 4], maxWidth: [80, 100, 140], borderRadius: 0},
+      'h2, h3': {my: 0},
+      alignItems: 'center',
+      a: {color: 'text', display: 'grid', gridTemplateColumns: '1fr 4fr'},
+    },
   },
   planningSession: {
     padding: [3, 4, 4, 5],
@@ -98,12 +105,6 @@ export default {
       borderColor: 'gray-300',
       color: 'text',
     },
-  },
-  planningSessionHeader: {
-    mb: [3, 4],
-    img: {m: 0, mr: [3, 4], maxWidth: [80, 100, 140], borderRadius: 0},
-    'h2, h3': {my: 0},
-    alignItems: 'center',
   },
   styles: {
     root: {

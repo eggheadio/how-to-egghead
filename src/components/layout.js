@@ -8,6 +8,7 @@ import {
   Box,
   Flex,
   Text,
+  Image,
   Link as StyledLink,
 } from '@theme-ui/components'
 import {useStaticQuery, graphql} from 'gatsby'
@@ -76,6 +77,7 @@ export default ({
                   Text,
                   Grid,
                   Flex,
+                  Image,
                   Link,
                   StyledLink,
                   jsx,
