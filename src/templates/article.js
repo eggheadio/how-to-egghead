@@ -26,8 +26,8 @@ const ArticleTemplate = ({data}) => {
             name: path,
             to: breadcrumbArray[idx - 1]
               ? `${breadcrumbArray[idx - 1].to}/${path}`.replace('//', '/')
-              : path,
-          },
+              : path
+          }
         ]
       }, [])
     )
@@ -90,7 +90,7 @@ const ArticleTemplate = ({data}) => {
               lineHeight: 'normal',
               letterSpacing: 'normal',
               mt: breadCrumbs.length > 1 ? 1 : [4, 5],
-              mb: 0,
+              mb: 0
             }}
           >
             {article.frontmatter.title}
@@ -112,6 +112,7 @@ const ArticleTemplate = ({data}) => {
               exit={{opacity: 0}}
               sx={{
                 position: 'fixed',
+                zIndex: 5,
                 overflowY: 'auto',
                 width: '100%',
                 height: '100%',
@@ -120,7 +121,7 @@ const ArticleTemplate = ({data}) => {
                 background: 'white',
                 p: 3,
                 pb: 5,
-                display: ['block', 'block', 'none'],
+                display: ['block', 'block', 'none']
               }}
             >
               <motion.div
@@ -129,7 +130,7 @@ const ArticleTemplate = ({data}) => {
                 exit={{top: 25}}
                 sx={{
                   width: '100%',
-                  position: 'relative',
+                  position: 'relative'
                 }}
               >
                 <TableOfContents
