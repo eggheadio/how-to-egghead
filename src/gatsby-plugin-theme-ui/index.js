@@ -3,7 +3,8 @@ import {lighten} from '@theme-ui/color'
 export default {
   colors: {
     primary: '#1b6ac9',
-    text: '#111', 'code-text': '#444',
+    text: '#111',
+    'code-text': '#444',
     background: '#fff',
     'gray-50': '#fafafa',
     'gray-100': '#f5f5f5',
@@ -74,6 +75,36 @@ export default {
         borderRadius: 5,
       },
     },
+    planningSessionHeader: {
+      mb: [3, 4],
+      img: {m: 0, mr: [3, 4], maxWidth: [80, 100, 140], borderRadius: 0},
+      'h2, h3': {my: 0},
+      alignItems: 'center',
+      a: {color: 'text', display: 'grid', gridTemplateColumns: '1fr 4fr'},
+    },
+  },
+  planningSession: {
+    padding: [3, 4, 4, 5],
+    mb: [3, 4],
+    bg: 'gray-100',
+    borderRadius: 10,
+    fontSize: '90%',
+    li: {mb: 1},
+    p: {mb: 3},
+    'h1, h2, h3, h4': {
+      lineHeight: 1.4,
+    },
+    h4: {
+      mt: 4,
+      mb: 3,
+    },
+    img: {borderRadius: 3},
+    code: {
+      bg: 'white',
+      border: '1px solid',
+      borderColor: 'gray-300',
+      color: 'text',
+    },
   },
   styles: {
     root: {
@@ -96,7 +127,7 @@ export default {
       code: {
         backgroundColor: 'gray-100',
         color: 'code-text',
-        padding: '5px 6px',
+        padding: '3px 6px',
         borderRadius: '3px',
       },
       pre: {
