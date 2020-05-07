@@ -46,6 +46,11 @@ export default {
         lineHeight: 1.2,
         borderBottom: '1px solid',
         borderBottomColor: 'gray-100',
+        ':hover': {
+          borderRadius: 8,
+          boxShadow: 'medium',
+          borderBottomColor: 'transparent',
+        },
         p: {
           mb: 0,
           mt: 2,
@@ -61,12 +66,8 @@ export default {
           m: 0,
         },
         textDecoration: 'none',
-        ':hover': {
-          borderRadius: 8,
-          boxShadow: 'medium',
-          borderBottomColor: 'transparent',
-        },
       },
+
       img: {
         mb: 0,
         borderRadius: 5,
@@ -80,6 +81,8 @@ export default {
         px: [3, 3, 3],
         color: 'primary',
         textDecoration: 'none',
+        borderBottom: '1px solid',
+        borderBottomColor: 'gray-100',
         ':hover': {
           borderRadius: 8,
           boxShadow: 'medium',
