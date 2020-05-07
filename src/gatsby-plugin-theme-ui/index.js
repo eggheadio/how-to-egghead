@@ -34,35 +34,32 @@ export default {
 
   cards: {
     primary: {
-      px: [2, 3, 3],
-      py: [3, 3, 4],
-      color: 'text',
-      display: 'grid',
-      gridGap: '1rem',
-      gridTemplateColumns: ['50px 6fr', '80px 6fr'],
-      alignItems: 'center',
-      fontFamily: 'heading',
-      lineHeight: 1.2,
-      borderBottom: '1px solid',
-      borderBottomColor: 'gray-100',
-      p: {
-        mb: 0,
-        mt: 2,
-        opacity: 0.75,
-        fontSize: [2, 3],
-      },
-      h1: {
-        my: '0 !important',
-        textAlign: 'center',
-      },
-      h2: {
-        fontSize: [3, 4],
-        m: 0,
-      },
-    },
-    link: {
       a: {
-        variant: 'cards.primary',
+        px: [2, 3, 3],
+        py: [3, 3, 4],
+        color: 'text',
+        display: 'grid',
+        gridGap: '1rem',
+        gridTemplateColumns: ['50px 6fr', '80px 6fr'],
+        alignItems: 'center',
+        fontFamily: 'heading',
+        lineHeight: 1.2,
+        borderBottom: '1px solid',
+        borderBottomColor: 'gray-100',
+        p: {
+          mb: 0,
+          mt: 2,
+          opacity: 0.75,
+          fontSize: [2, 3],
+        },
+        h1: {
+          my: '0 !important',
+          textAlign: 'center',
+        },
+        h2: {
+          fontSize: [3, 4],
+          m: 0,
+        },
         textDecoration: 'none',
         ':hover': {
           borderRadius: 8,
@@ -73,6 +70,21 @@ export default {
       img: {
         mb: 0,
         borderRadius: 5,
+      },
+    },
+    secondary: {
+      a: {
+        variant: 'cards.primary',
+        display: 'flex',
+        py: [3, 3, 3],
+        px: [3, 3, 3],
+        color: 'primary',
+        textDecoration: 'none',
+        ':hover': {
+          borderRadius: 8,
+          boxShadow: 'medium',
+          borderBottomColor: 'transparent',
+        },
       },
     },
     planningSessionHeader: {
