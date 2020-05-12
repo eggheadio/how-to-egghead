@@ -147,14 +147,14 @@ module.exports = {
                   const {excerpt} = node.excerpt
                   const base = {slug, title, path, excerpt, description}
                   const chunks = strip(node.rawBody).split('\n\n')
-
+                  const joinedChunks = chunks.join(' ')
                   return [
                     ...records,
-                    ...chunks.map((text, index) => ({
+                    {
                       ...base,
-                      objectID: `${slug}-${index}`,
-                      text,
-                    })),
+                      objectID: slug,
+                      text: joinedChunks,
+                    },
                   ]
                 }, []),
           },
